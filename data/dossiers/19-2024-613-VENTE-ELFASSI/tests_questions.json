@@ -1,0 +1,40 @@
+{
+  "dossier_id": "19-2024-613-VENTE-ELFASSI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier du bien vendu dans le dossier 19-2024-613-VENTE-ELFASSI ?",
+      "expected_answer_contains": "142.980/08",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est le vendeur dans le dossier 19-2024-613-VENTE-ELFASSI ?",
+      "expected_answer_contains": "Nawal ELFASSI",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est l'acquéreur dans le dossier 19-2024-613-VENTE-ELFASSI ?",
+      "expected_answer_contains": "Hamza RAISSOUNI",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quelle est la superficie du bien dans le dossier 19-2024-613-VENTE-ELFASSI ?",
+      "expected_answer_contains": "92",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le prix de vente dans le dossier 19-2024-613-VENTE-ELFASSI ?",
+      "expected_answer_contains": "890,000",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Comment le prix a-t-il été payé dans le dossier 19-2024-613-VENTE-ELFASSI ?",
+      "expected_answer_contains": "totalité",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "À quelle attestation fiscale le dossier 19-2024-613-VENTE-ELFASSI fait-il référence ?",
+      "expected_answer_contains": "attestation de paiement des impôts",
+      "expected_source_contains": "demande_attestation_fiscale"
+    }
+  ]
+}

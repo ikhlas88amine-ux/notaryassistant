@@ -1,0 +1,35 @@
+{
+  "dossier_id": "20-2025-388-SUCCESSION-LAZRAK",
+  "tests": [
+    {
+      "question": "Qui est le défunt dans le dossier 20-2025-388-SUCCESSION-LAZRAK ?",
+      "expected_answer_contains": "Abdelkader LAZRAK",
+      "expected_source_contains": "acte_notoriete_successorale"
+    },
+    {
+      "question": "Quelle est la date du décès dans le dossier 20-2025-388-SUCCESSION-LAZRAK ?",
+      "expected_answer_contains": "2025-01-05",
+      "expected_source_contains": "acte_notoriete_successorale"
+    },
+    {
+      "question": "Combien d'héritiers sont désignés dans le dossier 20-2025-388-SUCCESSION-LAZRAK ?",
+      "expected_answer_contains": "3",
+      "expected_source_contains": "acte_notoriete_successorale"
+    },
+    {
+      "question": "Quelle est la part successorale de Malika TAHIRI (épouse) dans le dossier 20-2025-388-SUCCESSION-LAZRAK ?",
+      "expected_answer_contains": "1/4",
+      "expected_source_contains": "acte_notoriete_successorale"
+    },
+    {
+      "question": "Quel bien compose la succession dans le dossier 20-2025-388-SUCCESSION-LAZRAK ?",
+      "expected_answer_contains": "139.775/08",
+      "expected_source_contains": "acte_notoriete_successorale"
+    },
+    {
+      "question": "Le dossier 20-2025-388-SUCCESSION-LAZRAK s'appuie-t-il sur un modèle réel de l'étude ?",
+      "expected_answer_contains": "STRUCTURE LEGALE STANDARD",
+      "expected_source_contains": "acte_notoriete_successorale"
+    }
+  ]
+}

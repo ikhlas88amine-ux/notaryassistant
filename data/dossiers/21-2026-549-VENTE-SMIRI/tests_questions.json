@@ -1,0 +1,30 @@
+{
+  "dossier_id": "21-2026-549-VENTE-SMIRI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier du bien vendu dans le dossier 21-2026-549-VENTE-SMIRI ?",
+      "expected_answer_contains": "175.660/08",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quelle banque finance l'acquisition dans le dossier 21-2026-549-VENTE-SMIRI ?",
+      "expected_answer_contains": "AL BARID BANK",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le rang de la première hypothèque dans le dossier 21-2026-549-VENTE-SMIRI ?",
+      "expected_answer_contains": "1",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui sont les co-acquéreurs dans le dossier 21-2026-549-VENTE-SMIRI ?",
+      "expected_answer_contains": "Sofia SMIRI",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le prix de vente total dans le dossier 21-2026-549-VENTE-SMIRI ?",
+      "expected_answer_contains": "980,000",
+      "expected_source_contains": "acte_de_vente"
+    }
+  ]
+}

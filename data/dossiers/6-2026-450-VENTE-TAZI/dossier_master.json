@@ -1,0 +1,40 @@
+{
+  "dossier_id": "6-2026-450-VENTE-TAZI",
+  "annee": 2026,
+  "numero_dossier": "450",
+  "type_dossier": "VENTE",
+  "variante": "mixte_comptabilite",
+  "client_famille": "TAZI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "vendeur": {
+      "nom_fr": "Youssef TAZI",
+      "nom_ar": "يوسف التازي",
+      "cin": "EJ409112"
+    },
+    "acquereur": {
+      "nom_fr": "Mehdi SEKKAT",
+      "nom_ar": "مهدي سكات",
+      "cin": "EJ884420"
+    },
+    "bien": {
+      "nature": "local commercial",
+      "adresse": "Avenue Zerktouni, El Jadida",
+      "tf": "171.008/08",
+      "superficie_m2": 60
+    },
+    "prix_dhs": 520000,
+    "modalite_paiement": "mixte",
+    "montant_hors_comptabilite_dhs": 150000,
+    "montant_via_comptabilite_dhs": 370000,
+    "date_acte": "2026-03-09"
+  }
+}

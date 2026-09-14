@@ -1,0 +1,30 @@
+{
+  "dossier_id": "22-2026-999-VENTE-AUTO",
+  "tests": [
+    {
+      "question": "Quelle est l'immatriculation du véhicule dans le dossier 22-2026-999-VENTE-AUTO ?",
+      "expected_answer_contains": "12345-A-18",
+      "expected_source_contains": "contrat_vente_vehicule"
+    },
+    {
+      "question": "Quel est le prix de vente du véhicule dans le dossier 22-2026-999-VENTE-AUTO ?",
+      "expected_answer_contains": "95,000",
+      "expected_source_contains": "contrat_vente_vehicule"
+    },
+    {
+      "question": "Qui est le vendeur du véhicule dans le dossier 22-2026-999-VENTE-AUTO ?",
+      "expected_answer_contains": "Nabil OUAZZANI",
+      "expected_source_contains": "contrat_vente_vehicule"
+    },
+    {
+      "question": "Ce dossier relève-t-il du champ notarial habituel de l'étude ?",
+      "expected_answer_contains": "ne relève pas du champ d'intervention notariale",
+      "expected_source_contains": "contrat_vente_vehicule"
+    },
+    {
+      "question": "Qui est l'acquéreur du véhicule dans le dossier 22-2026-999-VENTE-AUTO ?",
+      "expected_answer_contains": "Meryem SAADI",
+      "expected_source_contains": "contrat_vente_vehicule"
+    }
+  ]
+}

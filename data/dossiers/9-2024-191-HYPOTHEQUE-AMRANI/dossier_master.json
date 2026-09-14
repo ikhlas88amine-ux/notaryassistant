@@ -1,0 +1,33 @@
+{
+  "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+  "annee": 2024,
+  "numero_dossier": "191",
+  "type_dossier": "HYPOTHEQUE",
+  "variante": "engagement_1er_rang",
+  "client_famille": "AMRANI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "emprunteur": {
+      "nom_fr": "Nadia AMRANI",
+      "nom_ar": "نادية العمراني",
+      "cin": "EJ225588"
+    },
+    "bien": {
+      "nature": "appartement",
+      "tf": "155.660/08"
+    },
+    "banque": "ATTIJARIWAFA BANK",
+    "montant_credit_dhs": 640000,
+    "rang_hypotheque": 1,
+    "delai_inscription_jours": 30,
+    "date_acte": "2024-02-19"
+  }
+}

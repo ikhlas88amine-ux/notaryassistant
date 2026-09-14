@@ -1,0 +1,41 @@
+{
+  "dossier_id": "5-2026-876-VENTE-TAZI",
+  "annee": 2026,
+  "numero_dossier": "876",
+  "type_dossier": "VENTE",
+  "variante": "paiement_differe",
+  "client_famille": "TAZI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "vendeur": {
+      "nom_fr": "Youssef TAZI",
+      "nom_ar": "يوسف التازي",
+      "cin": "EJ409112"
+    },
+    "acquereur": {
+      "nom_fr": "Amal BERRADA",
+      "nom_ar": "امال برادة",
+      "cin": "EJ773301"
+    },
+    "bien": {
+      "nature": "villa",
+      "adresse": "Quartier des Castors, El Jadida",
+      "tf": "160.334/08",
+      "superficie_m2": 245
+    },
+    "prix_dhs": 1950000,
+    "modalite_paiement": "differe",
+    "montant_immediat_dhs": 1700000,
+    "montant_differe_dhs": 250000,
+    "delai_differe_mois": 6,
+    "date_acte": "2026-01-15"
+  }
+}

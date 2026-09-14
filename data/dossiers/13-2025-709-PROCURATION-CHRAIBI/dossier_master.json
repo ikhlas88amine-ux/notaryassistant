@@ -1,0 +1,33 @@
+{
+  "dossier_id": "13-2025-709-PROCURATION-CHRAIBI",
+  "annee": 2025,
+  "numero_dossier": "709",
+  "type_dossier": "PROCURATION",
+  "variante": "standard",
+  "client_famille": "CHRAIBI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": false,
+  "donnees": {
+    "mandant": {
+      "nom_fr": "Omar CHRAIBI",
+      "nom_ar": "عمر الشرايبي",
+      "cin": "EJ556231"
+    },
+    "mandataire": {
+      "nom_fr": "Nabila CHRAIBI",
+      "nom_ar": "نبيلة الشرايبي",
+      "cin": "EJ556232",
+      "lien": "épouse du mandant"
+    },
+    "objet": "gérer et administrer les biens du mandant, encaisser les loyers, représenter le mandant devant toute administration",
+    "date_acte": "2025-01-22",
+    "duree": "deux ans, renouvelable par tacite reconduction"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+  "tests": [
+    {
+      "question": "Qui est le mandant dans le dossier 4-2025-539-PROCURATION-ALAOUI ?",
+      "expected_answer_contains": "Hassan ALAOUI",
+      "expected_source_contains": "procuration"
+    },
+    {
+      "question": "Qui est le mandataire dans le dossier 4-2025-539-PROCURATION-ALAOUI ?",
+      "expected_answer_contains": "Younes ALAOUI",
+      "expected_source_contains": "procuration"
+    },
+    {
+      "question": "Quel est l'objet de la procuration dans le dossier 4-2025-539-PROCURATION-ALAOUI ?",
+      "expected_answer_contains": "vendre pour le compte du mandant un appartement sis à El Jadida, TF n° 141.220/08, signer l'acte de vente définitif, en recevoir le prix et en donner quittance",
+      "expected_source_contains": "procuration"
+    },
+    {
+      "question": "Quelle est la durée de la procuration dans le dossier 4-2025-539-PROCURATION-ALAOUI ?",
+      "expected_answer_contains": "un an à compter de la signature, révocable à tout moment par le mandant",
+      "expected_source_contains": "procuration"
+    },
+    {
+      "question": "Le dossier 4-2025-539-PROCURATION-ALAOUI s'appuie-t-il sur un modèle réel de l'étude ?",
+      "expected_answer_contains": "STRUCTURE LEGALE STANDARD",
+      "expected_source_contains": "procuration"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "checklist_id": "vente_simple.json",
+  "type_dossier": "VENTE",
+  "variante": "simple",
+  "items": [
+    {
+      "id": "ACTE_VENTE",
+      "label": "Projet ou acte de vente",
+      "required": true,
+      "severity": "blocking",
+      "accepted_document_types": [
+        "acte_de_vente"
+      ],
+      "accepted_filename_keywords": [
+        "acte",
+        "vente"
+      ],
+      "content_proof_keywords": [
+        "acte de vente"
+      ],
+      "recommended_action": "Fournir le projet ou l'acte de vente signe."
+    },
+    {
+      "id": "PIECE_IDENTITE",
+      "label": "Copies des pieces d'identite des parties",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "piece_identite",
+        "cin"
+      ],
+      "accepted_filename_keywords": [
+        "cin",
+        "identite",
+        "piece"
+      ],
+      "content_proof_keywords": [
+        "cin",
+        "numero cin"
+      ],
+      "recommended_action": "Recueillir les copies des CIN des parties."
+    },
+    {
+      "id": "TITRE_FONCIER",
+      "label": "Extrait du titre foncier",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "titre_foncier",
+        "extrait_tf"
+      ],
+      "accepted_filename_keywords": [
+        "titre",
+        "foncier"
+      ],
+      "content_proof_keywords": [
+        "titre foncier"
+      ],
+      "recommended_action": "Fournir l'extrait du titre foncier a jour."
+    },
+    {
+      "id": "ATTESTATION_FISCALE",
+      "label": "Attestation de situation fiscale",
+      "required": true,
+      "severity": "medium",
+      "accepted_document_types": [
+        "attestation_fiscale"
+      ],
+      "accepted_filename_keywords": [
+        "attestation",
+        "fiscal"
+      ],
+      "content_proof_keywords": [
+        "attestation",
+        "fiscale"
+      ],
+      "recommended_action": "Demander l'attestation de situation fiscale."
+    },
+    {
+      "id": "ETAT_HYPOTHECAIRE",
+      "label": "Etat hypothecaire",
+      "required": false,
+      "severity": "medium",
+      "accepted_document_types": [
+        "etat_hypothecaire"
+      ],
+      "accepted_filename_keywords": [
+        "hypothecaire",
+        "etat"
+      ],
+      "content_proof_keywords": [
+        "etat hypothecaire",
+        "etat hypothécaire"
+      ],
+      "recommended_action": "Verifier l'etat hypothecaire le cas echeant."
+    }
+  ]
+}

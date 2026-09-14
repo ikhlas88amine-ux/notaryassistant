@@ -1,0 +1,64 @@
+{
+  "checklist_id": "vente_fonds_de_commerce.json",
+  "type_dossier": "VENTE",
+  "variante": "fonds_de_commerce",
+  "items": [
+    {
+      "id": "ACTE_VENTE",
+      "label": "Acte de vente du fonds de commerce",
+      "required": true,
+      "severity": "blocking",
+      "accepted_document_types": [
+        "acte_de_vente"
+      ],
+      "accepted_filename_keywords": [
+        "acte",
+        "vente",
+        "fonds"
+      ],
+      "content_proof_keywords": [
+        "fonds de commerce"
+      ],
+      "recommended_action": "Fournir le projet ou l'acte de vente du fonds."
+    },
+    {
+      "id": "FONDS_COMMERCE",
+      "label": "Etat descriptif du fonds / extrait du registre du commerce",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "etat_descriptif"
+      ],
+      "accepted_filename_keywords": [
+        "etat",
+        "descriptif",
+        "fonds",
+        "registre"
+      ],
+      "content_proof_keywords": [
+        "fonds de commerce",
+        "registre du commerce"
+      ],
+      "recommended_action": "Joindre l'etat descriptif et l'extrait du registre du commerce."
+    },
+    {
+      "id": "PIECE_IDENTITE",
+      "label": "Copies des pieces d'identite des parties",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "piece_identite",
+        "cin"
+      ],
+      "accepted_filename_keywords": [
+        "cin",
+        "identite",
+        "piece"
+      ],
+      "content_proof_keywords": [
+        "cin"
+      ],
+      "recommended_action": "Recueillir les copies des CIN des parties."
+    }
+  ]
+}

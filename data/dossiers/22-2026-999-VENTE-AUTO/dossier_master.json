@@ -1,0 +1,36 @@
+{
+  "dossier_id": "22-2026-999-VENTE-AUTO",
+  "annee": 2026,
+  "numero_dossier": "999",
+  "type_dossier": "VENTE-AUTO",
+  "variante": "standard",
+  "client_famille": null,
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": false,
+  "donnees": {
+    "vendeur": {
+      "nom_fr": "Nabil OUAZZANI",
+      "cin": "EJ667112"
+    },
+    "acquereur": {
+      "nom_fr": "Meryem SAADI",
+      "cin": "EJ889945"
+    },
+    "vehicule": {
+      "marque": "Renault",
+      "modele": "Clio",
+      "immatriculation": "12345-A-18",
+      "date_premiere_immatriculation": "2019-03-01",
+      "numero_chassis": "VF1XXXXXXXXXXXXXX"
+    },
+    "prix_dhs": 95000,
+    "date_acte": "2026-05-04"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+  "question": "Qui est l'emprunteur dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+  "expected_source_contains": "engagement_hypothecaire",
+  "expected_answer_contains": "Nadia AMRANI",
+  "intent": "financing",
+  "retrieval": {
+    "intent": "financing",
+    "scope": "dossier",
+    "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+    "collections": [
+      "case_documents"
+    ],
+    "search_k": 15,
+    "raw_count": 2,
+    "filtered_count": 1,
+    "neighbor_count": 1,
+    "context_count": 2
+  },
+  "raw_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "fichier": "01_engagement_hypothecaire.docx",
+      "section": "financement_hypotheque",
+      "chunk_id": "9-2024-191-HYPOTHEQUE-AMRANI:01_engagement_hypothecaire:1",
+      "score": 1.0577364270597118,
+      "excerpt": "LETTRE D'ENGAGEMENT HYPOTHECAIRE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nA ATTIJARIWAFA BANK,\nJe soussigné Maître Fouad BENJELLOUN, notaire à El Jadida, m'engage à inscrire au profit de ATTIJARIWAFA BANK une hypothèque de 1er rang sur le bien objet du titre foncier n° 155.660/08, appartenant à Nadia AMRANI (نادية العمراني, CIN EJ225588), en garantie du crédit de 640,000 DHS (SIX CENT QUARANTE MILLE DIRHAMS) qui lui est consenti.\nCet engagement est pris pour un délai de 30 jours à compter du déblocage des fonds.\nFait à El Jadida, le 2024-02-19.",
+      "text": "LETTRE D'ENGAGEMENT HYPOTHECAIRE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nA ATTIJARIWAFA BANK,\nJe soussigné Maître Fouad BENJELLOUN, notaire à El Jadida, m'engage à inscrire au profit de ATTIJARIWAFA BANK une hypothèque de 1er rang sur le bien objet du titre foncier n° 155.660/08, appartenant à Nadia AMRANI (نادية العمراني, CIN EJ225588), en garantie du crédit de 640,000 DHS (SIX CENT QUARANTE MILLE DIRHAMS) qui lui est consenti.\nCet engagement est pris pour un délai de 30 jours à compter du déblocage des fonds.\nFait à El Jadida, le 2024-02-19.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "fichier": "01_engagement_hypothecaire.docx",
+      "section": null,
+      "chunk_id": "9-2024-191-HYPOTHEQUE-AMRANI:01_engagement_hypothecaire:0",
+      "score": 0.4339281164708305,
+      "excerpt": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE",
+      "text": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "filtered_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "fichier": "01_engagement_hypothecaire.docx",
+      "section": "financement_hypotheque",
+      "chunk_id": "9-2024-191-HYPOTHEQUE-AMRANI:01_engagement_hypothecaire:1",
+      "score": 1.0577364270597118,
+      "excerpt": "LETTRE D'ENGAGEMENT HYPOTHECAIRE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nA ATTIJARIWAFA BANK,\nJe soussigné Maître Fouad BENJELLOUN, notaire à El Jadida, m'engage à inscrire au profit de ATTIJARIWAFA BANK une hypothèque de 1er rang sur le bien objet du titre foncier n° 155.660/08, appartenant à Nadia AMRANI (نادية العمراني, CIN EJ225588), en garantie du crédit de 640,000 DHS (SIX CENT QUARANTE MILLE DIRHAMS) qui lui est consenti.\nCet engagement est pris pour un délai de 30 jours à compter du déblocage des fonds.\nFait à El Jadida, le 2024-02-19.",
+      "text": "LETTRE D'ENGAGEMENT HYPOTHECAIRE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nA ATTIJARIWAFA BANK,\nJe soussigné Maître Fouad BENJELLOUN, notaire à El Jadida, m'engage à inscrire au profit de ATTIJARIWAFA BANK une hypothèque de 1er rang sur le bien objet du titre foncier n° 155.660/08, appartenant à Nadia AMRANI (نادية العمراني, CIN EJ225588), en garantie du crédit de 640,000 DHS (SIX CENT QUARANTE MILLE DIRHAMS) qui lui est consenti.\nCet engagement est pris pour un délai de 30 jours à compter du déblocage des fonds.\nFait à El Jadida, le 2024-02-19.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "context_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "fichier": "01_engagement_hypothecaire.docx",
+      "section": "financement_hypotheque",
+      "chunk_id": "9-2024-191-HYPOTHEQUE-AMRANI:01_engagement_hypothecaire:1",
+      "score": 1.0577364270597118,
+      "excerpt": "LETTRE D'ENGAGEMENT HYPOTHECAIRE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nA ATTIJARIWAFA BANK,\nJe soussigné Maître Fouad BENJELLOUN, notaire à El Jadida, m'engage à inscrire au profit de ATTIJARIWAFA BANK une hypothèque de 1er rang sur le bien objet du titre foncier n° 155.660/08, appartenant à Nadia AMRANI (نادية العمراني, CIN EJ225588), en garantie du crédit de 640,000 DHS (SIX CENT QUARANTE MILLE DIRHAMS) qui lui est consenti.\nCet engagement est pris pour un délai de 30 jours à compter du déblocage des fonds.\nFait à El Jadida, le 2024-02-19.",
+      "text": "LETTRE D'ENGAGEMENT HYPOTHECAIRE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nA ATTIJARIWAFA BANK,\nJe soussigné Maître Fouad BENJELLOUN, notaire à El Jadida, m'engage à inscrire au profit de ATTIJARIWAFA BANK une hypothèque de 1er rang sur le bien objet du titre foncier n° 155.660/08, appartenant à Nadia AMRANI (نادية العمراني, CIN EJ225588), en garantie du crédit de 640,000 DHS (SIX CENT QUARANTE MILLE DIRHAMS) qui lui est consenti.\nCet engagement est pris pour un délai de 30 jours à compter du déblocage des fonds.\nFait à El Jadida, le 2024-02-19.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "fichier": "01_engagement_hypothecaire.docx",
+      "section": null,
+      "chunk_id": "9-2024-191-HYPOTHEQUE-AMRANI:01_engagement_hypothecaire:0",
+      "score": 1.056736427059712,
+      "excerpt": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE",
+      "text": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "context_blocks": [
+    "[Dossier 9-2024-191-HYPOTHEQUE-AMRANI - 01_engagement_hypothecaire.docx, section financement_hypotheque]\nLETTRE D'ENGAGEMENT HYPOTHECAIRE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nA ATTIJARIWAFA BANK,\nJe soussigné Maître Fouad BENJELLOUN, notaire à El Jadida, m'engage à inscrire au profit de ATTIJARIWAFA BANK une hypothèque de 1er rang sur le bien objet du titre foncier n° 155.660/08, appartenant à Nadia AMRANI (نادية العمراني, CIN EJ225588), en garantie du crédit de 640,000 DHS (SIX CENT QUARANTE MILLE DIRHAMS) qui lui est consenti.\nCet engagement est pris pour un délai de 30 jours à compter du déblocage des fonds.\nFait à El Jadida, le 2024-02-19.",
+    "[Dossier 9-2024-191-HYPOTHEQUE-AMRANI - 01_engagement_hypothecaire.docx, section None]\nDOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE"
+  ],
+  "response": {
+    "answer": "Prix de vente :\n- Non indiqué.\nBanque / prêteur :\n- ATTIJARIWAFA BANK\nCrédits identifiés :\n- Aucun crédit explicitement cité dans les données du dossier.\nCrédit garanti :\n- 640 000 DHS.\nRang de l'hypothèque :\n- 1e rang.",
+    "answer_type": "documentary_answer",
+    "warnings": [
+      "Ollama local non disponible : réponse déterministe construite à partir des données structurées et des chunks récupérés. À faire vérifier par le notaire."
+    ]
+  },
+  "citations": [
+    {
+      "source": "client",
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "fichier": "01_engagement_hypothecaire.docx",
+      "section": "financement_hypotheque",
+      "chunk_id": "9-2024-191-HYPOTHEQUE-AMRANI:01_engagement_hypothecaire:1",
+      "score": 1.0577364270597118,
+      "excerpt": "LETTRE D'ENGAGEMENT HYPOTHECAIRE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nA ATTIJARIWAFA BANK,\nJe soussigné Maître Fouad BENJELLOUN, notaire à El Jadida, m'engage à inscrire au profit de ATTIJARIWAFA BANK une hypothèque de 1er rang sur le bien objet du titre foncier n° 155.660/08, appartenant à Nadia AMRANI (نادية العمراني, CIN EJ225588), en garantie du crédit de 640,000 DHS (SIX CENT QUARANTE MILLE DIRHAMS) qui lui est consenti.\nCet engagement est pris pour un délai de 30 jours à compter du déblocage des fonds.\nFait à El Jadida, le 2024-02-19.",
+      "text": "LETTRE D'ENGAGEMENT HYPOTHECAIRE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nA ATTIJARIWAFA BANK,\nJe soussigné Maître Fouad BENJELLOUN, notaire à El Jadida, m'engage à inscrire au profit de ATTIJARIWAFA BANK une hypothèque de 1er rang sur le bien objet du titre foncier n° 155.660/08, appartenant à Nadia AMRANI (نادية العمراني, CIN EJ225588), en garantie du crédit de 640,000 DHS (SIX CENT QUARANTE MILLE DIRHAMS) qui lui est consenti.\nCet engagement est pris pour un délai de 30 jours à compter du déblocage des fonds.\nFait à El Jadida, le 2024-02-19.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "failure_reason": null
+}

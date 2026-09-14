@@ -1,0 +1,89 @@
+{
+  "run_at": "2026-08-23T12:26:32.608569+00:00",
+  "modele": "lecture seule (aucune correction automatique)",
+  "totals": {
+    "files": 0,
+    "chunks": 0,
+    "points": 0
+  },
+  "counts_by_severity": {
+    "blocking": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "info": 3
+  },
+  "corpora": {
+    "dossiers": {
+      "anomalies": [
+        {
+          "corpus": "dossiers",
+          "code": "MANIFEST_MISSING",
+          "severity": "info",
+          "message": "Aucun manifeste d'integrite present pour dossiers (output/audit/manifests/dossiers_latest.json).",
+          "ancien_hash": null,
+          "nouveau_hash": null
+        }
+      ],
+      "files": 0,
+      "chunks": 0,
+      "points": 0
+    },
+    "modeles": {
+      "anomalies": [
+        {
+          "corpus": "modeles",
+          "code": "MANIFEST_MISSING",
+          "severity": "info",
+          "message": "Aucun manifeste d'integrite present pour modeles (output/audit/manifests/modeles_latest.json).",
+          "ancien_hash": null,
+          "nouveau_hash": null
+        }
+      ],
+      "files": 0,
+      "chunks": 0,
+      "points": 0
+    },
+    "lois": {
+      "anomalies": [
+        {
+          "corpus": "lois",
+          "code": "MANIFEST_MISSING",
+          "severity": "info",
+          "message": "Aucun manifeste d'integrite present pour lois (output/audit/manifests/lois_latest.json).",
+          "ancien_hash": null,
+          "nouveau_hash": null
+        }
+      ],
+      "files": 0,
+      "chunks": 0,
+      "points": 0
+    }
+  },
+  "anomalies": [
+    {
+      "corpus": "dossiers",
+      "code": "MANIFEST_MISSING",
+      "severity": "info",
+      "message": "Aucun manifeste d'integrite present pour dossiers (output/audit/manifests/dossiers_latest.json).",
+      "ancien_hash": null,
+      "nouveau_hash": null
+    },
+    {
+      "corpus": "modeles",
+      "code": "MANIFEST_MISSING",
+      "severity": "info",
+      "message": "Aucun manifeste d'integrite present pour modeles (output/audit/manifests/modeles_latest.json).",
+      "ancien_hash": null,
+      "nouveau_hash": null
+    },
+    {
+      "corpus": "lois",
+      "code": "MANIFEST_MISSING",
+      "severity": "info",
+      "message": "Aucun manifeste d'integrite present pour lois (output/audit/manifests/lois_latest.json).",
+      "ancien_hash": null,
+      "nouveau_hash": null
+    }
+  ]
+}

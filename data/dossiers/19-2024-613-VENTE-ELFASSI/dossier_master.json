@@ -1,0 +1,38 @@
+{
+  "dossier_id": "19-2024-613-VENTE-ELFASSI",
+  "annee": 2024,
+  "numero_dossier": "613",
+  "type_dossier": "VENTE",
+  "variante": "simple",
+  "client_famille": "ELFASSI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "vendeur": {
+      "nom_fr": "Nawal ELFASSI",
+      "nom_ar": "نوال الفاسي",
+      "cin": "EJ556890"
+    },
+    "acquereur": {
+      "nom_fr": "Hamza RAISSOUNI",
+      "nom_ar": "حمزة الريسوني",
+      "cin": "EJ118456"
+    },
+    "bien": {
+      "nature": "appartement",
+      "adresse": "Rue Moulay Youssef, El Jadida",
+      "tf": "142.980/08",
+      "superficie_m2": 92
+    },
+    "prix_dhs": 890000,
+    "modalite_paiement": "totalite_via_notaire",
+    "date_acte": "2024-04-27"
+  }
+}

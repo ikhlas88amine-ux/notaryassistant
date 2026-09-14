@@ -1,0 +1,31 @@
+{
+  "dossier_id": "12-2024-306-HYPOTHEQUE-TEMSAMANI",
+  "annee": 2024,
+  "numero_dossier": "306",
+  "type_dossier": "HYPOTHEQUE",
+  "variante": "mainlevee",
+  "client_famille": "TEMSAMANI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "debiteur": {
+      "nom_fr": "Samir TEMSAMANI",
+      "nom_ar": "سمير التمسماني",
+      "cin": "EJ221004"
+    },
+    "banque": "BMCE Bank",
+    "bien": {
+      "tf": "160.900/08"
+    },
+    "montant_solde_dhs": 85000,
+    "montant_verse_tiers_dhs": 40000,
+    "date_mainlevee": "2024-12-12"
+  }
+}

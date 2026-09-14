@@ -1,0 +1,41 @@
+{
+  "dossier_id": "15-2024-824-AMBIGU",
+  "annee": 2024,
+  "numero_dossier": "824",
+  "type_dossier": "AMBIGU",
+  "variante": "double_tf_double_prix",
+  "client_famille": null,
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "vendeur": {
+      "nom_fr": "Abdellatif MARZOUKI",
+      "nom_ar": "عبد اللطيف مرزوقي",
+      "cin": "EJ775510"
+    },
+    "acquereur": {
+      "nom_fr": "SARL BADR IMMO",
+      "gerant": "Houda LAHLOU",
+      "cin_gerant": "EJ662209"
+    },
+    "bien": {
+      "nature": "terrain nu",
+      "adresse": "Douar Laghnadra, El Jadida"
+    },
+    "tf_version_1": "121.709/08",
+    "tf_version_2": "121.425/08",
+    "prix_section_1_dhs": 440000,
+    "prix_section_1_immediat_dhs": 30000,
+    "prix_section_1_differe_dhs": 410000,
+    "prix_section_2_dhs": 950000,
+    "date_acte": "2024-10-01",
+    "anomaly": "Deux numéros de titre foncier différents désignent le même bien dans le même acte, et deux sections de prix distinctes et incompatibles (440.000 DHS puis 950.000 DHS) apparaissent dans le même document."
+  }
+}

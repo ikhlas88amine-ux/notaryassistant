@@ -1,0 +1,64 @@
+{
+  "checklist_id": "succession_standard.json",
+  "type_dossier": "SUCCESSION",
+  "variante": "standard",
+  "items": [
+    {
+      "id": "ACTE_NOTORIETE",
+      "label": "Acte de notoriete successorale",
+      "required": true,
+      "severity": "blocking",
+      "accepted_document_types": [
+        "acte_notoriete"
+      ],
+      "accepted_filename_keywords": [
+        "notoriete",
+        "notoriété",
+        "succession"
+      ],
+      "content_proof_keywords": [
+        "notoriété",
+        "notoriete",
+        "succession"
+      ],
+      "recommended_action": "Etablir l'acte de notoriete successorale."
+    },
+    {
+      "id": "PIECE_IDENTITE",
+      "label": "Copies des pieces d'identite",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "piece_identite",
+        "cin"
+      ],
+      "accepted_filename_keywords": [
+        "cin",
+        "identite",
+        "piece"
+      ],
+      "content_proof_keywords": [
+        "cin"
+      ],
+      "recommended_action": "Recueillir les copies des CIN des heritiers."
+    },
+    {
+      "id": "ATTESTATION_FISCALE",
+      "label": "Attestation de situation fiscale",
+      "required": true,
+      "severity": "medium",
+      "accepted_document_types": [
+        "attestation_fiscale"
+      ],
+      "accepted_filename_keywords": [
+        "attestation",
+        "fiscal"
+      ],
+      "content_proof_keywords": [
+        "attestation",
+        "fiscale"
+      ],
+      "recommended_action": "Demander l'attestation de situation fiscale."
+    }
+  ]
+}

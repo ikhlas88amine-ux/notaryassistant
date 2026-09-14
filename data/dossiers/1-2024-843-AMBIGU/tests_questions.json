@@ -1,0 +1,30 @@
+{
+  "dossier_id": "1-2024-843-AMBIGU",
+  "tests": [
+    {
+      "question": "Le prix de vente est-il identique dans les deux versions du dossier 1-2024-843-AMBIGU ?",
+      "expected_answer_contains": "NE PAS UTILISER COMME ACTE AUTHENTIQUE",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le prix indiqué en version française dans le dossier 1-2024-843-AMBIGU ?",
+      "expected_answer_contains": "1.650.000",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le prix indiqué en version arabe (traduite) dans le dossier 1-2024-843-AMBIGU ?",
+      "expected_answer_contains": "340.000",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Une anomalie est-elle signalée dans le dossier 1-2024-843-AMBIGU ?",
+      "expected_answer_contains": "ANOMALIE VOLONTAIRE",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le titre foncier du bien dans le dossier 1-2024-843-AMBIGU ?",
+      "expected_answer_contains": "152.410/08",
+      "expected_source_contains": "acte_de_vente"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "dossier_id": "15-2024-824-AMBIGU",
+  "status": "invalid",
+  "summary": {
+    "blocking": 2,
+    "high": 1,
+    "medium": 0,
+    "low": 0,
+    "info": 0
+  },
+  "issues": [
+    {
+      "rule_id": "tf_multiple_declared",
+      "severity": "blocking",
+      "message": "Plusieurs numeros de titre foncier distincts sont declares pour le meme bien dans dossier_master.json : ['121.425/08', '121.709/08'].",
+      "documents": [],
+      "evidence": [
+        "121.425/08",
+        "121.709/08"
+      ],
+      "recommended_action": "Determiner le numero de titre foncier exact avec le notaire avant toute inscription ou publication."
+    },
+    {
+      "rule_id": "price_multiple_declared",
+      "severity": "blocking",
+      "message": "Plusieurs montants de prix distincts et incompatibles sont declares dans le dossier : {'prix_section_1_dhs': 440000, 'prix_section_2_dhs': 950000}.",
+      "documents": [],
+      "evidence": [
+        "{'prix_section_1_dhs': 440000, 'prix_section_2_dhs': 950000}"
+      ],
+      "recommended_action": "Clarifier avec les parties le prix reel de la transaction avant redaction de l'acte definitif."
+    },
+    {
+      "rule_id": "company_identified_by_cin",
+      "severity": "high",
+      "message": "La partie 'acquereur' semble etre une societe (champ 'gerant' present) mais aucun numero de RC ou d'ICE n'est declare pour l'identifier.",
+      "documents": [],
+      "evidence": [
+        "{'nom_fr': 'SARL BADR IMMO', 'gerant': 'Houda LAHLOU', 'cin_gerant': 'EJ662209'}"
+      ],
+      "recommended_action": "Identifier la societe par sa denomination, sa forme juridique, son RC/ICE et le CIN de son gerant, pas seulement par un CIN de personne physique."
+    }
+  ],
+  "generated_at": "2026-08-20T19:27:58.284910+00:00"
+}

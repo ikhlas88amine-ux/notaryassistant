@@ -1,0 +1,39 @@
+{
+  "dossier_id": "3-2024-567-VENTE-ELYACOUBI",
+  "annee": 2024,
+  "numero_dossier": "567",
+  "type_dossier": "VENTE",
+  "variante": "simple",
+  "client_famille": "ELYACOUBI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "vendeur": {
+      "nom_fr": "Mohamed ELYACOUBI",
+      "nom_ar": "محمد اليعقوبي",
+      "cin": "EJ221190"
+    },
+    "acquereur": {
+      "nom_fr": "Khalid FASSI",
+      "nom_ar": "خالد الفاسي",
+      "cin": "EJ665544"
+    },
+    "bien": {
+      "nature": "appartement",
+      "adresse": "Rue Ibn Batouta, 2e étage, El Jadida",
+      "tf": "129.775/08",
+      "superficie_m2": 88
+    },
+    "prix_dhs": 780000,
+    "prix_lettres_fr": "SEPT CENT QUATRE-VINGT MILLE DIRHAMS",
+    "modalite_paiement": "totalite_via_notaire",
+    "date_acte": "2024-09-02"
+  }
+}

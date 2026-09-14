@@ -1,0 +1,277 @@
+{
+  "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+  "question": "Combien d'héritiers sont désignés dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+  "expected_source_contains": "acte_notoriete_successorale",
+  "expected_answer_contains": "3",
+  "intent": "succession",
+  "retrieval": {
+    "intent": "succession",
+    "scope": "dossier",
+    "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+    "collections": [
+      "case_documents"
+    ],
+    "search_k": 15,
+    "raw_count": 5,
+    "filtered_count": 5,
+    "neighbor_count": 5,
+    "context_count": 5
+  },
+  "raw_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:2",
+      "score": 0.8584726587601363,
+      "excerpt": "Article 1 - Constat du décès\nIl est constaté le décès de Mohamed ELYACOUBI (محمد اليعقوبي, CIN EJ221190), survenu le 2025-07-30, laissant pour lui succéder les héritiers ci-après désignés, conformément aux règles de la succession légale (Faraid) du code de la famille.",
+      "text": "Article 1 - Constat du décès\nIl est constaté le décès de Mohamed ELYACOUBI (محمد اليعقوبي, CIN EJ221190), survenu le 2025-07-30, laissant pour lui succéder les héritiers ci-après désignés, conformément aux règles de la succession légale (Faraid) du code de la famille.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": null,
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:0",
+      "score": 0.5990743386425069,
+      "excerpt": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "text": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:4",
+      "score": 0.5990743386425069,
+      "excerpt": "Article 3 - Bien composant la succession\nLa succession comprend notamment le local commercial sis à Marché central, El Jadida, objet du titre foncier n° 144.500/08, d'une superficie d'environ 45 m², évalué à 900,000 DHS (NEUF CENTS MILLE DIRHAMS).\nFait à El Jadida, le 2025-09-10.",
+      "text": "Article 3 - Bien composant la succession\nLa succession comprend notamment le local commercial sis à Marché central, El Jadida, objet du titre foncier n° 144.500/08, d'une superficie d'environ 45 m², évalué à 900,000 DHS (NEUF CENTS MILLE DIRHAMS).\nFait à El Jadida, le 2025-09-10.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:3",
+      "score": 0.5192594709140055,
+      "excerpt": "Article 2 - Désignation des héritiers et de leurs parts\n- Fatima Zahra BENNANI (épouse), CIN EJ778001 : part successorale de 1/8.\n- Yasmine ELYACOUBI (fille), CIN EJ778002 : part successorale de 7/16.\n- Adam ELYACOUBI (fils), CIN EJ778003 : part successorale de 7/8 restant partagé selon la règle 2 pour 1.",
+      "text": "Article 2 - Désignation des héritiers et de leurs parts\n- Fatima Zahra BENNANI (épouse), CIN EJ778001 : part successorale de 1/8.\n- Yasmine ELYACOUBI (fille), CIN EJ778002 : part successorale de 7/16.\n- Adam ELYACOUBI (fils), CIN EJ778003 : part successorale de 7/8 restant partagé selon la règle 2 pour 1.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:1",
+      "score": 0.31972230159275206,
+      "excerpt": "ACTE DE NOTORIETE SUCCESSORALE (RASM ISTIFA)\nMaître Fouad BENJELLOUN, notaire à El Jadida,",
+      "text": "ACTE DE NOTORIETE SUCCESSORALE (RASM ISTIFA)\nMaître Fouad BENJELLOUN, notaire à El Jadida,",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "filtered_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:2",
+      "score": 0.8584726587601363,
+      "excerpt": "Article 1 - Constat du décès\nIl est constaté le décès de Mohamed ELYACOUBI (محمد اليعقوبي, CIN EJ221190), survenu le 2025-07-30, laissant pour lui succéder les héritiers ci-après désignés, conformément aux règles de la succession légale (Faraid) du code de la famille.",
+      "text": "Article 1 - Constat du décès\nIl est constaté le décès de Mohamed ELYACOUBI (محمد اليعقوبي, CIN EJ221190), survenu le 2025-07-30, laissant pour lui succéder les héritiers ci-après désignés, conformément aux règles de la succession légale (Faraid) du code de la famille.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:4",
+      "score": 0.5990743386425069,
+      "excerpt": "Article 3 - Bien composant la succession\nLa succession comprend notamment le local commercial sis à Marché central, El Jadida, objet du titre foncier n° 144.500/08, d'une superficie d'environ 45 m², évalué à 900,000 DHS (NEUF CENTS MILLE DIRHAMS).\nFait à El Jadida, le 2025-09-10.",
+      "text": "Article 3 - Bien composant la succession\nLa succession comprend notamment le local commercial sis à Marché central, El Jadida, objet du titre foncier n° 144.500/08, d'une superficie d'environ 45 m², évalué à 900,000 DHS (NEUF CENTS MILLE DIRHAMS).\nFait à El Jadida, le 2025-09-10.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:3",
+      "score": 0.5192594709140055,
+      "excerpt": "Article 2 - Désignation des héritiers et de leurs parts\n- Fatima Zahra BENNANI (épouse), CIN EJ778001 : part successorale de 1/8.\n- Yasmine ELYACOUBI (fille), CIN EJ778002 : part successorale de 7/16.\n- Adam ELYACOUBI (fils), CIN EJ778003 : part successorale de 7/8 restant partagé selon la règle 2 pour 1.",
+      "text": "Article 2 - Désignation des héritiers et de leurs parts\n- Fatima Zahra BENNANI (épouse), CIN EJ778001 : part successorale de 1/8.\n- Yasmine ELYACOUBI (fille), CIN EJ778002 : part successorale de 7/16.\n- Adam ELYACOUBI (fils), CIN EJ778003 : part successorale de 7/8 restant partagé selon la règle 2 pour 1.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": null,
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:0",
+      "score": 0.5990743386425069,
+      "excerpt": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "text": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:1",
+      "score": 0.31972230159275206,
+      "excerpt": "ACTE DE NOTORIETE SUCCESSORALE (RASM ISTIFA)\nMaître Fouad BENJELLOUN, notaire à El Jadida,",
+      "text": "ACTE DE NOTORIETE SUCCESSORALE (RASM ISTIFA)\nMaître Fouad BENJELLOUN, notaire à El Jadida,",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "context_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:2",
+      "score": 0.8584726587601363,
+      "excerpt": "Article 1 - Constat du décès\nIl est constaté le décès de Mohamed ELYACOUBI (محمد اليعقوبي, CIN EJ221190), survenu le 2025-07-30, laissant pour lui succéder les héritiers ci-après désignés, conformément aux règles de la succession légale (Faraid) du code de la famille.",
+      "text": "Article 1 - Constat du décès\nIl est constaté le décès de Mohamed ELYACOUBI (محمد اليعقوبي, CIN EJ221190), survenu le 2025-07-30, laissant pour lui succéder les héritiers ci-après désignés, conformément aux règles de la succession légale (Faraid) du code de la famille.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:4",
+      "score": 0.5990743386425069,
+      "excerpt": "Article 3 - Bien composant la succession\nLa succession comprend notamment le local commercial sis à Marché central, El Jadida, objet du titre foncier n° 144.500/08, d'une superficie d'environ 45 m², évalué à 900,000 DHS (NEUF CENTS MILLE DIRHAMS).\nFait à El Jadida, le 2025-09-10.",
+      "text": "Article 3 - Bien composant la succession\nLa succession comprend notamment le local commercial sis à Marché central, El Jadida, objet du titre foncier n° 144.500/08, d'une superficie d'environ 45 m², évalué à 900,000 DHS (NEUF CENTS MILLE DIRHAMS).\nFait à El Jadida, le 2025-09-10.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:3",
+      "score": 0.5192594709140055,
+      "excerpt": "Article 2 - Désignation des héritiers et de leurs parts\n- Fatima Zahra BENNANI (épouse), CIN EJ778001 : part successorale de 1/8.\n- Yasmine ELYACOUBI (fille), CIN EJ778002 : part successorale de 7/16.\n- Adam ELYACOUBI (fils), CIN EJ778003 : part successorale de 7/8 restant partagé selon la règle 2 pour 1.",
+      "text": "Article 2 - Désignation des héritiers et de leurs parts\n- Fatima Zahra BENNANI (épouse), CIN EJ778001 : part successorale de 1/8.\n- Yasmine ELYACOUBI (fille), CIN EJ778002 : part successorale de 7/16.\n- Adam ELYACOUBI (fils), CIN EJ778003 : part successorale de 7/8 restant partagé selon la règle 2 pour 1.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": null,
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:0",
+      "score": 0.5990743386425069,
+      "excerpt": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "text": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:1",
+      "score": 0.31972230159275206,
+      "excerpt": "ACTE DE NOTORIETE SUCCESSORALE (RASM ISTIFA)\nMaître Fouad BENJELLOUN, notaire à El Jadida,",
+      "text": "ACTE DE NOTORIETE SUCCESSORALE (RASM ISTIFA)\nMaître Fouad BENJELLOUN, notaire à El Jadida,",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "context_blocks": [
+    "[Dossier 7-2025-605-SUCCESSION-ELYACOUBI - 01_acte_notoriete_successorale.docx, section clauses_diverses]\nArticle 1 - Constat du décès\nIl est constaté le décès de Mohamed ELYACOUBI (محمد اليعقوبي, CIN EJ221190), survenu le 2025-07-30, laissant pour lui succéder les héritiers ci-après désignés, conformément aux règles de la succession légale (Faraid) du code de la famille.",
+    "[Dossier 7-2025-605-SUCCESSION-ELYACOUBI - 01_acte_notoriete_successorale.docx, section clauses_diverses]\nArticle 3 - Bien composant la succession\nLa succession comprend notamment le local commercial sis à Marché central, El Jadida, objet du titre foncier n° 144.500/08, d'une superficie d'environ 45 m², évalué à 900,000 DHS (NEUF CENTS MILLE DIRHAMS).\nFait à El Jadida, le 2025-09-10.",
+    "[Dossier 7-2025-605-SUCCESSION-ELYACOUBI - 01_acte_notoriete_successorale.docx, section clauses_diverses]\nArticle 2 - Désignation des héritiers et de leurs parts\n- Fatima Zahra BENNANI (épouse), CIN EJ778001 : part successorale de 1/8.\n- Yasmine ELYACOUBI (fille), CIN EJ778002 : part successorale de 7/16.\n- Adam ELYACOUBI (fils), CIN EJ778003 : part successorale de 7/8 restant partagé selon la règle 2 pour 1.",
+    "[Dossier 7-2025-605-SUCCESSION-ELYACOUBI - 01_acte_notoriete_successorale.docx, section None]\nDOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+    "[Dossier 7-2025-605-SUCCESSION-ELYACOUBI - 01_acte_notoriete_successorale.docx, section clauses_diverses]\nACTE DE NOTORIETE SUCCESSORALE (RASM ISTIFA)\nMaître Fouad BENJELLOUN, notaire à El Jadida,"
+  ],
+  "response": {
+    "answer": "Réponse fondée uniquement sur les sources fournies :\n- 01_acte_notoriete_successorale.docx : Article 1 - Constat du décès\nIl est constaté le décès de Mohamed ELYACOUBI (محمد اليعقوبي, CIN EJ221190), survenu le 2025-07-30, laissant pour lui succéder les héritiers ci-après désignés, conformément aux règles de la succession légale (Fa\n- 01_acte_notoriete_successorale.docx : Article 3 - Bien composant la succession\nLa succession comprend notamment le local commercial sis à Marché central, El Jadida, objet du titre foncier n° 144.500/08, d'une superficie d'environ 45 m², évalué à 900,000 DHS (NEUF CENTS MILLE DI\n- 01_acte_notoriete_successorale.docx : Article 2 - Désignation des héritiers et de leurs parts\n- Fatima Zahra BENNANI (épouse), CIN EJ778001 : part successorale de 1/8.\n- Yasmine ELYACOUBI (fille), CIN EJ778002 : part successorale de 7/16.\n- Adam ELYACOUBI (fils), CIN EJ778003 :\n- 01_acte_notoriete_successorale.docx : DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisat\n- 01_acte_notoriete_successorale.docx : ACTE DE NOTORIETE SUCCESSORALE (RASM ISTIFA)\nMaître Fouad BENJELLOUN, notaire à El Jadida,",
+    "answer_type": "documentary_answer",
+    "warnings": [
+      "Ollama local non disponible : réponse déterministe construite à partir des données structurées et des chunks récupérés. À faire vérifier par le notaire."
+    ]
+  },
+  "citations": [
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:2",
+      "score": 0.8584726587601363,
+      "excerpt": "Article 1 - Constat du décès\nIl est constaté le décès de Mohamed ELYACOUBI (محمد اليعقوبي, CIN EJ221190), survenu le 2025-07-30, laissant pour lui succéder les héritiers ci-après désignés, conformément aux règles de la succession légale (Faraid) du code de la famille.",
+      "text": "Article 1 - Constat du décès\nIl est constaté le décès de Mohamed ELYACOUBI (محمد اليعقوبي, CIN EJ221190), survenu le 2025-07-30, laissant pour lui succéder les héritiers ci-après désignés, conformément aux règles de la succession légale (Faraid) du code de la famille.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:4",
+      "score": 0.5990743386425069,
+      "excerpt": "Article 3 - Bien composant la succession\nLa succession comprend notamment le local commercial sis à Marché central, El Jadida, objet du titre foncier n° 144.500/08, d'une superficie d'environ 45 m², évalué à 900,000 DHS (NEUF CENTS MILLE DIRHAMS).\nFait à El Jadida, le 2025-09-10.",
+      "text": "Article 3 - Bien composant la succession\nLa succession comprend notamment le local commercial sis à Marché central, El Jadida, objet du titre foncier n° 144.500/08, d'une superficie d'environ 45 m², évalué à 900,000 DHS (NEUF CENTS MILLE DIRHAMS).\nFait à El Jadida, le 2025-09-10.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "fichier": "01_acte_notoriete_successorale.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "7-2025-605-SUCCESSION-ELYACOUBI:01_acte_notoriete_successorale:3",
+      "score": 0.5192594709140055,
+      "excerpt": "Article 2 - Désignation des héritiers et de leurs parts\n- Fatima Zahra BENNANI (épouse), CIN EJ778001 : part successorale de 1/8.\n- Yasmine ELYACOUBI (fille), CIN EJ778002 : part successorale de 7/16.\n- Adam ELYACOUBI (fils), CIN EJ778003 : part successorale de 7/8 restant partagé selon la règle 2 pour 1.",
+      "text": "Article 2 - Désignation des héritiers et de leurs parts\n- Fatima Zahra BENNANI (épouse), CIN EJ778001 : part successorale de 1/8.\n- Yasmine ELYACOUBI (fille), CIN EJ778002 : part successorale de 7/16.\n- Adam ELYACOUBI (fils), CIN EJ778003 : part successorale de 7/8 restant partagé selon la règle 2 pour 1.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "failure_reason": null
+}

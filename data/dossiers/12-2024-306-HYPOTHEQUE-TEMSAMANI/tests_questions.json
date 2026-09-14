@@ -1,0 +1,35 @@
+{
+  "dossier_id": "12-2024-306-HYPOTHEQUE-TEMSAMANI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier concerné par la mainlevée du dossier 12-2024-306-HYPOTHEQUE-TEMSAMANI ?",
+      "expected_answer_contains": "160.900/08",
+      "expected_source_contains": "mainlevee_hypotheque"
+    },
+    {
+      "question": "Quelle banque a consenti la mainlevée dans le dossier 12-2024-306-HYPOTHEQUE-TEMSAMANI ?",
+      "expected_answer_contains": "BMCE Bank",
+      "expected_source_contains": "mainlevee_hypotheque"
+    },
+    {
+      "question": "Qui est le débiteur dans le dossier 12-2024-306-HYPOTHEQUE-TEMSAMANI ?",
+      "expected_answer_contains": "Samir TEMSAMANI",
+      "expected_source_contains": "mainlevee_hypotheque"
+    },
+    {
+      "question": "À qui la réquisition de radiation est-elle adressée dans le dossier 12-2024-306-HYPOTHEQUE-TEMSAMANI ?",
+      "expected_answer_contains": "Conservateur",
+      "expected_source_contains": "requisition_radiation"
+    },
+    {
+      "question": "Quel montant est prélevé sur le prix de vente dans le dossier 12-2024-306-HYPOTHEQUE-TEMSAMANI ?",
+      "expected_answer_contains": "40.000",
+      "expected_source_contains": "autorisation_prelevement"
+    },
+    {
+      "question": "Quel est le solde à verser après radiation dans le dossier 12-2024-306-HYPOTHEQUE-TEMSAMANI ?",
+      "expected_answer_contains": "85.000",
+      "expected_source_contains": "engagement_conditionnel"
+    }
+  ]
+}

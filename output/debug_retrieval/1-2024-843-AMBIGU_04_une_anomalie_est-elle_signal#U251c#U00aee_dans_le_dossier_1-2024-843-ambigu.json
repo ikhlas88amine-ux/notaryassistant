@@ -1,0 +1,210 @@
+{
+  "dossier_id": "1-2024-843-AMBIGU",
+  "question": "Une anomalie est-elle signalée dans le dossier 1-2024-843-AMBIGU ?",
+  "expected_source_contains": "acte_de_vente",
+  "expected_answer_contains": "ANOMALIE VOLONTAIRE",
+  "intent": "risks",
+  "retrieval": {
+    "intent": "risks",
+    "scope": "dossier",
+    "dossier_id": "1-2024-843-AMBIGU",
+    "collections": [
+      "case_documents"
+    ],
+    "search_k": 15,
+    "raw_count": 6,
+    "filtered_count": 2,
+    "neighbor_count": 3,
+    "context_count": 3
+  },
+  "raw_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:5",
+      "score": 0.9349514883843235,
+      "excerpt": "ANOMALIE VOLONTAIRE (pour test RAG)\nLe prix indiqué dans le corps français de l'acte (1.650.000 DHS) ne correspond pas au montant indiqué dans la clause de prix arabe jointe (340.000 DHS) - écart injustifié.\nالفصل الثاني (النسخة العربية للثمن، مرفقة بالعقد الأصلي)\nأدى الطرف المشتري للطرف البائع، خارج مراقبة الموثق الممضي أسفله وخارج محاسبته، ثمن هذه البيعة المحدد في 340.000 درهم، وذلك على الفور، وقد اعترف الطرف البائع بقبض هذا المبلغ وأبرأ ذمة الطرف المشتري منه بالإبراء التام والنهائي.",
+      "text": "ANOMALIE VOLONTAIRE (pour test RAG)\nLe prix indiqué dans le corps français de l'acte (1.650.000 DHS) ne correspond pas au montant indiqué dans la clause de prix arabe jointe (340.000 DHS) - écart injustifié.\nالفصل الثاني (النسخة العربية للثمن، مرفقة بالعقد الأصلي)\nأدى الطرف المشتري للطرف البائع، خارج مراقبة الموثق الممضي أسفله وخارج محاسبته، ثمن هذه البيعة المحدد في 340.000 درهم، وذلك على الفور، وقد اعترف الطرف البائع بقبض هذا المبلغ وأبرأ ذمة الطرف المشتري منه بالإبراء التام والنهائي.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:4",
+      "score": 0.8681377167130213,
+      "excerpt": "Article 2 bis - Clause de prix (version arabe jointe, traduite ici pour information)\n[Traduction] Le prix de vente est fixé à 340,000 DHS, payé selon les modalités précisées dans la clause arabe annexée.\nFait à El Jadida, le 2024-06-11.",
+      "text": "Article 2 bis - Clause de prix (version arabe jointe, traduite ici pour information)\n[Traduction] Le prix de vente est fixé à 340,000 DHS, payé selon les modalités précisées dans la clause arabe annexée.\nFait à El Jadida, le 2024-06-11.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:3",
+      "score": 0.6454251444753476,
+      "excerpt": "Article 2 - Prix (version française)\nLa vente est consentie moyennant le prix de 1,650,000 DHS (UN MILLION SIX CENT CINQUANTE MILLE DIRHAMS), payé comptant.",
+      "text": "Article 2 - Prix (version française)\nLa vente est consentie moyennant le prix de 1,650,000 DHS (UN MILLION SIX CENT CINQUANTE MILLE DIRHAMS), payé comptant.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": null,
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:0",
+      "score": 0.46725508668520854,
+      "excerpt": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE",
+      "text": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:1",
+      "score": 0.4227125722376738,
+      "excerpt": "ACTE DE VENTE IMMOBILIERE\nRachid BENOMAR (رشيد بنعمر, CIN EJ145236), ci-après « le Vendeur »,\nSalma IDRISSI (سلمى الإدريسي, CIN EJ998877), ci-après « l'Acquéreur »,",
+      "text": "ACTE DE VENTE IMMOBILIERE\nRachid BENOMAR (رشيد بنعمر, CIN EJ145236), ci-après « le Vendeur »,\nSalma IDRISSI (سلمى الإدريسي, CIN EJ998877), ci-après « l'Acquéreur »,",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "designation_bien",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:2",
+      "score": 0.26681377167130216,
+      "excerpt": "Article 1 - Désignation du bien\nAppartement sis à Résidence Al Amal, 3e étage, El Jadida, titre foncier n° 152.410/08, superficie 74 m².",
+      "text": "Article 1 - Désignation du bien\nAppartement sis à Résidence Al Amal, 3e étage, El Jadida, titre foncier n° 152.410/08, superficie 74 m².",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "filtered_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:5",
+      "score": 0.9349514883843235,
+      "excerpt": "ANOMALIE VOLONTAIRE (pour test RAG)\nLe prix indiqué dans le corps français de l'acte (1.650.000 DHS) ne correspond pas au montant indiqué dans la clause de prix arabe jointe (340.000 DHS) - écart injustifié.\nالفصل الثاني (النسخة العربية للثمن، مرفقة بالعقد الأصلي)\nأدى الطرف المشتري للطرف البائع، خارج مراقبة الموثق الممضي أسفله وخارج محاسبته، ثمن هذه البيعة المحدد في 340.000 درهم، وذلك على الفور، وقد اعترف الطرف البائع بقبض هذا المبلغ وأبرأ ذمة الطرف المشتري منه بالإبراء التام والنهائي.",
+      "text": "ANOMALIE VOLONTAIRE (pour test RAG)\nLe prix indiqué dans le corps français de l'acte (1.650.000 DHS) ne correspond pas au montant indiqué dans la clause de prix arabe jointe (340.000 DHS) - écart injustifié.\nالفصل الثاني (النسخة العربية للثمن، مرفقة بالعقد الأصلي)\nأدى الطرف المشتري للطرف البائع، خارج مراقبة الموثق الممضي أسفله وخارج محاسبته، ثمن هذه البيعة المحدد في 340.000 درهم، وذلك على الفور، وقد اعترف الطرف البائع بقبض هذا المبلغ وأبرأ ذمة الطرف المشتري منه بالإبراء التام والنهائي.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:4",
+      "score": 0.8681377167130213,
+      "excerpt": "Article 2 bis - Clause de prix (version arabe jointe, traduite ici pour information)\n[Traduction] Le prix de vente est fixé à 340,000 DHS, payé selon les modalités précisées dans la clause arabe annexée.\nFait à El Jadida, le 2024-06-11.",
+      "text": "Article 2 bis - Clause de prix (version arabe jointe, traduite ici pour information)\n[Traduction] Le prix de vente est fixé à 340,000 DHS, payé selon les modalités précisées dans la clause arabe annexée.\nFait à El Jadida, le 2024-06-11.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "context_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:5",
+      "score": 0.9349514883843235,
+      "excerpt": "ANOMALIE VOLONTAIRE (pour test RAG)\nLe prix indiqué dans le corps français de l'acte (1.650.000 DHS) ne correspond pas au montant indiqué dans la clause de prix arabe jointe (340.000 DHS) - écart injustifié.\nالفصل الثاني (النسخة العربية للثمن، مرفقة بالعقد الأصلي)\nأدى الطرف المشتري للطرف البائع، خارج مراقبة الموثق الممضي أسفله وخارج محاسبته، ثمن هذه البيعة المحدد في 340.000 درهم، وذلك على الفور، وقد اعترف الطرف البائع بقبض هذا المبلغ وأبرأ ذمة الطرف المشتري منه بالإبراء التام والنهائي.",
+      "text": "ANOMALIE VOLONTAIRE (pour test RAG)\nLe prix indiqué dans le corps français de l'acte (1.650.000 DHS) ne correspond pas au montant indiqué dans la clause de prix arabe jointe (340.000 DHS) - écart injustifié.\nالفصل الثاني (النسخة العربية للثمن، مرفقة بالعقد الأصلي)\nأدى الطرف المشتري للطرف البائع، خارج مراقبة الموثق الممضي أسفله وخارج محاسبته، ثمن هذه البيعة المحدد في 340.000 درهم، وذلك على الفور، وقد اعترف الطرف البائع بقبض هذا المبلغ وأبرأ ذمة الطرف المشتري منه بالإبراء التام والنهائي.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:4",
+      "score": 0.8681377167130213,
+      "excerpt": "Article 2 bis - Clause de prix (version arabe jointe, traduite ici pour information)\n[Traduction] Le prix de vente est fixé à 340,000 DHS, payé selon les modalités précisées dans la clause arabe annexée.\nFait à El Jadida, le 2024-06-11.",
+      "text": "Article 2 bis - Clause de prix (version arabe jointe, traduite ici pour information)\n[Traduction] Le prix de vente est fixé à 340,000 DHS, payé selon les modalités précisées dans la clause arabe annexée.\nFait à El Jadida, le 2024-06-11.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:3",
+      "score": 0.8671377167130213,
+      "excerpt": "Article 2 - Prix (version française)\nLa vente est consentie moyennant le prix de 1,650,000 DHS (UN MILLION SIX CENT CINQUANTE MILLE DIRHAMS), payé comptant.",
+      "text": "Article 2 - Prix (version française)\nLa vente est consentie moyennant le prix de 1,650,000 DHS (UN MILLION SIX CENT CINQUANTE MILLE DIRHAMS), payé comptant.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "context_blocks": [
+    "[Dossier 1-2024-843-AMBIGU - 01_acte_de_vente.docx, section clauses_diverses]\nANOMALIE VOLONTAIRE (pour test RAG)\nLe prix indiqué dans le corps français de l'acte (1.650.000 DHS) ne correspond pas au montant indiqué dans la clause de prix arabe jointe (340.000 DHS) - écart injustifié.\nالفصل الثاني (النسخة العربية للثمن، مرفقة بالعقد الأصلي)\nأدى الطرف المشتري للطرف البائع، خارج مراقبة الموثق الممضي أسفله وخارج محاسبته، ثمن هذه البيعة المحدد في 340.000 درهم، وذلك على الفور، وقد اعترف الطرف البائع بقبض هذا المبلغ وأبرأ ذمة الطرف المشتري منه بالإبراء التام والنهائي.",
+    "[Dossier 1-2024-843-AMBIGU - 01_acte_de_vente.docx, section clauses_diverses]\nArticle 2 bis - Clause de prix (version arabe jointe, traduite ici pour information)\n[Traduction] Le prix de vente est fixé à 340,000 DHS, payé selon les modalités précisées dans la clause arabe annexée.\nFait à El Jadida, le 2024-06-11.",
+    "[Dossier 1-2024-843-AMBIGU - 01_acte_de_vente.docx, section clauses_diverses]\nArticle 2 - Prix (version française)\nLa vente est consentie moyennant le prix de 1,650,000 DHS (UN MILLION SIX CENT CINQUANTE MILLE DIRHAMS), payé comptant."
+  ],
+  "response": {
+    "answer": "Risques établis par les sources :\n- [blocking] price_multiple_declared : Plusieurs montants de prix distincts et incompatibles sont declares dans le dossier : {'prix_dhs_version_fr': 1650000, 'prix_dhs_version_ar': 340000}.\n  Valeurs constatées : {'prix_dhs_version_fr': 1650000, 'prix_dhs_version_ar': 340000}\n  Action recommandée : Clarifier avec les parties le prix reel de la transaction avant redaction de l'acte definitif.\nPoints à vérifier :\n- Tout élément marqué 'à vérifier' doit être confirmé par le notaire.\nAucune autre incohérence ne peut être établie à partir des sources disponibles.",
+    "answer_type": "documentary_answer",
+    "warnings": [
+      "Ollama local non disponible : réponse déterministe construite à partir des données structurées et des chunks récupérés. À faire vérifier par le notaire."
+    ]
+  },
+  "citations": [
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:5",
+      "score": 0.9349514883843235,
+      "excerpt": "ANOMALIE VOLONTAIRE (pour test RAG)\nLe prix indiqué dans le corps français de l'acte (1.650.000 DHS) ne correspond pas au montant indiqué dans la clause de prix arabe jointe (340.000 DHS) - écart injustifié.\nالفصل الثاني (النسخة العربية للثمن، مرفقة بالعقد الأصلي)\nأدى الطرف المشتري للطرف البائع، خارج مراقبة الموثق الممضي أسفله وخارج محاسبته، ثمن هذه البيعة المحدد في 340.000 درهم، وذلك على الفور، وقد اعترف الطرف البائع بقبض هذا المبلغ وأبرأ ذمة الطرف المشتري منه بالإبراء التام والنهائي.",
+      "text": "ANOMALIE VOLONTAIRE (pour test RAG)\nLe prix indiqué dans le corps français de l'acte (1.650.000 DHS) ne correspond pas au montant indiqué dans la clause de prix arabe jointe (340.000 DHS) - écart injustifié.\nالفصل الثاني (النسخة العربية للثمن، مرفقة بالعقد الأصلي)\nأدى الطرف المشتري للطرف البائع، خارج مراقبة الموثق الممضي أسفله وخارج محاسبته، ثمن هذه البيعة المحدد في 340.000 درهم، وذلك على الفور، وقد اعترف الطرف البائع بقبض هذا المبلغ وأبرأ ذمة الطرف المشتري منه بالإبراء التام والنهائي.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "1-2024-843-AMBIGU",
+      "fichier": "01_acte_de_vente.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:4",
+      "score": 0.8681377167130213,
+      "excerpt": "Article 2 bis - Clause de prix (version arabe jointe, traduite ici pour information)\n[Traduction] Le prix de vente est fixé à 340,000 DHS, payé selon les modalités précisées dans la clause arabe annexée.\nFait à El Jadida, le 2024-06-11.",
+      "text": "Article 2 bis - Clause de prix (version arabe jointe, traduite ici pour information)\n[Traduction] Le prix de vente est fixé à 340,000 DHS, payé selon les modalités précisées dans la clause arabe annexée.\nFait à El Jadida, le 2024-06-11.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "failure_reason": null
+}

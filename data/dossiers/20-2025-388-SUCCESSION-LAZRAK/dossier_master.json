@@ -1,0 +1,50 @@
+{
+  "dossier_id": "20-2025-388-SUCCESSION-LAZRAK",
+  "annee": 2025,
+  "numero_dossier": "388",
+  "type_dossier": "SUCCESSION",
+  "variante": "standard",
+  "client_famille": "LAZRAK",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": false,
+  "donnees": {
+    "defunt": {
+      "nom_fr": "Abdelkader LAZRAK",
+      "nom_ar": "عبد القادر لزرق",
+      "cin": "EJ001122",
+      "date_deces": "2025-01-05"
+    },
+    "heritiers": [
+      {
+        "nom_fr": "Malika TAHIRI (épouse)",
+        "cin": "EJ881001",
+        "part": "1/4"
+      },
+      {
+        "nom_fr": "Reda LAZRAK (fils)",
+        "cin": "EJ881002",
+        "part": "1/2 du reliquat"
+      },
+      {
+        "nom_fr": "Sanae LAZRAK (fille)",
+        "cin": "EJ881003",
+        "part": "1/4 du reliquat"
+      }
+    ],
+    "bien": {
+      "nature": "villa",
+      "adresse": "Quartier Al Qods, El Jadida",
+      "tf": "139.775/08",
+      "superficie_m2": 260
+    },
+    "valeur_succession_dhs": 2100000,
+    "date_acte_notoriete": "2025-03-02"
+  }
+}

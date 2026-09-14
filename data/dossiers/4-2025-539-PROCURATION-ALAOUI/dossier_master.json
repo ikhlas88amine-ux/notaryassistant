@@ -1,0 +1,33 @@
+{
+  "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+  "annee": 2025,
+  "numero_dossier": "539",
+  "type_dossier": "PROCURATION",
+  "variante": "standard",
+  "client_famille": "ALAOUI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": false,
+  "donnees": {
+    "mandant": {
+      "nom_fr": "Hassan ALAOUI",
+      "nom_ar": "حسن العلوي",
+      "cin": "EJ302981"
+    },
+    "mandataire": {
+      "nom_fr": "Younes ALAOUI",
+      "nom_ar": "يونس العلوي",
+      "cin": "EJ118820",
+      "lien": "frère du mandant"
+    },
+    "objet": "vendre pour le compte du mandant un appartement sis à El Jadida, TF n° 141.220/08, signer l'acte de vente définitif, en recevoir le prix et en donner quittance",
+    "date_acte": "2025-04-21",
+    "duree": "un an à compter de la signature, révocable à tout moment par le mandant"
+  }
+}

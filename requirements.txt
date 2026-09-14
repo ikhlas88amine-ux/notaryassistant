@@ -1,0 +1,31 @@
+# Assistant documentaire notarial local (RAG) — dependances Python.
+# Aucune dependance cloud : tout tourne en local (Ollama, Qdrant embarque, SQLite).
+# Versions figees sur celles reellement testees pendant le developpement de ce projet.
+
+# --- Backend API et CLI ---
+fastapi==0.141.1
+uvicorn[standard]==0.52.3
+pydantic==2.12.5
+pydantic-settings==2.15.0
+
+# --- Extraction de documents ---
+python-docx==1.2.0
+pymupdf==1.28.2
+# NB : l'extraction des fichiers .doc (Word 97-2003) et l'OCR des PDF scannes appellent
+# des binaires SYSTEME externes, pas des paquets pip : voir README (LibreOffice/soffice,
+# Tesseract). Sans eux, ces deux cas particuliers degradent proprement (texte vide,
+# extraction_quality="degraded") au lieu d'echouer.
+
+# --- Base vectorielle et LLM local ---
+qdrant-client==1.19.0
+httpx==0.28.1
+portalocker==3.2.0
+PyYAML==6.0.3
+# NB : PyYAML lit uniquement app/config/document_checklists.yaml (checklist documentaire
+# metier, cf. app/services/document_checklist.py) ; aucune donnee de dossier n'est en YAML.
+
+# --- Interface Streamlit ---
+streamlit==1.62.0
+
+# --- Tests ---
+pytest==9.1.1

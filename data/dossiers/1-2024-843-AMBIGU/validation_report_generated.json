@@ -1,0 +1,24 @@
+{
+  "dossier_id": "1-2024-843-AMBIGU",
+  "status": "invalid",
+  "summary": {
+    "blocking": 1,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "info": 0
+  },
+  "issues": [
+    {
+      "rule_id": "price_multiple_declared",
+      "severity": "blocking",
+      "message": "Plusieurs montants de prix distincts et incompatibles sont declares dans le dossier : {'prix_dhs_version_fr': 1650000, 'prix_dhs_version_ar': 340000}.",
+      "documents": [],
+      "evidence": [
+        "{'prix_dhs_version_fr': 1650000, 'prix_dhs_version_ar': 340000}"
+      ],
+      "recommended_action": "Clarifier avec les parties le prix reel de la transaction avant redaction de l'acte definitif."
+    }
+  ],
+  "generated_at": "2026-08-20T19:27:58.185472+00:00"
+}

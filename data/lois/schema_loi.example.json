@@ -1,0 +1,16 @@
+{
+  "_comment": "Fichier d'EXEMPLE DE SCHEMA UNIQUEMENT - ne represente aucune loi reelle et n'est jamais lu par le pipeline d'indexation (il ne se termine pas par un nom de fichier de loi valide et est exclu explicitement). Copiez cette structure pour vos vrais textes.",
+  "law_id": "identifiant-stable-slug",
+  "law_name": "Nom complet de la loi ou du dahir",
+  "language": "fr",
+  "articles": [
+    {
+      "article_num": "1",
+      "titre": "Titre ou livre",
+      "chapitre": "Chapitre",
+      "section": "Section (optionnel)",
+      "page": 1,
+      "text": "Texte integral et exact de l'article."
+    }
+  ]
+}

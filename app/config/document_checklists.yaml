@@ -1,0 +1,1344 @@
+# Fichier de configuration VERSIONNE des checklists documentaires metier.
+# Editable directement par l'etude (ajout/retrait de pieces, alias de fichiers, etc.).
+# Genere initialement par scripts/_gen_document_checklists.py ; ce script peut servir de
+# base pour une regeneration complete, mais n'est pas necessaire pour des ajustements ponctuels.
+#
+# Ce fichier NE constitue PAS une liste legale universelle. Les checklists doivent etre
+# revues et adaptees par l'etude notariale. La presence d'un fichier ne vaut jamais
+# validation juridique : la validite, l'actualite, les signatures, les originaux et la
+# conformite des pieces doivent toujours etre verifiees par le notaire.
+
+version: 1
+source: checklist_configuree_etude
+note: 'Checklists documentaires configurables par l''etude notariale. Cette configuration n''est pas une
+  liste legale universelle : elle doit etre revue et validee par l''etude, et ne dispense jamais le notaire
+  de sa propre verification juridique.'
+checklists:
+  VENTE:
+    label: Vente immobiliere standard
+    items:
+    - id: ACTE_VENTE
+      label: Acte de vente / projet d'acte
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - acte_de_vente
+      - vente
+      - projet_vente
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: Projet ou acte de vente du bien concerne.
+      source: checklist_configuree_etude
+    - id: CIN_VENDEUR
+      label: Piece d'identite du vendeur
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_vendeur
+      - cnie_vendeur
+      - id_vendeur
+      - passeport_vendeur
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: Copie de la piece d'identite du vendeur.
+      source: checklist_configuree_etude
+    - id: CIN_ACQUEREUR
+      label: Piece d'identite de l'acquereur
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_acquereur
+      - cnie_acquereur
+      - id_acquereur
+      - passeport_acquereur
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: Copie de la piece d'identite de l'acquereur.
+      source: checklist_configuree_etude
+    - id: CERTIFICAT_PROPRIETE
+      label: Certificat de propriete / etat foncier recent
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - certificat_propriete
+      - etat_foncier
+      - certificat_foncier
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: Certificat de propriete ou etat foncier a jour du bien.
+      source: checklist_configuree_etude
+    - id: TITRE_FONCIER
+      label: Titre foncier ou reference fonciere
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - titre_foncier
+      - tf
+      - copie_tf
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: Reference ou copie du titre foncier du bien.
+      source: checklist_configuree_etude
+    - id: SITUATION_HYPOTHECAIRE
+      label: Situation hypothecaire / charges
+      required: false
+      conditional: charges_mentionnees
+      condition_description: Applicable si le bien ou les documents mentionnent une hypotheque, un privilege
+        ou une charge en cours.
+      file_aliases:
+      - situation_hypothecaire
+      - etat_charges
+      - attestation_charges
+      content_markers:
+      - hypotheque
+      - charge
+      - privilege
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: Etat des inscriptions/charges grevant le bien, si le dossier en fait etat.
+      source: checklist_configuree_etude
+    - id: JUSTIFICATIF_PAIEMENT
+      label: Justificatif du prix ou des modalites de paiement
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - virement
+      - justificatif_paiement
+      - recu_paiement
+      - preuve_paiement
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: Preuve du paiement du prix ou des modalites convenues.
+      source: checklist_configuree_etude
+    - id: PROCURATION
+      label: Procuration
+      required: false
+      conditional: representation_detectee
+      condition_description: Applicable uniquement si une partie est representee (procuration/mandat detecte
+        dans les donnees ou les documents).
+      file_aliases:
+      - procuration
+      - mandat
+      - power_of_attorney
+      content_markers:
+      - procuration
+      - mandat
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: Procuration de la partie representee, le cas echeant.
+      source: checklist_configuree_etude
+    - id: DOCUMENTS_COPROPRIETE
+      label: Documents de copropriete
+      required: false
+      conditional: copropriete_detectee
+      condition_description: Applicable uniquement si le bien est en copropriete (mention dans les donnees
+        ou les documents).
+      file_aliases:
+      - copropriete
+      - syndic
+      - reglement_copropriete
+      content_markers:
+      - copropriete
+      - syndic
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: Reglement de copropriete, etat des charges de syndic, etc.
+      source: checklist_configuree_etude
+    - id: AUTORISATION_URBANISTIQUE
+      label: Autorisation / documents urbanistiques
+      required: false
+      conditional: urbanisme_necessaire
+      condition_description: Applicable si la nature du bien ou l'operation implique une construction,
+        un permis d'habiter ou une conformite a verifier.
+      file_aliases:
+      - permis_habiter
+      - autorisation_construire
+      - certificat_conformite
+      content_markers:
+      - permis
+      - autorisation de construire
+      - conformite
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: Permis d'habiter, autorisation de construire ou certificat de conformite, si necessaire.
+      source: checklist_configuree_etude
+    variants:
+      paiement_differe:
+        label: Vente a paiement differe
+        mode: extend
+        extra_items:
+        - id: ECHEANCIER_SOLDE
+          label: Echeancier ou engagement relatif au solde differe
+          required: true
+          conditional: null
+          condition_description: ''
+          file_aliases:
+          - echeancier
+          - engagement_solde
+          - paiement_differe
+          - reconnaissance_dette
+          content_markers: []
+          auto_detection: filename_only
+          manual_verification_required: true
+          help_text: Document formalisant l'echeancier ou l'engagement de paiement du solde differe.
+          source: checklist_configuree_etude
+        - id: JUSTIFICATIF_PAIEMENT_IMMEDIAT
+          label: Justificatif du paiement immediat
+          required: true
+          conditional: null
+          condition_description: ''
+          file_aliases:
+          - virement_initial
+          - paiement_initial
+          - recu_acompte
+          content_markers: []
+          auto_detection: filename_only
+          manual_verification_required: true
+          help_text: Preuve du versement de la part immediate du prix.
+          source: checklist_configuree_etude
+        - id: GARANTIE_SOLDE
+          label: Garantie eventuelle du solde
+          required: false
+          conditional: null
+          condition_description: ''
+          file_aliases:
+          - garantie_solde
+          - caution
+          - hypotheque_garantie
+          - nantissement
+          content_markers: []
+          auto_detection: manual
+          manual_verification_required: true
+          help_text: 'Garantie eventuelle du solde differe (caution, hypotheque, nantissement). Ne jamais
+            affirmer automatiquement qu''une garantie est requise ou absente : a verifier par le notaire
+            si aucune garantie n''apparait dans les donnees.'
+          source: checklist_configuree_etude
+        manual_checks:
+        - 'Verification manuelle des montants : prix total = montant immediat + solde differe (controle
+          arithmetique, pas une validation juridique).'
+        - Verification manuelle de la date et des conditions d'exigibilite du solde differe.
+      vefa:
+        mode: alias
+        target: VEFA
+      fonds_de_commerce:
+        mode: alias
+        target: VENTE_FONDS_COMMERCE
+  HYPOTHEQUE:
+    label: Hypotheque
+    items:
+    - id: ENGAGEMENT_HYPOTHECAIRE
+      label: Lettre d'engagement hypothecaire ou acte d'hypotheque
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - engagement_hypothecaire
+      - acte_hypotheque
+      - hypotheque
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: Acte ou lettre d'engagement constituant l'hypotheque.
+      source: checklist_configuree_etude
+    - id: CIN_EMPRUNTEUR
+      label: Piece d'identite de l'emprunteur / constituant
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_emprunteur
+      - cin_constituant
+      - id_emprunteur
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: OFFRE_CREDIT
+      label: Offre, convention ou attestation de credit bancaire
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - offre_pret
+      - contrat_credit
+      - attestation_credit
+      - credit_bancaire
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: ATTESTATION_BANQUE
+      label: Attestation ou instruction bancaire
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - attestation_banque
+      - instruction_banque
+      - lettre_banque
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CERTIFICAT_PROPRIETE
+      label: Certificat de propriete / titre foncier
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - certificat_propriete
+      - titre_foncier
+      - tf
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: ETAT_CHARGES
+      label: Etat des inscriptions / charges
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - etat_charges
+      - situation_hypothecaire
+      - certificat_charges
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: REQUISITION_INSCRIPTION
+      label: Requisition d'inscription
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - requisition_inscription
+      - requisition_hypotheque
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Requisition d'inscription, si prevue dans le processus de l'etude.
+      source: checklist_configuree_etude
+    - id: PROCURATION
+      label: Procuration
+      required: false
+      conditional: representation_detectee
+      condition_description: Applicable uniquement si une partie est representee.
+      file_aliases:
+      - procuration
+      - mandat
+      - power_of_attorney
+      content_markers:
+      - procuration
+      - mandat
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    manual_checks:
+    - 'Verification manuelle : montant garanti, rang, beneficiaire, TF, identite du constituant et delai
+      de l''engagement.'
+    variants:
+      mainlevee:
+        mode: alias
+        target: MAINLEVEE
+  MAINLEVEE:
+    label: Mainlevee d'hypotheque
+    items:
+    - id: MAINLEVEE_DECHARGE
+      label: Mainlevee, decharge ou accord de radiation de la banque
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - mainlevee
+      - decharge
+      - accord_radiation
+      - levee_hypotheque
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: Document de decharge/accord de radiation emanant de la banque.
+      source: checklist_configuree_etude
+    - id: REQUISITION_RADIATION
+      label: Requisition de radiation / inscription de mainlevee
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - requisition_mainlevee
+      - requisition_radiation
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: REFERENCE_HYPOTHEQUE
+      label: Reference de l'hypotheque ou attestation bancaire associee
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - reference_hypotheque
+      - attestation_banque
+      - credit_solde
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CERTIFICAT_PROPRIETE
+      label: Certificat de propriete / etat des charges
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - certificat_propriete
+      - etat_charges
+      - situation_hypothecaire
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CIN_PROPRIETAIRE
+      label: Piece d'identite du proprietaire ou du requerant
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_proprietaire
+      - cin_requerant
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Piece d'identite du proprietaire/requerant, si necessaire au dossier.
+      source: checklist_configuree_etude
+    - id: PROCURATION
+      label: Procuration
+      required: false
+      conditional: representation_detectee
+      condition_description: Applicable uniquement si une partie est representee.
+      file_aliases:
+      - procuration
+      - mandat
+      - power_of_attorney
+      content_markers:
+      - procuration
+      - mandat
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    manual_checks:
+    - 'Verification manuelle : identite de la banque, reference de l''inscription a radier, TF concerne,
+      decharge integrale et destination de la requete.'
+    - 'Une simple mention de mainlevee dans un autre document n''equivaut pas a une decharge : la piece
+      de decharge doit etre distinguee de la requisition.'
+  DONATION:
+    label: Donation
+    items:
+    - id: ACTE_DONATION
+      label: Acte de donation
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - acte_donation
+      - donation
+      - sdq
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CIN_DONATEUR
+      label: Piece d'identite du donateur
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_donateur
+      - cnie_donateur
+      - id_donateur
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CIN_DONATAIRE
+      label: Piece d'identite du donataire
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_donataire
+      - cnie_donataire
+      - id_donataire
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CERTIFICAT_PROPRIETE
+      label: Certificat de propriete / titre foncier
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - certificat_propriete
+      - titre_foncier
+      - tf
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: LIEN_FAMILIAL
+      label: Justificatif du lien familial
+      required: false
+      conditional: lien_familial_invoque
+      condition_description: Applicable uniquement si le lien familial est invoque pour le regime fiscal
+        ou dans l'acte.
+      file_aliases:
+      - acte_naissance
+      - livret_famille
+      - certificat_lien_familial
+      content_markers:
+      - fils
+      - fille
+      - epoux
+      - epouse
+      - petit-fils
+      - petite-fille
+      - lien
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: EVALUATION_BIEN
+      label: Evaluation / valeur declaree du bien
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - evaluation
+      - valeur_declaree
+      - expertise
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: PROCURATION
+      label: Procuration
+      required: false
+      conditional: representation_detectee
+      condition_description: Applicable uniquement si une partie est representee.
+      file_aliases:
+      - procuration
+      - mandat
+      - power_of_attorney
+      content_markers:
+      - procuration
+      - mandat
+      - represente
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: DOCUMENTS_COPROPRIETE
+      label: Documents de copropriete ou autres documents immobiliers
+      required: false
+      conditional: copropriete_detectee
+      condition_description: Applicable si le bien donne est en copropriete.
+      file_aliases:
+      - copropriete
+      - syndic
+      - reglement_copropriete
+      content_markers:
+      - copropriete
+      - syndic
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    manual_checks:
+    - 'Verification manuelle : acceptation du donataire, qualification de la donation, identite des parties,
+      TF, valeur declaree, regime fiscal, references du lien familial si invoque.'
+  SUCCESSION:
+    label: Succession
+    items:
+    - id: ACTE_DECES
+      label: Acte de deces / certificat de deces
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - acte_deces
+      - certificat_deces
+      - deces
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: ACTE_NOTORIETE
+      label: Acte de notoriete successorale / acte d'heredite
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - acte_notoriete_successorale
+      - notoriete
+      - heredite
+      - rsm_istifa
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CIN_HERITIER
+      label: Pieces d'identite des heritiers
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_heritier
+      - cnie_heritier
+      - id_heritier
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CIN_DEFUNT
+      label: Piece d'identite du defunt
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_defunt
+      - id_defunt
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Si disponible et utile au dossier.
+      source: checklist_configuree_etude
+    - id: CERTIFICAT_PROPRIETE
+      label: Certificat de propriete / TF des biens successoraux
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - certificat_propriete
+      - titre_foncier
+      - tf
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: QUALITE_HERITIERS
+      label: Documents etablissant la qualite des heritiers
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - acte_naissance
+      - livret_famille
+      - acte_mariage
+      - certificat_familial
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Selon le dossier (filiation, mariage, etc.).
+      source: checklist_configuree_etude
+    - id: PROCURATION_HERITIER
+      label: Procurations eventuelles des heritiers
+      required: false
+      conditional: heritier_represente
+      condition_description: Applicable uniquement si un heritier est represente par mandataire.
+      file_aliases:
+      - procuration_heritier
+      - mandat_heritier
+      content_markers:
+      - procuration
+      - mandat
+      - represente
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: EVALUATION_BIENS
+      label: Evaluation des biens
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - evaluation
+      - expertise
+      - valeur_bien
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    manual_checks:
+    - 'Verification manuelle : date de deces, identite du defunt, nombre et qualite des heritiers, quotes-parts,
+      TF, biens concernes et pouvoirs des representants. Le nombre et la qualite des heritiers ne sont
+      jamais valides automatiquement.'
+  PROCURATION:
+    label: Procuration
+    items:
+    - id: PROJET_PROCURATION
+      label: Projet ou acte de procuration
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - procuration
+      - mandat
+      - power_of_attorney
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CIN_MANDANT
+      label: Piece d'identite du mandant
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_mandant
+      - cnie_mandant
+      - id_mandant
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CIN_MANDATAIRE
+      label: Piece d'identite du mandataire
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_mandataire
+      - cnie_mandataire
+      - id_mandataire
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: OBJET_MANDAT
+      label: Document relatif a l'objet du mandat
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - titre_foncier
+      - certificat_propriete
+      - projet_vente
+      - contrat_credit
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Si le mandat porte sur un bien ou une operation precise.
+      source: checklist_configuree_etude
+    - id: LEGALISATION_ETRANGERE
+      label: Legalisation, apostille ou traduction de la procuration
+      required: false
+      conditional: origine_etrangere
+      condition_description: Applicable uniquement si la procuration est etablie a l'etranger.
+      file_aliases:
+      - apostille
+      - legalisation
+      - traduction_asernentee
+      - procuration_consulaire
+      content_markers:
+      - apostille
+      - consulat
+      - etranger
+      - legalisation
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    manual_checks:
+    - 'Verification manuelle : objet precis, identite, pouvoirs expres, bien concerne, prix/plafond eventuel,
+      duree, revocation et substitution.'
+    - Les procurations liees aux operations immobilieres doivent etre suffisamment precises sur l'objet,
+      les parties et les pouvoirs ; la forme applicable doit etre verifiee par le notaire.
+  VEFA:
+    label: Vente en l'etat futur d'achevement (VEFA)
+    items:
+    - id: CONTRAT_VEFA
+      label: Contrat de reservation, contrat preliminaire ou acte VEFA
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - reservation
+      - contrat_preliminaire
+      - vefa
+      - acte_vefa
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CIN_PARTIES
+      label: Pieces d'identite de l'acquereur et du vendeur/promoteur
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_acquereur
+      - cin_vendeur
+      - cin_promoteur
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: TITRE_FONCIER_TERRAIN
+      label: Titre foncier ou reference fonciere du terrain
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - titre_foncier
+      - tf
+      - certificat_propriete
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: PLANS_NOTICE
+      label: Plans, notice descriptive et documents techniques
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - plans
+      - notice_descriptive
+      - cahier_charges
+      - descriptif_technique
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: PERMIS_CONSTRUIRE
+      label: Permis de construire / autorisations applicables
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - permis_construire
+      - autorisation_construire
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: GARANTIE_ACHEVEMENT
+      label: Garantie d'achevement ou de remboursement
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - garantie_achevement
+      - garantie_remboursement
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Si prevue dans le contrat.
+      source: checklist_configuree_etude
+    - id: ECHEANCIER_PAIEMENT
+      label: Echeancier de paiement
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - echeancier_paiement
+      - appels_fonds
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: ATTESTATION_LIVRAISON
+      label: Attestation de livraison / reception
+      required: false
+      conditional: achevement_constate
+      condition_description: Non applicable avant l'achevement du programme ; applicable seulement si
+        une reception/livraison est mentionnee dans les donnees ou les documents.
+      file_aliases:
+      - attestation_livraison
+      - reception
+      - livraison
+      content_markers:
+      - reception
+      - livraison
+      - achevement
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: PROCURATION
+      label: Procuration
+      required: false
+      conditional: representation_detectee
+      condition_description: Applicable uniquement si une partie est representee.
+      file_aliases:
+      - procuration
+      - mandat
+      - power_of_attorney
+      content_markers:
+      - procuration
+      - mandat
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    manual_checks:
+    - 'Verification manuelle : identification du programme, TF, superficie, delai de livraison, garanties,
+      echeancier et annexes techniques.'
+    - Les contrats VEFA doivent faire l'objet d'une verification renforcee des mentions et garanties applicables.
+  VENTE_FONDS_COMMERCE:
+    label: Vente de fonds de commerce
+    items:
+    - id: ACTE_VENTE_FONDS
+      label: Acte de vente de fonds de commerce
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - vente_fonds_commerce
+      - acte_vente_fonds
+      - fonds_commerce
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: REGISTRE_COMMERCE
+      label: Registre de commerce et identifiants de l'entreprise
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - registre_commerce
+      - rc
+      - ice
+      - identifiant_fiscal
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: IDENTITE_PARTIES
+      label: Piece d'identite vendeur / acquereur ou documents societe
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_vendeur
+      - cin_acquereur
+      - statuts
+      - pouvoirs_societe
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: BAIL_COMMERCIAL
+      label: Bail commercial ou titre d'occupation
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - bail_commercial
+      - contrat_bail
+      - autorisation_bailleur
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Si applicable au fonds concerne.
+      source: checklist_configuree_etude
+    - id: ETAT_INSCRIPTIONS
+      label: Etat des inscriptions, nantissements ou privileges
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - etat_inscriptions
+      - nantissement
+      - privilege
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: INVENTAIRE_ELEMENTS
+      label: Inventaire des elements cedes
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - inventaire
+      - elements_cedes
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Si prevu par l'acte.
+      source: checklist_configuree_etude
+    - id: JUSTIFICATIF_PAIEMENT
+      label: Justificatif de paiement / consignation
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - virement
+      - consignation
+      - preuve_paiement
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: PROCURATION
+      label: Procuration
+      required: false
+      conditional: representation_detectee
+      condition_description: Applicable uniquement si une partie est representee.
+      file_aliases:
+      - procuration
+      - mandat
+      - power_of_attorney
+      content_markers:
+      - procuration
+      - mandat
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    manual_checks:
+    - 'Verification manuelle : qualite des parties, RC, bail, inscriptions, elements cedes, prix, formalites
+      de publicite et d''opposition.'
+  CREATION_SOCIETE:
+    label: Creation de societe (dont SARL)
+    aliases_types:
+    - SARL
+    items:
+    - id: STATUTS
+      label: Statuts originaux
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - statuts
+      - statuts_societe
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: REQUISITION_CREATION
+      label: Requisition de creation de societe
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - requisition_creation
+      - creation_societe
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: MODELE_J
+      label: Modele J / formulaire ou document equivalent
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - modele_j
+      - model_j
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: ANNONCE_LEGALE
+      label: Annonce legale / attestation de publication
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - annonce_legale
+      - journal_annonces_legales
+      - publication_legale
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: NOTIFICATION_IDENTIFIANTS
+      label: Notification des identifiants / documents du CRI
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - notification_identifiants
+      - cri
+      - identifiants
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Si applicable selon le circuit de creation (CRI).
+      source: checklist_configuree_etude
+    - id: REGISTRE_COMMERCE
+      label: Registre de commerce ou demande d'immatriculation
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - registre_commerce
+      - rc
+      - immatriculation
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: CIN_ASSOCIES
+      label: Pieces d'identite des associes et du gerant
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_associe
+      - cin_gerant
+      - id_associe
+      - id_gerant
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: JUSTIFICATIF_SIEGE
+      label: Justificatif du siege social
+      required: false
+      conditional: siege_renseigne
+      condition_description: Applicable uniquement si le siege social est renseigne dans les donnees du
+        dossier.
+      file_aliases:
+      - bail_siege
+      - domiciliation
+      - titre_siege
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: PROCURATION
+      label: Procuration / pouvoir
+      required: false
+      conditional: representation_detectee
+      condition_description: Applicable si un signataire represente un associe.
+      file_aliases:
+      - procuration
+      - mandat
+      - power_of_attorney
+      content_markers:
+      - procuration
+      - mandat
+      - pouvoir
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    manual_checks:
+    - 'Verification manuelle : denomination, objet social, capital, apports, siege, gerance, identite
+      des associes, signatures et formalites d''immatriculation.'
+  GERANCE_LIBRE:
+    label: Gerance libre
+    items:
+    - id: CONTRAT_GERANCE
+      label: Contrat de gerance libre
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - gerance_libre
+      - contrat_gerance
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: REGISTRE_COMMERCE
+      label: Registre de commerce du proprietaire et du gerant
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - registre_commerce
+      - rc
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: IDENTITE_PARTIES
+      label: Pieces d'identite / pouvoirs des parties
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - cin_proprietaire
+      - cin_gerant
+      - pouvoirs_societe
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: BAIL_LOCAUX
+      label: Bail ou justificatif de jouissance des locaux
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - bail_commercial
+      - contrat_bail
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: ELEMENTS_FONDS
+      label: Elements relatifs au fonds de commerce
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - fonds_commerce
+      - inventaire
+      - inscriptions
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: ANNONCE_LEGALE
+      label: Annonce legale / publication
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - annonce_legale
+      - publication
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Si prevue dans la procedure de l'etude.
+      source: checklist_configuree_etude
+    manual_checks:
+    - 'Verification manuelle : identite et qualite des parties, objet du fonds, duree, redevance, responsabilites,
+      formalites de publicite.'
+  DEMANDES_ADMINISTRATIVES:
+    label: Demandes administratives diverses
+    items:
+    - id: DEMANDE_SIGNEE
+      label: Demande ou requete signee
+      required: true
+      conditional: null
+      condition_description: ''
+      file_aliases:
+      - requisition
+      - demande
+      - lettre
+      - requete
+      content_markers: []
+      auto_detection: filename_only
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: PIECE_JUSTIFICATIVE_OBJET
+      label: Piece justificative correspondant a l'objet de la demande
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases: []
+      content_markers: []
+      auto_detection: manual
+      manual_verification_required: true
+      help_text: Alias configurables par sous-type (conservateur, modele J, journal officiel, licence
+        municipale, administration fiscale, mainlevee/radiation).
+      source: checklist_configuree_etude
+    - id: CIN_OU_POUVOIR_SIGNATAIRE
+      label: Piece d'identite ou pouvoir du signataire
+      required: false
+      conditional: representation_detectee
+      condition_description: Applicable si le signataire agit en representation d'un tiers.
+      file_aliases:
+      - cin_signataire
+      - procuration
+      - pouvoir
+      content_markers:
+      - procuration
+      - pouvoir
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: ''
+      source: checklist_configuree_etude
+    - id: ANNEXES_CITEES
+      label: Documents annexes cites dans la demande
+      required: false
+      conditional: null
+      condition_description: ''
+      file_aliases: []
+      content_markers:
+      - pieces jointes
+      - المرفقات
+      auto_detection: filename_or_content
+      manual_verification_required: true
+      help_text: Detection possible a partir d'une section 'PIECES JOINTES' ou 'المرفقات' si l'extraction
+        du document est disponible. Les annexes citees ne sont jamais declarees presentes sans fichier
+        correspondant reellement detecte.
+      source: checklist_configuree_etude
+    subtypes:
+    - requete_au_conservateur
+    - modele_j
+    - demande_publication_journal_officiel
+    - demande_licence_municipale
+    - demande_administration_fiscale
+    - demande_mainlevee_radiation
+    manual_checks:
+    - 'Verification manuelle : destinataire, objet, references, annexes, signature et date.'
+    - Chaque sous-type a sa propre liste de pieces ; les annexes citees peuvent etre proposees comme 'a
+      verifier', mais jamais declarees presentes sans fichier.

@@ -1,0 +1,45 @@
+{
+  "dossier_id": "2-2025-145-DONATION-ELYACOUBI",
+  "tests": [
+    {
+      "question": "Qui est le donateur (Premier Comparant) dans le dossier 2-2025-145-DONATION-ELYACOUBI ?",
+      "expected_answer_contains": "محمد اليعقوبي",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Qui est le donataire (Second Comparant) dans le dossier 2-2025-145-DONATION-ELYACOUBI ?",
+      "expected_answer_contains": "ياسمين اليعقوبي",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Quel est le lien entre donateur et donataire dans le dossier 2-2025-145-DONATION-ELYACOUBI ?",
+      "expected_answer_contains": "ابنة المتصدق",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Quel est le titre foncier du bien donné dans le dossier 2-2025-145-DONATION-ELYACOUBI ?",
+      "expected_answer_contains": "138.902/08",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Quelle est la valeur déclarée du bien donné dans le dossier 2-2025-145-DONATION-ELYACOUBI ?",
+      "expected_answer_contains": "2.400.000",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Quel est le taux de droits d'enregistrement appliqué dans le dossier 2-2025-145-DONATION-ELYACOUBI ?",
+      "expected_answer_contains": "1,5%",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Sous quelle qualification juridique la donation est-elle conclue dans le dossier 2-2025-145-DONATION-ELYACOUBI ?",
+      "expected_answer_contains": "عقد صدقة لا رجعة فيها",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Le dossier 2-2025-145-DONATION-ELYACOUBI s'appuie-t-il sur un modèle réel de l'étude ?",
+      "expected_answer_contains": "عقد صدقة لا رجعة فيها",
+      "expected_source_contains": "acte_de_donation"
+    }
+  ]
+}

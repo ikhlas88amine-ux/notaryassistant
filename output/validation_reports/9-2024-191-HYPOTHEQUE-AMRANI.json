@@ -1,0 +1,53 @@
+{
+  "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+  "status": "valid",
+  "summary": {
+    "blocking": 0,
+    "warning": 0,
+    "info": 2
+  },
+  "issues": [
+    {
+      "rule_id": "checklist_incomplete",
+      "severity": "info",
+      "title": "Checklist documentaire incomplète",
+      "message": "La checklist documentaire signale 5 pièce(s) à ajouter et 1 point(s) à vérifier. Cette information ne vaut pas invalidité juridique automatique.",
+      "evidence": {
+        "fields": {
+          "checklist_synthese": {
+            "presente": 1,
+            "a_ajouter": 5,
+            "a_verifier": 1,
+            "non_applicable": 1
+          }
+        },
+        "documents": [
+          "Hypotheque"
+        ],
+        "source_refs": [
+          "Hypotheque"
+        ]
+      },
+      "recommended_action": "Traiter la checklist comme un suivi documentaire, sans en déduire une validité juridique automatique.",
+      "requires_notary_review": true
+    },
+    {
+      "rule_id": "mortgage_registration_not_proven",
+      "severity": "info",
+      "title": "Inscription définitive non établie",
+      "message": "L'engagement d'inscription est présent ; l'inscription définitive n'est pas établie par les sources disponibles.",
+      "evidence": {
+        "fields": {},
+        "documents": [
+          "01_engagement_hypothecaire.docx"
+        ],
+        "source_refs": [
+          "01_engagement_hypothecaire.docx"
+        ]
+      },
+      "recommended_action": "Vérifier ultérieurement la référence définitive d'inscription si elle doit exister au dossier.",
+      "requires_notary_review": true
+    }
+  ],
+  "generated_at": "2026-08-25T15:06:15.975651+00:00"
+}

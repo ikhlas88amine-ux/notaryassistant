@@ -1,0 +1,30 @@
+{
+  "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier hypothéqué dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+      "expected_answer_contains": "155.660/08",
+      "expected_source_contains": "engagement_hypothecaire"
+    },
+    {
+      "question": "Quelle banque bénéficie de l'hypothèque dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+      "expected_answer_contains": "ATTIJARIWAFA BANK",
+      "expected_source_contains": "engagement_hypothecaire"
+    },
+    {
+      "question": "Quel est le montant du crédit garanti dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+      "expected_answer_contains": "640,000",
+      "expected_source_contains": "engagement_hypothecaire"
+    },
+    {
+      "question": "Quel est le rang de l'hypothèque dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+      "expected_answer_contains": "1",
+      "expected_source_contains": "engagement_hypothecaire"
+    },
+    {
+      "question": "Qui est l'emprunteur dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+      "expected_answer_contains": "Nadia AMRANI",
+      "expected_source_contains": "engagement_hypothecaire"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+  "annee": 2025,
+  "numero_dossier": "605",
+  "type_dossier": "SUCCESSION",
+  "variante": "standard",
+  "client_famille": "ELYACOUBI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": false,
+  "donnees": {
+    "defunt": {
+      "nom_fr": "Mohamed ELYACOUBI",
+      "nom_ar": "محمد اليعقوبي",
+      "cin": "EJ221190",
+      "date_deces": "2025-07-30"
+    },
+    "heritiers": [
+      {
+        "nom_fr": "Fatima Zahra BENNANI (épouse)",
+        "cin": "EJ778001",
+        "part": "1/8"
+      },
+      {
+        "nom_fr": "Yasmine ELYACOUBI (fille)",
+        "cin": "EJ778002",
+        "part": "7/16"
+      },
+      {
+        "nom_fr": "Adam ELYACOUBI (fils)",
+        "cin": "EJ778003",
+        "part": "7/8 restant partagé selon la règle 2 pour 1"
+      }
+    ],
+    "bien": {
+      "nature": "local commercial",
+      "adresse": "Marché central, El Jadida",
+      "tf": "144.500/08",
+      "superficie_m2": 45
+    },
+    "valeur_succession_dhs": 900000,
+    "date_acte_notoriete": "2025-09-10"
+  }
+}

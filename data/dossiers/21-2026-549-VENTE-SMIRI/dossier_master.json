@@ -1,0 +1,50 @@
+{
+  "dossier_id": "21-2026-549-VENTE-SMIRI",
+  "annee": 2026,
+  "numero_dossier": "549",
+  "type_dossier": "VENTE",
+  "variante": "tripartite_bancaire",
+  "client_famille": "SMIRI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "vendeur": {
+      "nom_fr": "SARL DAR AL BAHJA PROMOTION",
+      "gerant": "Othmane FILALI"
+    },
+    "acquereur_1": {
+      "nom_fr": "Sofia SMIRI",
+      "nom_ar": "صوفيا السميري",
+      "cin": "EJ775003",
+      "role": "emprunteuse - garantie FOGALEF"
+    },
+    "acquereur_2": {
+      "nom_fr": "Yassir SMIRI",
+      "nom_ar": "ياسر السميري",
+      "cin": "EJ775004",
+      "role": "co-emprunteur - prêt immobilier standard"
+    },
+    "banque": "AL BARID BANK",
+    "bien": {
+      "nature": "appartement en copropriété",
+      "adresse": "Résidence An Nakhil II, El Jadida",
+      "tf": "175.660/08",
+      "superficie_m2": 84
+    },
+    "prix_dhs": 980000,
+    "credit_1_dhs": 500000,
+    "credit_1_taux": "4,70% (garantie FOGALEF 70%)",
+    "credit_2_dhs": 300000,
+    "credit_2_taux": "5,70%",
+    "rang_hypotheque_1": 1,
+    "rang_hypotheque_2": 2,
+    "date_acte": "2026-02-17"
+  }
+}

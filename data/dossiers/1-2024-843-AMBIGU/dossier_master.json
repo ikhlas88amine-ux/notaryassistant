@@ -1,0 +1,40 @@
+{
+  "dossier_id": "1-2024-843-AMBIGU",
+  "annee": 2024,
+  "numero_dossier": "843",
+  "type_dossier": "AMBIGU",
+  "variante": "prix_contradictoire_fr_ar",
+  "client_famille": null,
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "notaire_ville": "El Jadida",
+    "vendeur": {
+      "nom_fr": "Rachid BENOMAR",
+      "nom_ar": "رشيد بنعمر",
+      "cin": "EJ145236"
+    },
+    "acquereur": {
+      "nom_fr": "Salma IDRISSI",
+      "nom_ar": "سلمى الإدريسي",
+      "cin": "EJ998877"
+    },
+    "bien": {
+      "nature": "appartement",
+      "adresse": "Résidence Al Amal, 3e étage, El Jadida",
+      "tf": "152.410/08",
+      "superficie_m2": 74
+    },
+    "prix_dhs_version_fr": 1650000,
+    "prix_dhs_version_ar": 340000,
+    "date_acte": "2024-06-11",
+    "anomaly": "Le prix indiqué dans le corps français de l'acte (1.650.000 DHS) ne correspond pas au montant indiqué dans la clause de prix arabe jointe (340.000 DHS) - écart injustifié."
+  }
+}

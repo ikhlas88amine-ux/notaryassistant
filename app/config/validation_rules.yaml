@@ -1,0 +1,684 @@
+version: 1
+source: deterministic_business_validation
+rules:
+  - id: dossier_identity_missing
+    applies_to:
+      - type_dossier: AMBIGU
+      - type_dossier: HYPOTHEQUE
+      - type_dossier: DONATION
+      - type_dossier: PROCURATION
+      - type_dossier: SUCCESSION
+      - type_dossier: VENTE
+      - type_dossier: VENTE-AUTO
+    severity: warning
+    title: "Identité du dossier incomplète"
+    condition: "dossier_id, type_dossier ou année absents ou incohérents"
+    message: "Les métadonnées d'identification du dossier sont incomplètes ou incohérentes."
+    recommended_action: "Vérifier le dossier maître et compléter les métadonnées de référence."
+    requires_notary_review: true
+
+  - id: document_source_missing
+    applies_to:
+      - type_dossier: AMBIGU
+      - type_dossier: HYPOTHEQUE
+      - type_dossier: DONATION
+      - type_dossier: PROCURATION
+      - type_dossier: SUCCESSION
+      - type_dossier: VENTE
+      - type_dossier: VENTE-AUTO
+    severity: warning
+    title: "Document source non détecté"
+    condition: "aucun document exploitable n'est présent dans le dossier"
+    message: "Aucun document source n'a été détecté dans le dossier."
+    recommended_action: "Ajouter ou restaurer au moins une pièce source avant tout contrôle complémentaire."
+    requires_notary_review: true
+
+  - id: required_field_missing
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+      - type_dossier: DONATION
+      - type_dossier: PROCURATION
+      - type_dossier: SUCCESSION
+      - type_dossier: VENTE
+      - type_dossier: VENTE-AUTO
+    severity: warning
+    title: "Champ structuré manquant"
+    condition: "un champ attendu pour le type de dossier n'est pas renseigné"
+    message: "Un ou plusieurs champs attendus pour ce type de dossier sont absents des données structurées."
+    recommended_action: "Compléter les données structurées avant la rédaction définitive."
+    requires_notary_review: true
+
+  - id: amount_invalid
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+      - type_dossier: DONATION
+      - type_dossier: SUCCESSION
+      - type_dossier: VENTE
+      - type_dossier: VENTE-AUTO
+    severity: warning
+    title: "Montant invalide"
+    condition: "un montant attendu comme positif est nul, négatif ou non numérique"
+    message: "Au moins un montant attendu comme positif est invalide."
+    recommended_action: "Contrôler la saisie du montant et la pièce justificative correspondante."
+    requires_notary_review: true
+
+  - id: date_order_incoherent
+    applies_to:
+      - type_dossier: DONATION
+    severity: warning
+    title: "Ordre chronologique incohérent"
+    condition: "deux dates comparables sont présentes mais dans un ordre impossible"
+    message: "L'ordre chronologique de certaines dates est incohérent."
+    recommended_action: "Vérifier les dates portées dans le dossier maître et dans les pièces."
+    requires_notary_review: true
+
+  - id: multiple_conflicting_values
+    applies_to:
+      - type_dossier: AMBIGU
+    severity: blocking
+    title: "Valeurs critiques contradictoires"
+    condition: "plusieurs valeurs distinctes existent pour un même champ critique"
+    message: "Des valeurs contradictoires sont présentes pour un ou plusieurs champs critiques du dossier."
+    recommended_action: "Résoudre la contradiction avant toute rédaction définitive."
+    requires_notary_review: true
+
+  - id: source_fact_conflict
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+      - type_dossier: DONATION
+      - type_dossier: SUCCESSION
+      - type_dossier: VENTE
+      - type_dossier: VENTE-AUTO
+    severity: blocking
+    title: "Incompatibilité entre données et document"
+    condition: "une donnée structurée contredit un fait explicitement extrait d'un document du même dossier"
+    message: "Une contradiction explicite existe entre le dossier maître et un document du dossier."
+    recommended_action: "Comparer le dossier maître et les pièces pour identifier la valeur fiable."
+    requires_notary_review: true
+
+  - id: checklist_incomplete
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+      - type_dossier: DONATION
+      - type_dossier: PROCURATION
+      - type_dossier: SUCCESSION
+      - type_dossier: VENTE
+    severity: info
+    title: "Checklist documentaire incomplète"
+    condition: "la checklist documentaire signale des pièces à ajouter ou des points à vérifier"
+    message: "La checklist documentaire comporte encore des éléments à compléter ou à vérifier."
+    recommended_action: "Traiter la checklist comme un suivi documentaire, sans en déduire une validité juridique automatique."
+    requires_notary_review: true
+
+  - id: sale_parties_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [simple, paiement_differe, hors_comptabilite, mixte_comptabilite, tripartite_bancaire, terrain_nu_engagement_construire]
+    severity: warning
+    title: "Parties de la vente non établies"
+    condition: "vendeur ou acquéreur absent des données disponibles"
+    message: "Le vendeur ou l'acquéreur n'est pas clairement identifié dans les données disponibles."
+    recommended_action: "Vérifier l'identité et la qualité de chaque partie."
+    requires_notary_review: true
+
+  - id: sale_tf_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [simple, paiement_differe, hors_comptabilite, mixte_comptabilite, tripartite_bancaire, terrain_nu_engagement_construire]
+    severity: warning
+    title: "Titre foncier non identifié"
+    condition: "le bien est présenté comme immatriculé mais le titre foncier n'est pas établi"
+    message: "Le titre foncier du bien vendu n'est pas établi par les données disponibles."
+    recommended_action: "Contrôler la référence foncière dans l'acte et les pièces annexes."
+    requires_notary_review: true
+
+  - id: sale_price_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [simple, paiement_differe, hors_comptabilite, mixte_comptabilite, tripartite_bancaire, terrain_nu_engagement_construire]
+    severity: warning
+    title: "Prix de vente absent"
+    condition: "le prix n'est pas renseigné"
+    message: "Le prix de vente n'est pas établi dans les données disponibles."
+    recommended_action: "Vérifier le prix déclaré dans l'acte et dans le dossier maître."
+    requires_notary_review: true
+
+  - id: price_multiple_declared
+    applies_to:
+      - type_dossier: AMBIGU
+      - type_dossier: VENTE
+        variants: [simple, paiement_differe, hors_comptabilite, mixte_comptabilite, tripartite_bancaire, terrain_nu_engagement_construire]
+    severity: blocking
+    title: "Plusieurs prix déclarés incompatibles"
+    condition: "plusieurs prix distincts et incompatibles sont explicitement déclarés"
+    message: "Plusieurs prix incompatibles apparaissent dans le dossier ; aucun prix réel ne peut être retenu automatiquement."
+    recommended_action: "Faire confirmer le prix exact par le notaire et par les pièces signées."
+    requires_notary_review: true
+
+  - id: sale_payment_breakdown_incoherent
+    applies_to:
+      - type_dossier: VENTE
+        variants: [paiement_differe, terrain_nu_engagement_construire]
+    severity: blocking
+    title: "Décomposition du paiement incohérente"
+    condition: "montant immédiat + montant différé différent du prix total"
+    message: "La décomposition du paiement ne correspond pas au prix total déclaré."
+    recommended_action: "Vérifier l'arithmétique du prix et des échéances."
+    requires_notary_review: true
+
+  - id: sale_deferred_payment_missing_terms
+    applies_to:
+      - type_dossier: VENTE
+        variants: [paiement_differe, terrain_nu_engagement_construire]
+    severity: warning
+    title: "Solde différé insuffisamment décrit"
+    condition: "un paiement différé est détecté sans montant différé ou sans délai"
+    message: "Les modalités du paiement différé ne sont pas suffisamment établies."
+    recommended_action: "Préciser le montant différé et son délai d'exigibilité."
+    requires_notary_review: true
+
+  - id: sale_payment_route_unclear
+    applies_to:
+      - type_dossier: VENTE
+        variants: [simple, paiement_differe, hors_comptabilite, mixte_comptabilite, tripartite_bancaire, terrain_nu_engagement_construire]
+    severity: warning
+    title: "Circuit de paiement non établi"
+    condition: "les modalités de paiement ne sont pas claires dans les données disponibles"
+    message: "Les données disponibles ne permettent pas d'établir clairement le circuit de paiement."
+    recommended_action: "Vérifier si le paiement passe par la comptabilité du notaire, une consignation ou un paiement direct."
+    requires_notary_review: true
+
+  - id: sale_representative_missing_power
+    applies_to:
+      - type_dossier: VENTE
+        variants: [simple, paiement_differe, hors_comptabilite, mixte_comptabilite, tripartite_bancaire, terrain_nu_engagement_construire]
+    severity: warning
+    title: "Représentation sans procuration détectée"
+    condition: "une représentation est détectée sans procuration correspondante"
+    message: "Une représentation semble exister sans procuration détectée dans le dossier."
+    recommended_action: "Contrôler le pouvoir du représentant et la pièce justificative correspondante."
+    requires_notary_review: true
+
+  - id: sale_tax_and_fees_clause_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [simple, paiement_differe, hors_comptabilite, mixte_comptabilite, tripartite_bancaire, terrain_nu_engagement_construire]
+    severity: info
+    title: "Clause frais et charges non retrouvée"
+    condition: "l'acte de vente est présent mais la clause relative aux frais et charges n'est pas retrouvée"
+    message: "Les dispositions relatives aux frais, droits ou charges n'ont pas été retrouvées automatiquement."
+    recommended_action: "Relire l'acte pour vérifier la répartition des frais et charges."
+    requires_notary_review: true
+
+  - id: mortgage_beneficiary_missing
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [engagement_1er_rang, engagement_avec_caution]
+    severity: warning
+    title: "Banque bénéficiaire absente"
+    condition: "la banque bénéficiaire n'est pas identifiée"
+    message: "La banque bénéficiaire de l'hypothèque n'est pas établie."
+    recommended_action: "Vérifier le bénéficiaire de l'inscription projetée."
+    requires_notary_review: true
+
+  - id: mortgage_tf_missing
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [engagement_1er_rang, engagement_avec_caution]
+    severity: warning
+    title: "Titre foncier non identifié"
+    condition: "le TF grevé n'est pas établi"
+    message: "Le titre foncier grevé n'est pas clairement identifié."
+    recommended_action: "Contrôler le bien donné en garantie."
+    requires_notary_review: true
+
+  - id: mortgage_credit_amount_missing
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [engagement_1er_rang, engagement_avec_caution]
+    severity: warning
+    title: "Montant du crédit absent"
+    condition: "le montant garanti ou le crédit n'est pas établi"
+    message: "Le montant du crédit garanti n'est pas établi dans les données disponibles."
+    recommended_action: "Vérifier le montant garanti dans l'engagement ou l'acte."
+    requires_notary_review: true
+
+  - id: mortgage_rank_missing
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [engagement_1er_rang, engagement_avec_caution]
+    severity: warning
+    title: "Rang hypothécaire absent"
+    condition: "le rang de l'hypothèque n'est pas identifié"
+    message: "Le rang hypothécaire n'est pas établi dans les données disponibles."
+    recommended_action: "Contrôler le rang de l'inscription projetée."
+    requires_notary_review: true
+
+  - id: mortgage_rank_amount_confusion
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [engagement_1er_rang, engagement_avec_caution]
+    severity: blocking
+    title: "Rang et montant contradictoires"
+    condition: "la distinction entre le rang et le montant est contredite par deux extractions réelles"
+    message: "Le rang hypothécaire et les mentions extraites doivent être revérifiés."
+    recommended_action: "Comparer le rang déclaré et le rang lu dans les pièces."
+    requires_notary_review: true
+
+  - id: mortgage_registration_not_proven
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [engagement_1er_rang, engagement_avec_caution]
+    severity: info
+    title: "Inscription définitive non établie"
+    condition: "un engagement d'inscription est présent sans référence définitive d'inscription"
+    message: "L'engagement d'inscription est présent ; l'inscription définitive n'est pas établie par les sources disponibles."
+    recommended_action: "Vérifier ultérieurement la référence définitive d'inscription si elle doit exister au dossier."
+    requires_notary_review: true
+
+  - id: mortgage_surety_detected
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [engagement_avec_caution]
+    severity: info
+    title: "Cautionnement hypothécaire détecté"
+    condition: "un cautionnement hypothécaire est détecté"
+    message: "Cautionnement détecté : identité, bien donné en garantie et étendue du cautionnement à vérifier."
+    recommended_action: "Contrôler le constituant, le bien affecté et l'étendue de la garantie."
+    requires_notary_review: true
+
+  - id: mortgage_deadline_missing
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [engagement_1er_rang, engagement_avec_caution]
+    severity: info
+    title: "Délai d'inscription absent"
+    condition: "l'engagement prévoit une inscription sans délai explicite"
+    message: "Le délai d'inscription n'a pas été établi automatiquement."
+    recommended_action: "Vérifier si un délai d'inscription figure dans l'engagement."
+    requires_notary_review: true
+
+  - id: release_bank_discharge_missing
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [mainlevee]
+    severity: warning
+    title: "Décharge bancaire non détectée"
+    condition: "aucune décharge ou accord bancaire de mainlevée n'est détecté"
+    message: "Aucune décharge ou mainlevée bancaire n'a été détectée."
+    recommended_action: "Vérifier la pièce autorisant la radiation."
+    requires_notary_review: true
+
+  - id: release_requisition_missing
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [mainlevee]
+    severity: warning
+    title: "Réquisition de radiation non détectée"
+    condition: "aucune réquisition de radiation n'est détectée"
+    message: "Aucune réquisition de radiation n'a été détectée."
+    recommended_action: "Vérifier la présence du projet ou de l'acte de radiation."
+    requires_notary_review: true
+
+  - id: release_reference_missing
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [mainlevee]
+    severity: warning
+    title: "Référence de l'inscription à radier non établie"
+    condition: "la référence de l'inscription à radier n'est pas identifiée"
+    message: "La référence de l'inscription ou du TF concerné n'est pas suffisamment établie."
+    recommended_action: "Contrôler la référence exacte de l'inscription à radier."
+    requires_notary_review: true
+
+  - id: release_bank_conflict
+    applies_to:
+      - type_dossier: HYPOTHEQUE
+        variants: [mainlevee]
+    severity: blocking
+    title: "Banques contradictoires dans la mainlevée"
+    condition: "plusieurs banques incompatibles apparaissent dans les pièces de mainlevée"
+    message: "Des banques contradictoires sont mentionnées dans les pièces de mainlevée."
+    recommended_action: "Résoudre la contradiction avant toute radiation."
+    requires_notary_review: true
+
+  - id: donation_parties_missing
+    applies_to:
+      - type_dossier: DONATION
+        variants: [standard]
+    severity: warning
+    title: "Parties de la donation absentes"
+    condition: "donateur ou donataire absent"
+    message: "Le donateur ou le donataire n'est pas clairement identifié."
+    recommended_action: "Vérifier l'identité des parties à la donation."
+    requires_notary_review: true
+
+  - id: donation_tf_missing
+    applies_to:
+      - type_dossier: DONATION
+        variants: [standard]
+    severity: warning
+    title: "Titre foncier absent"
+    condition: "le TF du bien donné n'est pas établi"
+    message: "Le titre foncier du bien donné n'est pas établi."
+    recommended_action: "Contrôler la référence foncière du bien donné."
+    requires_notary_review: true
+
+  - id: donation_declared_value_missing
+    applies_to:
+      - type_dossier: DONATION
+        variants: [standard]
+    severity: warning
+    title: "Valeur déclarée absente"
+    condition: "la valeur déclarée n'est pas disponible"
+    message: "La valeur déclarée de la donation n'est pas établie."
+    recommended_action: "Vérifier la valeur retenue dans l'acte et pour l'enregistrement."
+    requires_notary_review: true
+
+  - id: donation_qualification_missing
+    applies_to:
+      - type_dossier: DONATION
+        variants: [standard]
+    severity: info
+    title: "Qualification de la donation à confirmer"
+    condition: "la qualification de l'opération n'est pas retrouvée explicitement"
+    message: "La qualification de l'opération n'a pas été retrouvée automatiquement."
+    recommended_action: "Relire l'acte pour confirmer la qualification retenue."
+    requires_notary_review: true
+
+  - id: donation_family_link_unproven
+    applies_to:
+      - type_dossier: DONATION
+        variants: [standard]
+    severity: warning
+    title: "Lien familial non justifié"
+    condition: "un lien familial est invoqué sans pièce justificative détectée"
+    message: "Le lien familial invoqué n'est pas justifié par les données disponibles."
+    recommended_action: "Vérifier le justificatif d'état civil ou toute pièce équivalente."
+    requires_notary_review: true
+
+  - id: donation_tax_rate_missing
+    applies_to:
+      - type_dossier: DONATION
+        variants: [standard]
+    severity: info
+    title: "Taux de droits à confirmer"
+    condition: "un taux de droits est évoqué sans être clairement détecté"
+    message: "Le taux de droits d'enregistrement reste à confirmer."
+    recommended_action: "Contrôler le taux retenu dans l'acte et dans les pièces fiscales."
+    requires_notary_review: true
+
+  - id: succession_death_missing
+    applies_to:
+      - type_dossier: SUCCESSION
+        variants: [standard]
+    severity: warning
+    title: "Décès non établi"
+    condition: "le décès n'est pas établi"
+    message: "Le décès à l'origine de la succession n'est pas clairement établi."
+    recommended_action: "Vérifier l'acte de décès ou la mention correspondante dans l'acte."
+    requires_notary_review: true
+
+  - id: succession_deceased_missing
+    applies_to:
+      - type_dossier: SUCCESSION
+        variants: [standard]
+    severity: warning
+    title: "Défunt non identifié"
+    condition: "le défunt n'est pas identifié"
+    message: "Le défunt n'est pas clairement identifié dans les données disponibles."
+    recommended_action: "Compléter l'identité du défunt."
+    requires_notary_review: true
+
+  - id: succession_heirs_missing
+    applies_to:
+      - type_dossier: SUCCESSION
+        variants: [standard]
+    severity: warning
+    title: "Héritiers non identifiés"
+    condition: "aucun héritier n'est identifié"
+    message: "Aucun héritier n'est clairement identifié dans les données disponibles."
+    recommended_action: "Vérifier la liste des héritiers mentionnés au dossier."
+    requires_notary_review: true
+
+  - id: succession_shares_incoherent
+    applies_to:
+      - type_dossier: SUCCESSION
+        variants: [standard]
+    severity: blocking
+    title: "Quotes-parts incohérentes"
+    condition: "toutes les quotes-parts sont exprimées de façon fiable mais leur somme diffère de 1"
+    message: "Les quotes-parts successorales disponibles sont incohérentes."
+    recommended_action: "Recalculer les quotes-parts avant la rédaction définitive."
+    requires_notary_review: true
+
+  - id: succession_property_missing
+    applies_to:
+      - type_dossier: SUCCESSION
+        variants: [standard]
+    severity: info
+    title: "Bien successoral non identifié"
+    condition: "aucun bien successoral n'est identifié"
+    message: "Aucun bien successoral n'a été identifié automatiquement."
+    recommended_action: "Vérifier si le dossier décrit un bien ou si l'acte porte seulement sur la notoriété."
+    requires_notary_review: true
+
+  - id: succession_representative_missing_power
+    applies_to:
+      - type_dossier: SUCCESSION
+        variants: [standard]
+    severity: warning
+    title: "Héritier représenté sans procuration détectée"
+    condition: "un héritier est représenté sans procuration détectée"
+    message: "Une représentation d'héritier semble exister sans procuration détectée."
+    recommended_action: "Contrôler le pouvoir du représentant."
+    requires_notary_review: true
+
+  - id: power_principal_missing
+    applies_to:
+      - type_dossier: PROCURATION
+        variants: [standard]
+    severity: warning
+    title: "Mandant absent"
+    condition: "le mandant n'est pas identifié"
+    message: "Le mandant n'est pas clairement identifié."
+    recommended_action: "Compléter l'identité du mandant."
+    requires_notary_review: true
+
+  - id: power_agent_missing
+    applies_to:
+      - type_dossier: PROCURATION
+        variants: [standard]
+    severity: warning
+    title: "Mandataire absent"
+    condition: "le mandataire n'est pas identifié"
+    message: "Le mandataire n'est pas clairement identifié."
+    recommended_action: "Compléter l'identité du mandataire."
+    requires_notary_review: true
+
+  - id: power_scope_missing
+    applies_to:
+      - type_dossier: PROCURATION
+        variants: [standard]
+    severity: warning
+    title: "Étendue des pouvoirs non établie"
+    condition: "les pouvoirs confiés ne sont pas explicitement décrits"
+    message: "L'étendue des pouvoirs n'est pas explicitement établie."
+    recommended_action: "Relire l'objet de la procuration et vérifier son périmètre exact."
+    requires_notary_review: true
+
+  - id: power_duration_unclear
+    applies_to:
+      - type_dossier: PROCURATION
+        variants: [standard]
+    severity: info
+    title: "Durée ou révocabilité à confirmer"
+    condition: "la durée ou la clause de révocabilité n'est pas clairement établie"
+    message: "La durée ou la révocabilité de la procuration reste à confirmer."
+    recommended_action: "Contrôler la clause de durée et de révocation."
+    requires_notary_review: true
+
+  - id: power_foreign_formality_unverified
+    applies_to:
+      - type_dossier: PROCURATION
+        variants: [standard]
+    severity: warning
+    title: "Formalisme étranger non vérifié"
+    condition: "une origine étrangère est détectée sans apostille, légalisation ou traduction"
+    message: "Une procuration d'origine étrangère semble exister sans formalité détectée."
+    recommended_action: "Contrôler l'apostille, la légalisation et la traduction si nécessaire."
+    requires_notary_review: true
+
+  - id: vefa_program_or_tf_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [vefa]
+    severity: warning
+    title: "Programme ou TF d'origine non établi"
+    condition: "le programme ou le TF d'origine n'est pas clairement identifié"
+    message: "Le programme VEFA ou son TF d'origine n'est pas établi."
+    recommended_action: "Vérifier l'identification du programme et la référence foncière d'origine."
+    requires_notary_review: true
+
+  - id: vefa_plan_or_description_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [vefa]
+    severity: warning
+    title: "Description VEFA incomplète"
+    condition: "la description du lot ou du programme est insuffisante"
+    message: "La description du lot en VEFA n'est pas suffisamment établie."
+    recommended_action: "Contrôler la description du lot, des surfaces et du programme."
+    requires_notary_review: true
+
+  - id: vefa_payment_schedule_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [vefa]
+    severity: warning
+    title: "Échéancier de paiement absent"
+    condition: "aucun échéancier de paiement n'est détecté"
+    message: "L'échéancier de paiement VEFA n'a pas été détecté automatiquement."
+    recommended_action: "Vérifier l'échéancier de paiement et son adossement à l'avancement des travaux."
+    requires_notary_review: true
+
+  - id: vefa_guarantee_unproven
+    applies_to:
+      - type_dossier: VENTE
+        variants: [vefa]
+    severity: info
+    title: "Garantie VEFA à confirmer"
+    condition: "la garantie VEFA n'est pas clairement établie"
+    message: "La garantie VEFA reste à confirmer dans les sources disponibles."
+    recommended_action: "Contrôler la garantie de remboursement ou toute garantie équivalente."
+    requires_notary_review: true
+
+  - id: vefa_delivery_terms_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [vefa]
+    severity: info
+    title: "Conditions d'achèvement ou de livraison à confirmer"
+    condition: "les conditions d'achèvement ou de livraison ne sont pas clairement établies"
+    message: "Les conditions d'achèvement ou de livraison n'ont pas été établies automatiquement."
+    recommended_action: "Vérifier les délais et conditions d'achèvement/livraison."
+    requires_notary_review: true
+
+  - id: vefa_completion_documents_not_applicable
+    applies_to:
+      - type_dossier: VENTE
+        variants: [vefa]
+    severity: info
+    title: "Pièces d'achèvement non applicables à ce stade"
+    condition: "le dossier VEFA est antérieur à l'achèvement ou à la livraison"
+    message: "Avant achèvement, les pièces de réception/livraison peuvent rester non applicables."
+    recommended_action: "Contrôler ce point au stade adéquat du dossier."
+    requires_notary_review: true
+
+  - id: business_sale_parties_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [fonds_de_commerce]
+    severity: warning
+    title: "Parties de la cession de fonds absentes"
+    condition: "cédant ou cessionnaire absent"
+    message: "Le cédant ou le cessionnaire du fonds de commerce n'est pas clairement identifié."
+    recommended_action: "Vérifier les sociétés parties à l'opération et leurs représentants."
+    requires_notary_review: true
+
+  - id: business_sale_rc_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [fonds_de_commerce]
+    severity: warning
+    title: "Référence RC manquante"
+    condition: "le RC de l'une des parties n'est pas établi"
+    message: "Le RC d'une des parties à la cession de fonds n'est pas clairement établi."
+    recommended_action: "Contrôler les références RC et la qualité des représentants."
+    requires_notary_review: true
+
+  - id: business_sale_lease_or_occupation_unclear
+    applies_to:
+      - type_dossier: VENTE
+        variants: [fonds_de_commerce]
+    severity: warning
+    title: "Bail ou occupation à confirmer"
+    condition: "le bail commercial ou le mode d'occupation n'est pas clairement établi"
+    message: "Le bail commercial ou le mode d'occupation du fonds reste à confirmer."
+    recommended_action: "Vérifier le bail, le droit au bail ou l'occupation des locaux."
+    requires_notary_review: true
+
+  - id: business_sale_encumbrances_unverified
+    applies_to:
+      - type_dossier: VENTE
+        variants: [fonds_de_commerce]
+    severity: info
+    title: "Charges du fonds non entièrement vérifiées"
+    condition: "les inscriptions, oppositions ou charges du fonds restent à confirmer"
+    message: "Les charges, oppositions ou inscriptions affectant le fonds restent à vérifier."
+    recommended_action: "Contrôler les certificats utiles et les oppositions éventuelles."
+    requires_notary_review: true
+
+  - id: business_sale_inventory_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [fonds_de_commerce]
+    severity: warning
+    title: "Inventaire des éléments cédés non détecté"
+    condition: "l'inventaire des éléments cédés n'est pas détecté"
+    message: "L'inventaire ou la liste détaillée des éléments cédés n'a pas été détecté automatiquement."
+    recommended_action: "Vérifier les éléments corporels et incorporels cédés."
+    requires_notary_review: true
+
+  - id: business_sale_price_missing
+    applies_to:
+      - type_dossier: VENTE
+        variants: [fonds_de_commerce]
+    severity: warning
+    title: "Prix de cession absent"
+    condition: "le prix de cession n'est pas établi"
+    message: "Le prix de cession du fonds de commerce n'est pas établi."
+    recommended_action: "Vérifier le prix global et sa ventilation éventuelle."
+    requires_notary_review: true
+
+  - id: business_sale_publicity_unverified
+    applies_to:
+      - type_dossier: VENTE
+        variants: [fonds_de_commerce]
+    severity: info
+    title: "Publicité légale à confirmer"
+    condition: "la publicité légale n'est pas prouvée par les pièces disponibles"
+    message: "La publicité légale de la cession n'est pas prouvée par les pièces disponibles."
+    recommended_action: "Contrôler les formalités de publicité légale à accomplir ou déjà accomplies."
+    requires_notary_review: true
+
+  - id: auto_sale_vehicle_identification_missing
+    applies_to:
+      - type_dossier: VENTE-AUTO
+        variants: [standard]
+    severity: warning
+    title: "Identification du véhicule incomplète"
+    condition: "une référence essentielle du véhicule est absente"
+    message: "L'identification du véhicule n'est pas complète dans les données disponibles."
+    recommended_action: "Vérifier la marque, le modèle, l'immatriculation et le numéro de châssis."
+    requires_notary_review: true

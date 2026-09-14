@@ -1,0 +1,55 @@
+{
+  "dossier_id": "14-2025-124-DONATION-AMRANI",
+  "tests": [
+    {
+      "question": "Qui est le donateur (Premier Comparant) dans le dossier 14-2025-124-DONATION-AMRANI ?",
+      "expected_answer_contains": "خديجة العمراني",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Qui est le donataire (Second Comparant) dans le dossier 14-2025-124-DONATION-AMRANI ?",
+      "expected_answer_contains": "زكرياء بوزيان",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Quel est le lien entre donateur et donataire dans le dossier 14-2025-124-DONATION-AMRANI ?",
+      "expected_answer_contains": "حفيد المتصدقة",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Quel est le titre foncier du bien donné dans le dossier 14-2025-124-DONATION-AMRANI ?",
+      "expected_answer_contains": "162.415/08",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Quelle est la valeur déclarée du bien donné dans le dossier 14-2025-124-DONATION-AMRANI ?",
+      "expected_answer_contains": "480.000",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Quel est le taux de droits d'enregistrement appliqué dans le dossier 14-2025-124-DONATION-AMRANI ?",
+      "expected_answer_contains": "1,5%",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Qui représente le donataire dans le dossier 14-2025-124-DONATION-AMRANI et en vertu de quel acte ?",
+      "expected_answer_contains": "سلمى بوزيان",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "En vertu de quel acte le représentant agit-il dans le dossier 14-2025-124-DONATION-AMRANI ?",
+      "expected_answer_contains": "وكالة عرفية مؤرخة في 10 ماي 2025",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Sous quelle qualification juridique la donation est-elle conclue dans le dossier 14-2025-124-DONATION-AMRANI ?",
+      "expected_answer_contains": "عقد صدقة لا رجعة فيها",
+      "expected_source_contains": "acte_de_donation"
+    },
+    {
+      "question": "Le dossier 14-2025-124-DONATION-AMRANI s'appuie-t-il sur un modèle réel de l'étude ?",
+      "expected_answer_contains": "عقد صدقة لا رجعة فيها",
+      "expected_source_contains": "acte_de_donation"
+    }
+  ]
+}

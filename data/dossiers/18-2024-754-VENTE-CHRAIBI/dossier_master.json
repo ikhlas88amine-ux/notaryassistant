@@ -1,0 +1,43 @@
+{
+  "dossier_id": "18-2024-754-VENTE-CHRAIBI",
+  "annee": 2024,
+  "numero_dossier": "754",
+  "type_dossier": "VENTE",
+  "variante": "terrain_nu_engagement_construire",
+  "client_famille": "CHRAIBI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "vendeur": {
+      "nom_fr": "Salma CHRAIBI",
+      "nom_ar": "سلمى الشرايبي",
+      "cin": "EJ118902"
+    },
+    "acquereur": {
+      "nom_fr": "Adil MOUSSAOUI",
+      "nom_ar": "عادل موساوي",
+      "cin": "EJ441290"
+    },
+    "bien": {
+      "nature": "terrain nu",
+      "adresse": "Douar Ouled Jaloq, El Jadida",
+      "tf": "150.622/08",
+      "superficie_m2": 185
+    },
+    "prix_dhs": 440000,
+    "montant_immediat_dhs": 30000,
+    "montant_differe_dhs": 410000,
+    "delai_differe_jours": 365,
+    "rang1_beneficiaire": "vendeur (garantie du solde différé)",
+    "rang2_beneficiaire": "Trésor Général du Royaume (garantie du différentiel de taxe)",
+    "engagement_construire_delai_ans": 7,
+    "date_acte": "2024-06-09"
+  }
+}

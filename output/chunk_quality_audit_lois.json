@@ -1,0 +1,129 @@
+{
+  "source_file": "output/chunks_lois.jsonl",
+  "total_chunks": 4408,
+  "indexable": 4408,
+  "excluded": 0,
+  "technical_notices": 0,
+  "fragments_too_short": 27,
+  "table_artifacts": 0,
+  "low_confidence_chunks": 186,
+  "sections_inferred": 0,
+  "chunks_by_role": {
+    "other": 4408
+  },
+  "sections_by_name": {
+    "": 3466,
+    "Section I : Les conditions d'accès": 1,
+    "Section II : Les incompatibilités": 2,
+    "Section III : Le stage": 4,
+    "Section IV : La nomination": 5,
+    "SECTION PREMIÉRE : DE LA CAPACITÉ4": 11,
+    "SECTION DEUXIÉME : DE LA DÉCLARATION DE VOLONTÉ": 43,
+    "SECTION TROISIÉME : DE L'OBJET DES OBLIGATIONS": 9,
+    "Section I : Dispositions générales": 2,
+    "Section II : De l'offre": 3,
+    "Section III : De la conclusion d'un contrat sous forme électronique": 1,
+    "Section IV : Dispositions diverses": 44,
+    "SECTION PREMIÉRE : DE LA SOLIDARITÉ ENTRE LES": 11,
+    "SECTION DEUXIÉME : DE LA SOLIDARITÉ ENTRE LES DÉBITEURS": 17,
+    "SECTION PREMIÉRE : DES OBLIGATIONS INDIVISIBLES": 5,
+    "SECTION DEUXIÉME : DES OBLIGATIONS DIVISIBLES": 3,
+    "SECTION PREMIÉRE : DE LA DEMEURE DU DÉBITEUR": 14,
+    "SECTION DEUXIÉME : DE LA FORCE MAJEURE ET DU CAS": 2,
+    "SECTION TROISIÉME : DE LA DEMEURE DU CRÉANCIER": 18,
+    "SECTION PREMIÉRE : DES ARRHES": 3,
+    "SECTION DEUXIÉME : DE DROIT DE RÉTENTION": 15,
+    "SECTION PREMIÉRE : DU PAYEMENT EN GÉNÉRAL": 5,
+    "SECTION DEUXIÉME : DU PAYEMENT PAR CHÉQUE65": 22,
+    "SECTION PREMIÉRE : DE L’AVEU DE LA PARTIE": 11,
+    "SECTION DEUXIÉME : DE LA PREUVE LITTÉRALE": 30,
+    "SECTION TROISIÉME : DE LA PREUVE TESTIMONIALE": 18,
+    "SECTION CINQUIÉME : DU SERMENT": 1,
+    "SECTION PREMIÉRE : DE L'INTERPRÉTATION DES": 13,
+    "SECTION DEUXIÉME : DE QUELQUES RÉGLES GÉNÉRALES DE": 4,
+    "SECTION PREMIÉRE : DE LA NATURE ET DES ÉLÉMENTS": 10,
+    "SECTION DEUXIÉME : DE LA PERFECTION DE LA VENTE": 3,
+    "SECTION PREMIÉRE : DES EFFETS DE LA VENTE ET GÉNÉRAL": 7,
+    "SECTION DEUXIÉME : DES OBLIGATIONS DU VENDEUR": 78,
+    "SECTION TROISIÉME : DES OBLIGATIONS DE L'ACHETEUR": 37,
+    "SECTION TROISIEME : De la vente à livrer avec avance de prix": 6,
+    "Section IV : de la vente d'immeuble en l'état futur d'achèvement111": 23,
+    "Section V : De la vente mobilière avec clause de réserve de": 220,
+    "Section IV: De la réalisation du gage et du nantissement": 49,
+    "SECTION VI.- AUTRES REVENUS ET GAINS414": 1,
+    "Section première": 1,
+    "Section II": 7,
+    "Section III": 7,
+    "Section IV": 6,
+    "Section V": 23,
+    "Section VI": 19,
+    "Section VII": 10,
+    "القسم األول :الخطبة والزواج": 1,
+    "القسم الثالث :موانع الزواج": 1,
+    "القسم الرابع :الشروط اإلرادية لعقد الزواج وآثارها": 3,
+    "القسم السادس :اإلجراءات اإلدارية والشكلية إلبرام عقد الزواج": 5,
+    "القسم األول :أحكام عامة": 12,
+    "القسم الثالث :الطالق": 15,
+    "القسم الثامن :إجراءات ومضمون اإلشهاد على الطالق": 4,
+    "القسم األول :شروط الوصية وإجراءات تنفيذها": 2,
+    "القسم الثاني :التنزيل": 6,
+    "القسم الثاني :أسباب اإلرث وشروطه وموانعه": 5,
+    "القسم الثالث :طرائق اإلرث": 7,
+    "القسم الرابع :أصحاب الفروض": 7,
+    "القسم الخامس :اإلرث بطريق التعصيب": 7,
+    "القسم السادس :الحجب": 5,
+    "القسم السابع :مسائل خاصة": 9,
+    "القسم الثامن :وصية واجبة": 4,
+    "القسم التاسع :تصفية التركة": 22,
+    "القسم العاشر :تسليم التركة وقسمتها": 3
+  },
+  "cin_extracted": 173,
+  "cin_rejected": 259,
+  "cin_false_positives_in_entities": 0,
+  "loan_numbers_in_entities": 0,
+  "loan_false_positives": 0,
+  "mortgage_ranks_in_entities": 0,
+  "empty_mortgage_rank_values": 0,
+  "amounts_extracted": 0,
+  "amount_format_nonstandard_count": 0,
+  "amount_words_digits_mismatch_count": 0,
+  "persons_structured": 0,
+  "banks_extracted": 0,
+  "land_titles_extracted": 0,
+  "dates_extracted": 0,
+  "anomaly_examples": [
+    {
+      "chunk_id": "loi-32-09__art94__p18__c0",
+      "value": "CIN rejeté: mai 1925"
+    },
+    {
+      "chunk_id": "loi-32-09__art132__p26__c0",
+      "value": "CIN rejeté: mai 1925"
+    },
+    {
+      "chunk_id": "doc-1913__art85 bis__p26__c0",
+      "value": "CIN rejeté: mai 1942"
+    },
+    {
+      "chunk_id": "doc-1913__art119__p38__c0",
+      "value": "CIN rejeté: de 1996"
+    },
+    {
+      "chunk_id": "doc-1913__art138__p42__c0",
+      "value": "CIN rejeté: mai 2000"
+    },
+    {
+      "chunk_id": "doc-1913__art324__p85__c0",
+      "value": "CIN rejeté: au 33466"
+    },
+    {
+      "chunk_id": "doc-1913__art984__p242__c0",
+      "value": "CIN rejeté: mai 1997"
+    },
+    {
+      "chunk_id": "doc-1913__art1061__p260__c0",
+      "value": "CIN rejeté: et 1057"
+    }
+  ],
+  "quality_flag_counts": {}
+}

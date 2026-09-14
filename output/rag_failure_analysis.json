@@ -1,0 +1,416 @@
+{
+  "generated_at": "2026-08-20T21:44:14.768760+00:00",
+  "total_questions": 34,
+  "successful": 0,
+  "failed": 34,
+  "failures": [
+    {
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "question": "Quel est le titre foncier hypothéqué dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+      "expected_terms": [
+        "155.660/08"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "question": "Quelle banque bénéficie de l'hypothèque dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+      "expected_terms": [
+        "ATTIJARIWAFA BANK"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "question": "Quel est le montant du crédit garanti dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+      "expected_terms": [
+        "640,000"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "question": "Quel est le rang de l'hypothèque dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+      "expected_terms": [
+        "1"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "9-2024-191-HYPOTHEQUE-AMRANI",
+      "question": "Qui est l'emprunteur dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?",
+      "expected_terms": [
+        "Nadia AMRANI"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "17-2025-967-VENTE-ALAOUI",
+      "question": "Quel est le titre foncier du bien vendu dans le dossier 17-2025-967-VENTE-ALAOUI ?",
+      "expected_terms": [
+        "158.320/08"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "17-2025-967-VENTE-ALAOUI",
+      "question": "Qui est le vendeur dans le dossier 17-2025-967-VENTE-ALAOUI ?",
+      "expected_terms": [
+        "لطيفة العلوي"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "17-2025-967-VENTE-ALAOUI",
+      "question": "Qui est l'acquéreur dans le dossier 17-2025-967-VENTE-ALAOUI ?",
+      "expected_terms": [
+        "ابراهيم النجاري"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "17-2025-967-VENTE-ALAOUI",
+      "question": "Quelle est la superficie du bien dans le dossier 17-2025-967-VENTE-ALAOUI ?",
+      "expected_terms": [
+        "70"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "17-2025-967-VENTE-ALAOUI",
+      "question": "Le prix a-t-il transité par la comptabilité du notaire dans le dossier 17-2025-967-VENTE-ALAOUI ?",
+      "expected_terms": [
+        "خارج محاسبته"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "11-2024-595-DONATION-AMRANI",
+      "question": "Qui est le donateur (Premier Comparant) dans le dossier 11-2024-595-DONATION-AMRANI ?",
+      "expected_terms": [
+        "كريم العمراني"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "11-2024-595-DONATION-AMRANI",
+      "question": "Qui est le donataire (Second Comparant) dans le dossier 11-2024-595-DONATION-AMRANI ?",
+      "expected_terms": [
+        "الياس العمراني"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "11-2024-595-DONATION-AMRANI",
+      "question": "Quel est le lien entre donateur et donataire dans le dossier 11-2024-595-DONATION-AMRANI ?",
+      "expected_terms": [
+        "ابن المتصدق"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "11-2024-595-DONATION-AMRANI",
+      "question": "Quel est le titre foncier du bien donné dans le dossier 11-2024-595-DONATION-AMRANI ?",
+      "expected_terms": [
+        "133.870/08"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "11-2024-595-DONATION-AMRANI",
+      "question": "Quelle est la valeur déclarée du bien donné dans le dossier 11-2024-595-DONATION-AMRANI ?",
+      "expected_terms": [
+        "600.000"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "11-2024-595-DONATION-AMRANI",
+      "question": "Quel est le taux de droits d'enregistrement appliqué dans le dossier 11-2024-595-DONATION-AMRANI ?",
+      "expected_terms": [
+        "1,5%"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "11-2024-595-DONATION-AMRANI",
+      "question": "Sous quelle qualification juridique la donation est-elle conclue dans le dossier 11-2024-595-DONATION-AMRANI ?",
+      "expected_terms": [
+        "عقد صدقة لا رجعة فيها"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "11-2024-595-DONATION-AMRANI",
+      "question": "Le dossier 11-2024-595-DONATION-AMRANI s'appuie-t-il sur un modèle réel de l'étude ?",
+      "expected_terms": [
+        "عقد صدقة لا رجعة فيها"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "question": "Qui est le défunt dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+      "expected_terms": [
+        "Mohamed ELYACOUBI"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "question": "Quelle est la date du décès dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+      "expected_terms": [
+        "2025-07-30"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "question": "Combien d'héritiers sont désignés dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+      "expected_terms": [
+        "3"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "question": "Quelle est la part successorale de Fatima Zahra BENNANI (épouse) dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+      "expected_terms": [
+        "1/8"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "question": "Quel bien compose la succession dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+      "expected_terms": [
+        "144.500/08"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+      "question": "Le dossier 7-2025-605-SUCCESSION-ELYACOUBI s'appuie-t-il sur un modèle réel de l'étude ?",
+      "expected_terms": [
+        "STRUCTURE LEGALE STANDARD"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "question": "Qui est le mandant dans le dossier 4-2025-539-PROCURATION-ALAOUI ?",
+      "expected_terms": [
+        "Hassan ALAOUI"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "question": "Qui est le mandataire dans le dossier 4-2025-539-PROCURATION-ALAOUI ?",
+      "expected_terms": [
+        "Younes ALAOUI"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "question": "Quel est l'objet de la procuration dans le dossier 4-2025-539-PROCURATION-ALAOUI ?",
+      "expected_terms": [
+        "vendre pour le compte du mandant un appartement sis à El Jadida, TF n° 141.220/08, signer l'acte de vente définitif, en recevoir le prix et en donner quittance"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "question": "Quelle est la durée de la procuration dans le dossier 4-2025-539-PROCURATION-ALAOUI ?",
+      "expected_terms": [
+        "un an à compter de la signature, révocable à tout moment par le mandant"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "question": "Le dossier 4-2025-539-PROCURATION-ALAOUI s'appuie-t-il sur un modèle réel de l'étude ?",
+      "expected_terms": [
+        "STRUCTURE LEGALE STANDARD"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "1-2024-843-AMBIGU",
+      "question": "Le prix de vente est-il identique dans les deux versions du dossier 1-2024-843-AMBIGU ?",
+      "expected_terms": [
+        "NE PAS UTILISER COMME ACTE AUTHENTIQUE"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "1-2024-843-AMBIGU",
+      "question": "Quel est le prix indiqué en version française dans le dossier 1-2024-843-AMBIGU ?",
+      "expected_terms": [
+        "1.650.000"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "1-2024-843-AMBIGU",
+      "question": "Quel est le prix indiqué en version arabe (traduite) dans le dossier 1-2024-843-AMBIGU ?",
+      "expected_terms": [
+        "340.000"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "1-2024-843-AMBIGU",
+      "question": "Une anomalie est-elle signalée dans le dossier 1-2024-843-AMBIGU ?",
+      "expected_terms": [
+        "ANOMALIE VOLONTAIRE"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    },
+    {
+      "dossier_id": "1-2024-843-AMBIGU",
+      "question": "Quel est le titre foncier du bien dans le dossier 1-2024-843-AMBIGU ?",
+      "expected_terms": [
+        "152.410/08"
+      ],
+      "retrieved_chunks": [],
+      "model_answer": null,
+      "failure_type": "generation",
+      "root_cause": "Ollama local indisponible dans cette exécution",
+      "proposed_fix": "Activer Ollama; conserver le fallback lexical/exact/RRF"
+    }
+  ]
+}

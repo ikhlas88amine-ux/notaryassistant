@@ -1,0 +1,40 @@
+{
+  "dossier_id": "3-2024-567-VENTE-ELYACOUBI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier du bien vendu dans le dossier 3-2024-567-VENTE-ELYACOUBI ?",
+      "expected_answer_contains": "129.775/08",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est le vendeur dans le dossier 3-2024-567-VENTE-ELYACOUBI ?",
+      "expected_answer_contains": "Mohamed ELYACOUBI",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est l'acquéreur dans le dossier 3-2024-567-VENTE-ELYACOUBI ?",
+      "expected_answer_contains": "Khalid FASSI",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quelle est la superficie du bien dans le dossier 3-2024-567-VENTE-ELYACOUBI ?",
+      "expected_answer_contains": "88",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le prix de vente dans le dossier 3-2024-567-VENTE-ELYACOUBI ?",
+      "expected_answer_contains": "780,000",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Comment le prix a-t-il été payé dans le dossier 3-2024-567-VENTE-ELYACOUBI ?",
+      "expected_answer_contains": "totalité",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "À quelle attestation fiscale le dossier 3-2024-567-VENTE-ELYACOUBI fait-il référence ?",
+      "expected_answer_contains": "attestation de paiement des impôts",
+      "expected_source_contains": "demande_attestation_fiscale"
+    }
+  ]
+}

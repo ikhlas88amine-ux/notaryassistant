@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-08-20T19:27:53.342419+00:00",
+  "ollama_embeddings_used": true,
+  "ollama_available": true,
+  "corpora": {
+    "lois": {
+      "n_documents_seen": 0,
+      "n_chunks": 0,
+      "n_chunks_embedded_and_indexed": 0,
+      "n_extraction_errors": 0,
+      "output_file": "/home/user/workspace/notary_rag_app/output/chunks_lois.jsonl"
+    },
+    "modeles": {
+      "n_documents_seen": 23,
+      "n_chunks": 181,
+      "n_chunks_embedded_and_indexed": 181,
+      "n_extraction_errors": 0,
+      "output_file": "/home/user/workspace/notary_rag_app/output/chunks_modeles.jsonl"
+    },
+    "dossiers": {
+      "n_documents_seen": 27,
+      "n_chunks": 117,
+      "n_chunks_embedded_and_indexed": 117,
+      "n_extraction_errors": 0,
+      "output_file": "/home/user/workspace/notary_rag_app/output/chunks_dossiers.jsonl"
+    }
+  },
+  "qdrant_collection_sizes": {
+    "legal_public": 0,
+    "templates_internal": 181,
+    "case_documents": 117
+  },
+  "total_extraction_errors": 0
+}

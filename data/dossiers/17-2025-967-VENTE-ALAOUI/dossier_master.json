@@ -1,0 +1,38 @@
+{
+  "dossier_id": "17-2025-967-VENTE-ALAOUI",
+  "annee": 2025,
+  "numero_dossier": "967",
+  "type_dossier": "VENTE",
+  "variante": "hors_comptabilite",
+  "client_famille": "ALAOUI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "vendeur": {
+      "nom_fr": "Latifa ALAOUI",
+      "nom_ar": "لطيفة العلوي",
+      "cin": "EJ225712"
+    },
+    "acquereur": {
+      "nom_fr": "Brahim NEJJARI",
+      "nom_ar": "ابراهيم النجاري",
+      "cin": "EJ667788"
+    },
+    "bien": {
+      "nature": "appartement",
+      "adresse": "Rue Al Massira, El Jadida",
+      "tf": "158.320/08",
+      "superficie_m2": 70
+    },
+    "prix_dhs": 650000,
+    "modalite_paiement": "hors_comptabilite_totale",
+    "date_acte": "2025-07-08"
+  }
+}

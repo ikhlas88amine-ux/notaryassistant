@@ -1,0 +1,56 @@
+# Orchestration OPTIONNELLE. Le chemin recommande pour un poste notaire unique est decrit dans
+# le README et ne necessite PAS Docker : Ollama installe directement + Qdrant "embedded" (simple
+# fichier local) + `uvicorn` et `streamlit` lances a la main. Ce docker-compose.yml est propose
+# pour ceux qui preferent un environnement conteneurise, ou pour utiliser Qdrant en mode
+# "server" (acces concurrent depuis plusieurs process, ce que le mode embedded ne permet pas).
+#
+# Ollama N'EST PAS conteneurise ici : il doit tourner sur la machine hote (ou sur un autre hote
+# du reseau interne de l'etude), jamais dans le cloud. Ajustez OLLAMA_BASE_URL si besoin.
+#
+# Lancement :
+#   docker compose up -d qdrant          # demarre uniquement Qdrant en mode serveur
+#   docker compose --profile full up -d  # demarre aussi l'API et l'interface Streamlit
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.11.0
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+
+  api:
+    build: .
+    profiles: ["full"]
+    depends_on:
+      - qdrant
+    ports:
+      - "8000:8000"
+    environment:
+      # host.docker.internal permet au conteneur de joindre Ollama installe sur la machine hote.
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - QDRANT_MODE=server
+      - QDRANT_URL=http://qdrant:6333
+      - DATA_DIR=/app/data
+      - OUTPUT_DIR=/app/output
+      - SQLITE_PATH=/app/output/app_metadata.sqlite3
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+    command: ["uvicorn", "app.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  ui:
+    build: .
+    profiles: ["full"]
+    depends_on:
+      - api
+    ports:
+      - "8501:8501"
+    environment:
+      - NOTARY_RAG_API_URL=http://api:8000
+    command: ["streamlit", "run", "app/ui/Accueil.py", "--server.port", "8501", "--server.address", "0.0.0.0"]
+
+volumes:
+  qdrant_storage:

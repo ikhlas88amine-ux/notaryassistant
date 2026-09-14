@@ -1,0 +1,58 @@
+{
+  "dossier_id": "14-2025-124-DONATION-AMRANI",
+  "annee": 2025,
+  "numero_dossier": "124",
+  "type_dossier": "DONATION",
+  "variante": "standard",
+  "client_famille": "AMRANI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "donateur": {
+      "nom_fr": "Khadija AMRANI",
+      "nom_ar": "خديجة العمراني",
+      "cin": "EJ221587",
+      "situation_matrimoniale": "veuve"
+    },
+    "donataire": {
+      "nom_fr": "Zakaria BOUZIANE",
+      "nom_ar": "زكرياء بوزيان",
+      "cin": "EJ998001",
+      "lien": "petit-fils de la donatrice",
+      "represente_par": {
+        "nom_fr": "Salma BOUZIANE",
+        "nom_ar": "سلمى بوزيان",
+        "cin": "EJ998002",
+        "lien": "mère du donataire",
+        "reference_procuration": "procuration sous seing privé en date du 2025-05-10"
+      }
+    },
+    "bien": {
+      "nature": "appartement",
+      "adresse": "Résidence Nakhil, El Jadida",
+      "tf": "162.415/08",
+      "superficie_m2": 65,
+      "etage": "1er étage",
+      "lot_designation": "lot n° 12",
+      "quotite_parties_communes": "38/10000",
+      "box": "un box au rez-de-chaussée"
+    },
+    "valeur_venale_dhs": 480000,
+    "taux_enregistrement": "1,5%",
+    "reference_propriete": {
+      "acte_precedent_date": "2015-04-02",
+      "ville_enregistrement": "El Jadida",
+      "date_enregistrement": "2015-04-18",
+      "numero_depot": "3305/2015",
+      "numero_recu": "R-091447"
+    },
+    "date_acte": "2025-05-30"
+  }
+}

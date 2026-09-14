@@ -1,0 +1,40 @@
+{
+  "dossier_id": "8-2025-687-VENTE-GHALI",
+  "annee": 2025,
+  "numero_dossier": "687",
+  "type_dossier": "VENTE",
+  "variante": "fonds_de_commerce",
+  "client_famille": "GHALI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "cedant": {
+      "nom_fr": "SARL CAFE ATLAS",
+      "gerant": "Karim GHALI",
+      "cin": "EJ556002",
+      "rc": "RC El Jadida 18342"
+    },
+    "cessionnaire": {
+      "nom_fr": "SARL AU NOOR TRADE",
+      "gerant": "Imane SEBTI",
+      "cin": "EJ667013",
+      "rc": "RC El Jadida 19501"
+    },
+    "fonds": {
+      "nature": "café",
+      "adresse": "Boulevard Mohammed VI, El Jadida"
+    },
+    "prix_dhs": 300000,
+    "prix_incorporel_dhs": 190000,
+    "prix_corporel_dhs": 110000,
+    "date_acte": "2025-05-18",
+    "date_enregistrement": "2025-05-25"
+  }
+}

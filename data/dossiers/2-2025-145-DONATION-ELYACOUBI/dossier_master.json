@@ -1,0 +1,48 @@
+{
+  "dossier_id": "2-2025-145-DONATION-ELYACOUBI",
+  "annee": 2025,
+  "numero_dossier": "145",
+  "type_dossier": "DONATION",
+  "variante": "standard",
+  "client_famille": "ELYACOUBI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "donateur": {
+      "nom_fr": "Mohamed ELYACOUBI",
+      "nom_ar": "محمد اليعقوبي",
+      "cin": "EJ221190",
+      "date_naissance": "1952-03-14",
+      "situation_matrimoniale": "marié selon la Chariâa islamique, sans convention de mariage au sens de l'article 49 du code de la famille (loi 70.03)"
+    },
+    "donataire": {
+      "nom_fr": "Yasmine ELYACOUBI",
+      "nom_ar": "ياسمين اليعقوبي",
+      "cin": "EJ556781",
+      "lien": "fille du donateur"
+    },
+    "bien": {
+      "nature": "villa avec jardin",
+      "adresse": "Lotissement Riad, lot 22, El Jadida",
+      "tf": "138.902/08",
+      "superficie_m2": 310
+    },
+    "valeur_venale_dhs": 2400000,
+    "taux_enregistrement": "1,5%",
+    "reference_propriete": {
+      "acte_precedent_date": "2010-06-15",
+      "ville_enregistrement": "El Jadida",
+      "date_enregistrement": "2010-06-28",
+      "numero_depot": "4021/2010",
+      "numero_recu": "R-118820"
+    },
+    "date_acte": "2025-02-04"
+  }
+}

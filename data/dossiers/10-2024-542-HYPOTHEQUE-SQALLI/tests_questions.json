@@ -1,0 +1,35 @@
+{
+  "dossier_id": "10-2024-542-HYPOTHEQUE-SQALLI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier hypothéqué dans le dossier 10-2024-542-HYPOTHEQUE-SQALLI ?",
+      "expected_answer_contains": "148.201/08",
+      "expected_source_contains": "engagement_hypothecaire"
+    },
+    {
+      "question": "Quelle banque bénéficie de l'hypothèque dans le dossier 10-2024-542-HYPOTHEQUE-SQALLI ?",
+      "expected_answer_contains": "AL BARID BANK",
+      "expected_source_contains": "engagement_hypothecaire"
+    },
+    {
+      "question": "Quel est le montant du crédit garanti dans le dossier 10-2024-542-HYPOTHEQUE-SQALLI ?",
+      "expected_answer_contains": "420,000",
+      "expected_source_contains": "engagement_hypothecaire"
+    },
+    {
+      "question": "Quel est le rang de l'hypothèque dans le dossier 10-2024-542-HYPOTHEQUE-SQALLI ?",
+      "expected_answer_contains": "3",
+      "expected_source_contains": "engagement_hypothecaire"
+    },
+    {
+      "question": "Qui est l'emprunteur dans le dossier 10-2024-542-HYPOTHEQUE-SQALLI ?",
+      "expected_answer_contains": "Amine SQALLI",
+      "expected_source_contains": "engagement_hypothecaire"
+    },
+    {
+      "question": "Qui se porte caution hypothécaire dans le dossier 10-2024-542-HYPOTHEQUE-SQALLI ?",
+      "expected_answer_contains": "Réda SQALLI",
+      "expected_source_contains": "engagement_hypothecaire"
+    }
+  ]
+}

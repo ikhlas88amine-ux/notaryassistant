@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-08-20T21:44:14.768760+00:00",
+  "before": {
+    "total_questions": 34,
+    "successful": 0,
+    "failed": 34
+  },
+  "after": {
+    "total_questions": 34,
+    "successful": 0,
+    "failed": 34
+  },
+  "environment_note": "Jeu exécuté sans Ollama local joignable; le fallback lexical est couvert par tests unitaires, mais le script RAG historique dépend encore du moteur local."
+}

@@ -1,0 +1,84 @@
+{
+  "checklist_id": "vente_vefa.json",
+  "type_dossier": "VENTE",
+  "variante": "vefa",
+  "items": [
+    {
+      "id": "ACTE_VENTE",
+      "label": "Contrat de reservation / acte de vente en l'etat futur d'achevement",
+      "required": true,
+      "severity": "blocking",
+      "accepted_document_types": [
+        "acte_de_vente",
+        "contrat_reservation"
+      ],
+      "accepted_filename_keywords": [
+        "acte",
+        "vente",
+        "reservation"
+      ],
+      "content_proof_keywords": [
+        "etat futur",
+        "état futur",
+        "vefa",
+        "reservation",
+        "réservation"
+      ],
+      "recommended_action": "Fournir le contrat de reservation ou l'acte VEFA."
+    },
+    {
+      "id": "PERMIS_CONSTRUIRE",
+      "label": "Permis de construire / autorisation",
+      "required": false,
+      "severity": "medium",
+      "accepted_document_types": [
+        "permis_construire"
+      ],
+      "accepted_filename_keywords": [
+        "permis"
+      ],
+      "content_proof_keywords": [
+        "permis de construire",
+        "permis"
+      ],
+      "recommended_action": "Verifier le permis de construire le cas echeant."
+    },
+    {
+      "id": "PIECE_IDENTITE",
+      "label": "Copies des pieces d'identite des parties",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "piece_identite",
+        "cin"
+      ],
+      "accepted_filename_keywords": [
+        "cin",
+        "identite",
+        "piece"
+      ],
+      "content_proof_keywords": [
+        "cin"
+      ],
+      "recommended_action": "Recueillir les copies des CIN des parties."
+    },
+    {
+      "id": "TITRE_FONCIER",
+      "label": "Extrait du titre foncier",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "titre_foncier",
+        "extrait_tf"
+      ],
+      "accepted_filename_keywords": [
+        "titre",
+        "foncier"
+      ],
+      "content_proof_keywords": [
+        "titre foncier"
+      ],
+      "recommended_action": "Fournir l'extrait du titre foncier a jour."
+    }
+  ]
+}

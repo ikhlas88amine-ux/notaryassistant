@@ -1,0 +1,62 @@
+{
+  "checklist_id": "hypotheque_mainlevee.json",
+  "type_dossier": "HYPOTHEQUE",
+  "variante": "mainlevee",
+  "items": [
+    {
+      "id": "MAINLEVEE",
+      "label": "Mainlevee d'hypotheque",
+      "required": true,
+      "severity": "blocking",
+      "accepted_document_types": [
+        "mainlevee"
+      ],
+      "accepted_filename_keywords": [
+        "mainlevee",
+        "mainlevée"
+      ],
+      "content_proof_keywords": [
+        "mainlevée",
+        "mainlevee"
+      ],
+      "recommended_action": "Obtenir la mainlevee d'hypotheque signee."
+    },
+    {
+      "id": "REQUISITION_RADIATION",
+      "label": "Requisition de radiation",
+      "required": true,
+      "severity": "blocking",
+      "accepted_document_types": [
+        "requisition_radiation"
+      ],
+      "accepted_filename_keywords": [
+        "requisition",
+        "radiation"
+      ],
+      "content_proof_keywords": [
+        "réquisition",
+        "radiation",
+        "requisition"
+      ],
+      "recommended_action": "Etablir la requisition de radiation de l'inscription."
+    },
+    {
+      "id": "AUTORISATION_PRELEVEMENT",
+      "label": "Autorisation de prelevement",
+      "required": false,
+      "severity": "medium",
+      "accepted_document_types": [
+        "autorisation_prelevement"
+      ],
+      "accepted_filename_keywords": [
+        "autorisation",
+        "prelevement"
+      ],
+      "content_proof_keywords": [
+        "prélèvement",
+        "prelevement"
+      ],
+      "recommended_action": "Verifier l'autorisation de prelevement le cas echeant."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "dossier_id": "17-2025-967-VENTE-ALAOUI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier du bien vendu dans le dossier 17-2025-967-VENTE-ALAOUI ?",
+      "expected_answer_contains": "158.320/08",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est le vendeur dans le dossier 17-2025-967-VENTE-ALAOUI ?",
+      "expected_answer_contains": "لطيفة العلوي",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est l'acquéreur dans le dossier 17-2025-967-VENTE-ALAOUI ?",
+      "expected_answer_contains": "ابراهيم النجاري",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quelle est la superficie du bien dans le dossier 17-2025-967-VENTE-ALAOUI ?",
+      "expected_answer_contains": "70",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Le prix a-t-il transité par la comptabilité du notaire dans le dossier 17-2025-967-VENTE-ALAOUI ?",
+      "expected_answer_contains": "خارج محاسبته",
+      "expected_source_contains": "acte_de_vente"
+    }
+  ]
+}

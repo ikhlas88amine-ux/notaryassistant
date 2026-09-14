@@ -1,0 +1,53 @@
+{
+  "mode": "read_only_diagnose",
+  "paths": {
+    "data_dir": "/home/user/work/notary_app/src/data",
+    "output_dir": "/home/user/work/notary_app/src/output",
+    "qdrant_local_path": "/home/user/work/notary_app/src/output/qdrant_local"
+  },
+  "ollama": {
+    "base_url": "http://127.0.0.1:11434",
+    "available": false,
+    "version": null,
+    "models": [],
+    "chat_model": "qwen2.5:1.5b",
+    "embed_model": "nomic-embed-text",
+    "error": "[Errno 111] Connection refused"
+  },
+  "embeddings": {
+    "model": "nomic-embed-text",
+    "batch_size": 4,
+    "keep_alive": "10m",
+    "timeout_seconds": 180
+  },
+  "qdrant": {
+    "mode": "embedded",
+    "url": "http://localhost:6333",
+    "collections": {
+      "legal_public": 4349,
+      "templates_internal": 40,
+      "case_documents": 175
+    }
+  },
+  "chunks": {
+    "dossiers": 117,
+    "modeles": 181,
+    "lois": 0
+  },
+  "disk": {
+    "output_total_bytes": 29499166720,
+    "output_used_bytes": 8587792384,
+    "output_free_bytes": 20576489472
+  },
+  "libreoffice": {
+    "available": true,
+    "binary": "/usr/local/bin/libreoffice",
+    "version": "LibreOffice 25.2.3.2 520(Build:2)"
+  }
+}
+Exception ignored in: <function QdrantClient.__del__ at 0x7f787cedbe20>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/qdrant_client/qdrant_client.py", line 169, in __del__
+  File "/usr/local/lib/python3.13/site-packages/qdrant_client/qdrant_client.py", line 178, in close
+  File "/usr/local/lib/python3.13/site-packages/qdrant_client/local/qdrant_local.py", line 108, in close
+ImportError: sys.meta_path is None, Python is likely shutting down

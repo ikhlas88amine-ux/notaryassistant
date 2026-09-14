@@ -1,0 +1,47 @@
+{
+  "dossier_id": "11-2024-595-DONATION-AMRANI",
+  "annee": 2024,
+  "numero_dossier": "595",
+  "type_dossier": "DONATION",
+  "variante": "standard",
+  "client_famille": "AMRANI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "donateur": {
+      "nom_fr": "Karim AMRANI",
+      "nom_ar": "كريم العمراني",
+      "cin": "EJ118675",
+      "situation_matrimoniale": "marié selon la Chariâa islamique, sans convention de mariage au sens de l'article 49 du code de la famille (loi 70.03)"
+    },
+    "donataire": {
+      "nom_fr": "Ilyas AMRANI",
+      "nom_ar": "الياس العمراني",
+      "cin": "EJ990112",
+      "lien": "fils du donateur"
+    },
+    "bien": {
+      "nature": "terrain nu",
+      "adresse": "Douar Sidi Bouzid, El Jadida",
+      "tf": "133.870/08",
+      "superficie_m2": 500
+    },
+    "valeur_venale_dhs": 600000,
+    "taux_enregistrement": "1,5%",
+    "reference_propriete": {
+      "acte_precedent_date": "2005-09-10",
+      "ville_enregistrement": "El Jadida",
+      "date_enregistrement": "2005-09-22",
+      "numero_depot": "2210/2005",
+      "numero_recu": "R-055123"
+    },
+    "date_acte": "2024-11-03"
+  }
+}

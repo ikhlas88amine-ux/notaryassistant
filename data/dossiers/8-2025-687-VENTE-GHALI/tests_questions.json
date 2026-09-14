@@ -1,0 +1,30 @@
+{
+  "dossier_id": "8-2025-687-VENTE-GHALI",
+  "tests": [
+    {
+      "question": "Qui est le cédant du fonds de commerce dans le dossier 8-2025-687-VENTE-GHALI ?",
+      "expected_answer_contains": "SARL CAFE ATLAS",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est le cessionnaire du fonds de commerce dans le dossier 8-2025-687-VENTE-GHALI ?",
+      "expected_answer_contains": "SARL AU NOOR TRADE",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quelle est la nature du fonds de commerce cédé dans le dossier 8-2025-687-VENTE-GHALI ?",
+      "expected_answer_contains": "café",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le prix global de cession du fonds de commerce dans le dossier 8-2025-687-VENTE-GHALI ?",
+      "expected_answer_contains": "300,000",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Sous quelle condition le prix reste-t-il consigné dans le dossier 8-2025-687-VENTE-GHALI ?",
+      "expected_answer_contains": "certificat de non-opposition",
+      "expected_source_contains": "acte_de_vente"
+    }
+  ]
+}

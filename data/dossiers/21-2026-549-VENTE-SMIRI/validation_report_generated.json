@@ -1,0 +1,24 @@
+{
+  "dossier_id": "21-2026-549-VENTE-SMIRI",
+  "status": "warnings",
+  "summary": {
+    "blocking": 0,
+    "high": 1,
+    "medium": 0,
+    "low": 0,
+    "info": 0
+  },
+  "issues": [
+    {
+      "rule_id": "company_identified_by_cin",
+      "severity": "high",
+      "message": "La partie 'vendeur' semble etre une societe (champ 'gerant' present) mais aucun numero de RC ou d'ICE n'est declare pour l'identifier.",
+      "documents": [],
+      "evidence": [
+        "{'nom_fr': 'SARL DAR AL BAHJA PROMOTION', 'gerant': 'Othmane FILALI'}"
+      ],
+      "recommended_action": "Identifier la societe par sa denomination, sa forme juridique, son RC/ICE et le CIN de son gerant, pas seulement par un CIN de personne physique."
+    }
+  ],
+  "generated_at": "2026-08-20T19:27:58.388677+00:00"
+}

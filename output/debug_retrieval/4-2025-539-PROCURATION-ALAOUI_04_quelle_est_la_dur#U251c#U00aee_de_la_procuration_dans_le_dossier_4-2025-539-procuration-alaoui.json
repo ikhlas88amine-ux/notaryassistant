@@ -1,0 +1,237 @@
+{
+  "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+  "question": "Quelle est la durée de la procuration dans le dossier 4-2025-539-PROCURATION-ALAOUI ?",
+  "expected_source_contains": "procuration",
+  "expected_answer_contains": "un an à compter de la signature, révocable à tout moment par le mandant",
+  "intent": "procuration",
+  "retrieval": {
+    "intent": "procuration",
+    "scope": "dossier",
+    "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+    "collections": [
+      "case_documents"
+    ],
+    "search_k": 15,
+    "raw_count": 4,
+    "filtered_count": 4,
+    "neighbor_count": 4,
+    "context_count": 4
+  },
+  "raw_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:3",
+      "score": 1.3175600414957092,
+      "excerpt": "Article 2 - Durée\nLa présente procuration est consentie pour un an à compter de la signature, révocable à tout moment par le mandant.\nFait à El Jadida, le 2025-04-21.",
+      "text": "Article 2 - Durée\nLa présente procuration est consentie pour un an à compter de la signature, révocable à tout moment par le mandant.\nFait à El Jadida, le 2025-04-21.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": null,
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:0",
+      "score": 0.6283980159066885,
+      "excerpt": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "text": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:1",
+      "score": 0.6283980159066885,
+      "excerpt": "PROCURATION NOTARIEE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nHassan ALAOUI (حسن العلوي, CIN EJ302981), ci-après « le Mandant »,",
+      "text": "PROCURATION NOTARIEE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nHassan ALAOUI (حسن العلوي, CIN EJ302981), ci-après « le Mandant »,",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:2",
+      "score": 0.6283980159066885,
+      "excerpt": "Article 1 - Constitution de mandataire\nLe Mandant constitue pour son mandataire spécial Younes ALAOUI (يونس العلوي, CIN EJ118820, frère du mandant), auquel il donne pouvoir de : vendre pour le compte du mandant un appartement sis à El Jadida, TF n° 141.220/08, signer l'acte de vente définitif, en recevoir le prix et en donner quittance.",
+      "text": "Article 1 - Constitution de mandataire\nLe Mandant constitue pour son mandataire spécial Younes ALAOUI (يونس العلوي, CIN EJ118820, frère du mandant), auquel il donne pouvoir de : vendre pour le compte du mandant un appartement sis à El Jadida, TF n° 141.220/08, signer l'acte de vente définitif, en recevoir le prix et en donner quittance.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "filtered_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:3",
+      "score": 1.3175600414957092,
+      "excerpt": "Article 2 - Durée\nLa présente procuration est consentie pour un an à compter de la signature, révocable à tout moment par le mandant.\nFait à El Jadida, le 2025-04-21.",
+      "text": "Article 2 - Durée\nLa présente procuration est consentie pour un an à compter de la signature, révocable à tout moment par le mandant.\nFait à El Jadida, le 2025-04-21.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": null,
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:0",
+      "score": 0.6283980159066885,
+      "excerpt": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "text": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:1",
+      "score": 0.6283980159066885,
+      "excerpt": "PROCURATION NOTARIEE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nHassan ALAOUI (حسن العلوي, CIN EJ302981), ci-après « le Mandant »,",
+      "text": "PROCURATION NOTARIEE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nHassan ALAOUI (حسن العلوي, CIN EJ302981), ci-après « le Mandant »,",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:2",
+      "score": 0.6283980159066885,
+      "excerpt": "Article 1 - Constitution de mandataire\nLe Mandant constitue pour son mandataire spécial Younes ALAOUI (يونس العلوي, CIN EJ118820, frère du mandant), auquel il donne pouvoir de : vendre pour le compte du mandant un appartement sis à El Jadida, TF n° 141.220/08, signer l'acte de vente définitif, en recevoir le prix et en donner quittance.",
+      "text": "Article 1 - Constitution de mandataire\nLe Mandant constitue pour son mandataire spécial Younes ALAOUI (يونس العلوي, CIN EJ118820, frère du mandant), auquel il donne pouvoir de : vendre pour le compte du mandant un appartement sis à El Jadida, TF n° 141.220/08, signer l'acte de vente définitif, en recevoir le prix et en donner quittance.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "context_chunks": [
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:3",
+      "score": 1.3175600414957092,
+      "excerpt": "Article 2 - Durée\nLa présente procuration est consentie pour un an à compter de la signature, révocable à tout moment par le mandant.\nFait à El Jadida, le 2025-04-21.",
+      "text": "Article 2 - Durée\nLa présente procuration est consentie pour un an à compter de la signature, révocable à tout moment par le mandant.\nFait à El Jadida, le 2025-04-21.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": null,
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:0",
+      "score": 0.6283980159066885,
+      "excerpt": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "text": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:1",
+      "score": 0.6283980159066885,
+      "excerpt": "PROCURATION NOTARIEE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nHassan ALAOUI (حسن العلوي, CIN EJ302981), ci-après « le Mandant »,",
+      "text": "PROCURATION NOTARIEE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nHassan ALAOUI (حسن العلوي, CIN EJ302981), ci-après « le Mandant »,",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:2",
+      "score": 0.6283980159066885,
+      "excerpt": "Article 1 - Constitution de mandataire\nLe Mandant constitue pour son mandataire spécial Younes ALAOUI (يونس العلوي, CIN EJ118820, frère du mandant), auquel il donne pouvoir de : vendre pour le compte du mandant un appartement sis à El Jadida, TF n° 141.220/08, signer l'acte de vente définitif, en recevoir le prix et en donner quittance.",
+      "text": "Article 1 - Constitution de mandataire\nLe Mandant constitue pour son mandataire spécial Younes ALAOUI (يونس العلوي, CIN EJ118820, frère du mandant), auquel il donne pouvoir de : vendre pour le compte du mandant un appartement sis à El Jadida, TF n° 141.220/08, signer l'acte de vente définitif, en recevoir le prix et en donner quittance.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "context_blocks": [
+    "[Dossier 4-2025-539-PROCURATION-ALAOUI - 01_procuration.docx, section clauses_diverses]\nArticle 2 - Durée\nLa présente procuration est consentie pour un an à compter de la signature, révocable à tout moment par le mandant.\nFait à El Jadida, le 2025-04-21.",
+    "[Dossier 4-2025-539-PROCURATION-ALAOUI - 01_procuration.docx, section None]\nDOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+    "[Dossier 4-2025-539-PROCURATION-ALAOUI - 01_procuration.docx, section clauses_diverses]\nPROCURATION NOTARIEE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nHassan ALAOUI (حسن العلوي, CIN EJ302981), ci-après « le Mandant »,",
+    "[Dossier 4-2025-539-PROCURATION-ALAOUI - 01_procuration.docx, section clauses_diverses]\nArticle 1 - Constitution de mandataire\nLe Mandant constitue pour son mandataire spécial Younes ALAOUI (يونس العلوي, CIN EJ118820, frère du mandant), auquel il donne pouvoir de : vendre pour le compte du mandant un appartement sis à El Jadida, TF n° 141.220/08, signer l'acte de vente définitif, en recevoir le prix et en donner quittance."
+  ],
+  "response": {
+    "answer": "Réponse fondée uniquement sur les sources fournies :\n- 01_procuration.docx : Article 2 - Durée\nLa présente procuration est consentie pour un an à compter de la signature, révocable à tout moment par le mandant.\nFait à El Jadida, le 2025-04-21.\n- 01_procuration.docx : DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisat\n- 01_procuration.docx : PROCURATION NOTARIEE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nHassan ALAOUI (حسن العلوي, CIN EJ302981), ci-après « le Mandant »,\n- 01_procuration.docx : Article 1 - Constitution de mandataire\nLe Mandant constitue pour son mandataire spécial Younes ALAOUI (يونس العلوي, CIN EJ118820, frère du mandant), auquel il donne pouvoir de : vendre pour le compte du mandant un appartement sis à El Jadid",
+    "answer_type": "documentary_answer",
+    "warnings": [
+      "Ollama local non disponible : réponse déterministe construite à partir des données structurées et des chunks récupérés. À faire vérifier par le notaire."
+    ]
+  },
+  "citations": [
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:3",
+      "score": 1.3175600414957092,
+      "excerpt": "Article 2 - Durée\nLa présente procuration est consentie pour un an à compter de la signature, révocable à tout moment par le mandant.\nFait à El Jadida, le 2025-04-21.",
+      "text": "Article 2 - Durée\nLa présente procuration est consentie pour un an à compter de la signature, révocable à tout moment par le mandant.\nFait à El Jadida, le 2025-04-21.",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": null,
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:0",
+      "score": 0.6283980159066885,
+      "excerpt": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "text": "DOCUMENT FICTIF GENERE POUR TEST RAG - AUCUNE DONNEE REELLE - NE PAS UTILISER COMME ACTE AUTHENTIQUE\nSTRUCTURE LEGALE STANDARD - AUCUN MODELE REEL DE L'ETUDE FOURNI POUR CE TYPE D'ACTE - A FAIRE VALIDER PAR LE NOTAIRE AVANT toute réutilisation",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    },
+    {
+      "source": "client",
+      "dossier_id": "4-2025-539-PROCURATION-ALAOUI",
+      "fichier": "01_procuration.docx",
+      "section": "clauses_diverses",
+      "chunk_id": "4-2025-539-PROCURATION-ALAOUI:01_procuration:1",
+      "score": 0.6283980159066885,
+      "excerpt": "PROCURATION NOTARIEE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nHassan ALAOUI (حسن العلوي, CIN EJ302981), ci-après « le Mandant »,",
+      "text": "PROCURATION NOTARIEE\nMaître Fouad BENJELLOUN, notaire à El Jadida,\nHassan ALAOUI (حسن العلوي, CIN EJ302981), ci-après « le Mandant »,",
+      "chunk_role": null,
+      "secondary_chunk_roles": [],
+      "entities": {}
+    }
+  ],
+  "failure_reason": null
+}

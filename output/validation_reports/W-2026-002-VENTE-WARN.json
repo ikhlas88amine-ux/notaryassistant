@@ -1,0 +1,89 @@
+{
+  "dossier_id": "W-2026-002-VENTE-WARN",
+  "status": "warnings",
+  "summary": {
+    "blocking": 0,
+    "warning": 3,
+    "info": 1
+  },
+  "issues": [
+    {
+      "rule_id": "required_field_missing",
+      "severity": "warning",
+      "title": "Champ structuré manquant",
+      "message": "Certains champs attendus pour ce type de dossier ne sont pas renseignés : bien.tf, prix_dhs.",
+      "evidence": {
+        "fields": {
+          "missing_fields": [
+            "bien.tf",
+            "prix_dhs"
+          ]
+        },
+        "documents": [
+          "dossier_master.json"
+        ],
+        "source_refs": [
+          "dossier_master.json"
+        ]
+      },
+      "recommended_action": "Compléter les données structurées avant la rédaction définitive.",
+      "requires_notary_review": true
+    },
+    {
+      "rule_id": "sale_tf_missing",
+      "severity": "warning",
+      "title": "Titre foncier non identifié",
+      "message": "Le titre foncier du bien vendu n'est pas établi par les données disponibles.",
+      "evidence": {
+        "fields": {
+          "bien": {}
+        },
+        "documents": [
+          "dossier_master.json"
+        ],
+        "source_refs": [
+          "01_acte_de_vente.docx"
+        ]
+      },
+      "recommended_action": "Contrôler la référence foncière dans l'acte et les pièces annexes.",
+      "requires_notary_review": true
+    },
+    {
+      "rule_id": "sale_price_missing",
+      "severity": "warning",
+      "title": "Prix de vente absent",
+      "message": "Le prix de vente n'est pas établi dans les données disponibles.",
+      "evidence": {
+        "fields": {
+          "champs_prix": []
+        },
+        "documents": [
+          "dossier_master.json"
+        ],
+        "source_refs": [
+          "dossier_master.json"
+        ]
+      },
+      "recommended_action": "Vérifier le prix déclaré dans l'acte et dans le dossier maître.",
+      "requires_notary_review": true
+    },
+    {
+      "rule_id": "sale_tax_and_fees_clause_missing",
+      "severity": "info",
+      "title": "Clause frais et charges non retrouvée",
+      "message": "Les dispositions relatives aux frais, droits ou charges n'ont pas été retrouvées automatiquement.",
+      "evidence": {
+        "fields": {},
+        "documents": [
+          "01_acte_de_vente.docx"
+        ],
+        "source_refs": [
+          "01_acte_de_vente.docx"
+        ]
+      },
+      "recommended_action": "Relire l'acte pour vérifier la répartition des frais et charges.",
+      "requires_notary_review": true
+    }
+  ],
+  "generated_at": "2026-08-25T15:06:06.751120+00:00"
+}

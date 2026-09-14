@@ -1,0 +1,30 @@
+{
+  "dossier_id": "13-2025-709-PROCURATION-CHRAIBI",
+  "tests": [
+    {
+      "question": "Qui est le mandant dans le dossier 13-2025-709-PROCURATION-CHRAIBI ?",
+      "expected_answer_contains": "Omar CHRAIBI",
+      "expected_source_contains": "procuration"
+    },
+    {
+      "question": "Qui est le mandataire dans le dossier 13-2025-709-PROCURATION-CHRAIBI ?",
+      "expected_answer_contains": "Nabila CHRAIBI",
+      "expected_source_contains": "procuration"
+    },
+    {
+      "question": "Quel est l'objet de la procuration dans le dossier 13-2025-709-PROCURATION-CHRAIBI ?",
+      "expected_answer_contains": "gérer et administrer les biens du mandant, encaisser les loyers, représenter le mandant devant toute administration",
+      "expected_source_contains": "procuration"
+    },
+    {
+      "question": "Quelle est la durée de la procuration dans le dossier 13-2025-709-PROCURATION-CHRAIBI ?",
+      "expected_answer_contains": "deux ans, renouvelable par tacite reconduction",
+      "expected_source_contains": "procuration"
+    },
+    {
+      "question": "Le dossier 13-2025-709-PROCURATION-CHRAIBI s'appuie-t-il sur un modèle réel de l'étude ?",
+      "expected_answer_contains": "STRUCTURE LEGALE STANDARD",
+      "expected_source_contains": "procuration"
+    }
+  ]
+}

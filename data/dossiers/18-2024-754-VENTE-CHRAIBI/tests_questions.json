@@ -1,0 +1,35 @@
+{
+  "dossier_id": "18-2024-754-VENTE-CHRAIBI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier du bien vendu dans le dossier 18-2024-754-VENTE-CHRAIBI ?",
+      "expected_answer_contains": "150.622/08",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est le vendeur dans le dossier 18-2024-754-VENTE-CHRAIBI ?",
+      "expected_answer_contains": "سلمى الشرايبي",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est l'acquéreur dans le dossier 18-2024-754-VENTE-CHRAIBI ?",
+      "expected_answer_contains": "عادل موساوي",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quelle est la superficie du bien dans le dossier 18-2024-754-VENTE-CHRAIBI ?",
+      "expected_answer_contains": "185",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le délai d'engagement de construire dans le dossier 18-2024-754-VENTE-CHRAIBI ?",
+      "expected_answer_contains": "7",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui bénéficie de l'hypothèque de 1er rang dans le dossier 18-2024-754-VENTE-CHRAIBI ?",
+      "expected_answer_contains": "البائع (ضمانا للباقي المؤجل)",
+      "expected_source_contains": "acte_de_vente"
+    }
+  ]
+}

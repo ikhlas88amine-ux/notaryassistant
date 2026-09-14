@@ -1,0 +1,30 @@
+{
+  "dossier_id": "6-2026-450-VENTE-TAZI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier du bien vendu dans le dossier 6-2026-450-VENTE-TAZI ?",
+      "expected_answer_contains": "171.008/08",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est le vendeur dans le dossier 6-2026-450-VENTE-TAZI ?",
+      "expected_answer_contains": "يوسف التازي",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est l'acquéreur dans le dossier 6-2026-450-VENTE-TAZI ?",
+      "expected_answer_contains": "مهدي سكات",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quelle est la superficie du bien dans le dossier 6-2026-450-VENTE-TAZI ?",
+      "expected_answer_contains": "60",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel montant a été payé hors la comptabilité du notaire dans le dossier 6-2026-450-VENTE-TAZI ?",
+      "expected_answer_contains": "150.000",
+      "expected_source_contains": "acte_de_vente"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "checklist_id": "vente_tripartite_bancaire.json",
+  "type_dossier": "VENTE",
+  "variante": "tripartite_bancaire",
+  "items": [
+    {
+      "id": "ACTE_VENTE",
+      "label": "Projet ou acte de vente",
+      "required": true,
+      "severity": "blocking",
+      "accepted_document_types": [
+        "acte_de_vente"
+      ],
+      "accepted_filename_keywords": [
+        "acte",
+        "vente"
+      ],
+      "content_proof_keywords": [
+        "acte de vente"
+      ],
+      "recommended_action": "Fournir le projet ou l'acte de vente signe."
+    },
+    {
+      "id": "ENGAGEMENT_HYPOTHECAIRE",
+      "label": "Engagement hypothecaiare de la banque",
+      "required": true,
+      "severity": "blocking",
+      "accepted_document_types": [
+        "engagement_hypothecaire"
+      ],
+      "accepted_filename_keywords": [
+        "engagement",
+        "hypothecaire"
+      ],
+      "content_proof_keywords": [
+        "engagement",
+        "hypothèque",
+        "hypotheque"
+      ],
+      "recommended_action": "Obtenir l'engagement hypothecaiare signe par la banque."
+    },
+    {
+      "id": "OFFRE_CREDIT",
+      "label": "Offres de credit",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "offre_credit"
+      ],
+      "accepted_filename_keywords": [
+        "offre",
+        "credit"
+      ],
+      "content_proof_keywords": [
+        "crédit",
+        "credit",
+        "prêt",
+        "pret"
+      ],
+      "recommended_action": "Joindre les offres de credit acceptees."
+    },
+    {
+      "id": "PIECE_IDENTITE",
+      "label": "Copies des pieces d'identite des parties",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "piece_identite",
+        "cin"
+      ],
+      "accepted_filename_keywords": [
+        "cin",
+        "identite",
+        "piece"
+      ],
+      "content_proof_keywords": [
+        "cin",
+        "numero cin"
+      ],
+      "recommended_action": "Recueillir les copies des CIN des parties."
+    },
+    {
+      "id": "TITRE_FONCIER",
+      "label": "Extrait du titre foncier",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "titre_foncier",
+        "extrait_tf"
+      ],
+      "accepted_filename_keywords": [
+        "titre",
+        "foncier"
+      ],
+      "content_proof_keywords": [
+        "titre foncier"
+      ],
+      "recommended_action": "Fournir l'extrait du titre foncier a jour."
+    }
+  ]
+}

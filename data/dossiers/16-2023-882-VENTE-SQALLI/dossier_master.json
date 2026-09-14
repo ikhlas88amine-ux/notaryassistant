@@ -1,0 +1,42 @@
+{
+  "dossier_id": "16-2023-882-VENTE-SQALLI",
+  "annee": 2023,
+  "numero_dossier": "882",
+  "type_dossier": "VENTE",
+  "variante": "vefa",
+  "client_famille": "SQALLI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "vendeur": {
+      "nom_fr": "Promoteur SARL RIAD CONSTRUCTION",
+      "gerant": "Anas SQALLI",
+      "cin_gerant": "EJ440091"
+    },
+    "acquereur": {
+      "nom_fr": "Rania SQALLI",
+      "nom_ar": "رانية الصقلي",
+      "cin": "EJ440092"
+    },
+    "bien": {
+      "nature": "villa en copropriété (VEFA)",
+      "adresse": "Complexe Les Jardins d'Or, El Jadida",
+      "tf_origine": "170.100/08",
+      "superficie_terrain_m2": 220,
+      "superficie_couverte_m2": 180
+    },
+    "prix_m2_couvert_dhs": 6500,
+    "prix_total_dhs": 1450000,
+    "delai_achevement_mois": 24,
+    "delai_extension_mois": 6,
+    "date_acte": "2023-11-20",
+    "garantie": "Garantie de remboursement bancaire - Banque Populaire El Jadida"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "dossier_id": "5-2026-876-VENTE-TAZI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier du bien vendu dans le dossier 5-2026-876-VENTE-TAZI ?",
+      "expected_answer_contains": "160.334/08",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est le vendeur dans le dossier 5-2026-876-VENTE-TAZI ?",
+      "expected_answer_contains": "يوسف التازي",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est l'acquéreur dans le dossier 5-2026-876-VENTE-TAZI ?",
+      "expected_answer_contains": "امال برادة",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quelle est la superficie du bien dans le dossier 5-2026-876-VENTE-TAZI ?",
+      "expected_answer_contains": "245",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le montant payé comptant dans le dossier 5-2026-876-VENTE-TAZI ?",
+      "expected_answer_contains": "1.700.000",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Dans quel délai le solde doit-il être payé dans le dossier 5-2026-876-VENTE-TAZI ?",
+      "expected_answer_contains": "6",
+      "expected_source_contains": "acte_de_vente"
+    }
+  ]
+}

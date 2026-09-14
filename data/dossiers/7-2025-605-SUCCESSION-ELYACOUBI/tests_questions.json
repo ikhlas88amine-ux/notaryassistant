@@ -1,0 +1,35 @@
+{
+  "dossier_id": "7-2025-605-SUCCESSION-ELYACOUBI",
+  "tests": [
+    {
+      "question": "Qui est le défunt dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+      "expected_answer_contains": "Mohamed ELYACOUBI",
+      "expected_source_contains": "acte_notoriete_successorale"
+    },
+    {
+      "question": "Quelle est la date du décès dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+      "expected_answer_contains": "2025-07-30",
+      "expected_source_contains": "acte_notoriete_successorale"
+    },
+    {
+      "question": "Combien d'héritiers sont désignés dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+      "expected_answer_contains": "3",
+      "expected_source_contains": "acte_notoriete_successorale"
+    },
+    {
+      "question": "Quelle est la part successorale de Fatima Zahra BENNANI (épouse) dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+      "expected_answer_contains": "1/8",
+      "expected_source_contains": "acte_notoriete_successorale"
+    },
+    {
+      "question": "Quel bien compose la succession dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?",
+      "expected_answer_contains": "144.500/08",
+      "expected_source_contains": "acte_notoriete_successorale"
+    },
+    {
+      "question": "Le dossier 7-2025-605-SUCCESSION-ELYACOUBI s'appuie-t-il sur un modèle réel de l'étude ?",
+      "expected_answer_contains": "STRUCTURE LEGALE STANDARD",
+      "expected_source_contains": "acte_notoriete_successorale"
+    }
+  ]
+}

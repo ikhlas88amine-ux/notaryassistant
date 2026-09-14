@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-08-21T15:50:32Z",
+  "ollama": {
+    "url_configured": "http://127.0.0.1:11434",
+    "url_effective": "http://127.0.0.1:11434",
+    "available": false,
+    "note": "Ollama local non joignable — l'indexation vectorielle ne pourra pas tourner tant qu'Ollama n'est pas lance."
+  },
+  "qdrant": {
+    "mode": "embedded",
+    "path": "./output/qdrant_local",
+    "embedded_lock": "ok_instance_unique",
+    "collection_sizes": {
+      "legal_public": 0,
+      "templates_internal": 35,
+      "case_documents": 90
+    }
+  },
+  "disk": {
+    "free_bytes": 21048262656,
+    "free_gb": 19.6,
+    "total_gb": 27.46
+  },
+  "chunks": {
+    "lois": {
+      "n_chunks": 4408,
+      "indexable": 4408,
+      "excluded": 0,
+      "technical_notices": 0
+    },
+    "modeles": {
+      "n_chunks": 266,
+      "indexable": 213,
+      "excluded": 53,
+      "technical_notices": 0
+    },
+    "dossiers": {
+      "n_chunks": 250,
+      "indexable": 173,
+      "excluded": 77,
+      "technical_notices": 27
+    }
+  }
+}

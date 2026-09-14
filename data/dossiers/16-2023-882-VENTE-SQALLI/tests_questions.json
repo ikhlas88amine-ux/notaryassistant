@@ -1,0 +1,30 @@
+{
+  "dossier_id": "16-2023-882-VENTE-SQALLI",
+  "tests": [
+    {
+      "question": "Quel est le titre foncier d'origine du terrain dans le dossier 16-2023-882-VENTE-SQALLI ?",
+      "expected_answer_contains": "170.100/08",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est le promoteur-vendeur dans le dossier 16-2023-882-VENTE-SQALLI ?",
+      "expected_answer_contains": "Promoteur SARL RIAD CONSTRUCTION",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Qui est l'acquéreur dans le dossier 16-2023-882-VENTE-SQALLI ?",
+      "expected_answer_contains": "رانية الصقلي",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quelle est la superficie couverte du bien dans le dossier 16-2023-882-VENTE-SQALLI ?",
+      "expected_answer_contains": "180",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le prix total de vente dans le dossier 16-2023-882-VENTE-SQALLI ?",
+      "expected_answer_contains": "1.450.000",
+      "expected_source_contains": "acte_de_vente"
+    }
+  ]
+}

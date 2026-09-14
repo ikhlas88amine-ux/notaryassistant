@@ -1,0 +1,98 @@
+{
+  "checklist_id": "hypotheque_engagement_avec_caution.json",
+  "type_dossier": "HYPOTHEQUE",
+  "variante": "engagement_avec_caution",
+  "items": [
+    {
+      "id": "ENGAGEMENT_HYPOTHECAIRE",
+      "label": "Engagement hypothecaiare",
+      "required": true,
+      "severity": "blocking",
+      "accepted_document_types": [
+        "engagement_hypothecaire"
+      ],
+      "accepted_filename_keywords": [
+        "engagement",
+        "hypothecaire"
+      ],
+      "content_proof_keywords": [
+        "engagement",
+        "hypothèque",
+        "hypotheque"
+      ],
+      "recommended_action": "Obtenir l'engagement hypothecaiare signe."
+    },
+    {
+      "id": "CAUTIONNEMENT",
+      "label": "Acte de cautionnement",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "cautionnement"
+      ],
+      "accepted_filename_keywords": [
+        "caution"
+      ],
+      "content_proof_keywords": [
+        "caution",
+        "garant"
+      ],
+      "recommended_action": "Faire signer l'acte de cautionnement par la caution."
+    },
+    {
+      "id": "IDENTITE_EMPRUNTEUR",
+      "label": "Copie CIN de l'emprunteur",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "piece_identite",
+        "cin"
+      ],
+      "accepted_filename_keywords": [
+        "cin",
+        "identite",
+        "emprunteur"
+      ],
+      "content_proof_keywords": [
+        "cin"
+      ],
+      "recommended_action": "Recueillir la copie CIN de l'emprunteur."
+    },
+    {
+      "id": "TITRE_FONCIER",
+      "label": "Extrait du titre foncier",
+      "required": true,
+      "severity": "high",
+      "accepted_document_types": [
+        "titre_foncier",
+        "extrait_tf"
+      ],
+      "accepted_filename_keywords": [
+        "titre",
+        "foncier"
+      ],
+      "content_proof_keywords": [
+        "titre foncier"
+      ],
+      "recommended_action": "Fournir l'extrait du titre foncier a jour."
+    },
+    {
+      "id": "OFFRE_CREDIT",
+      "label": "Offre de credit",
+      "required": true,
+      "severity": "medium",
+      "accepted_document_types": [
+        "offre_credit"
+      ],
+      "accepted_filename_keywords": [
+        "offre",
+        "credit"
+      ],
+      "content_proof_keywords": [
+        "crédit",
+        "credit"
+      ],
+      "recommended_action": "Joindre l'offre de credit acceptee."
+    }
+  ]
+}

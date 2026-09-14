@@ -1,0 +1,87 @@
+{
+  "source_file": "output/chunks_dossiers.jsonl",
+  "total_chunks": 250,
+  "indexable": 173,
+  "excluded": 77,
+  "technical_notices": 27,
+  "fragments_too_short": 50,
+  "table_artifacts": 96,
+  "low_confidence_chunks": 0,
+  "sections_inferred": 79,
+  "chunks_by_role": {
+    "technical_notice": 27,
+    "parties": 40,
+    "property": 39,
+    "price": 27,
+    "mortgage": 6,
+    "clause": 79,
+    "payment": 10,
+    "signatures": 20,
+    "financing": 2
+  },
+  "sections_by_name": {
+    "notice_technique": 27,
+    "identification_parties": 39,
+    "designation_bien": 39,
+    "prix_paiement": 37,
+    "financement_hypotheque": 9,
+    "clauses_diverses": 79,
+    "pieces_jointes": 3,
+    "formalites_signatures": 17
+  },
+  "cin_extracted": 100,
+  "cin_rejected": 19,
+  "cin_false_positives_in_entities": 0,
+  "loan_numbers_in_entities": 3,
+  "loan_false_positives": 0,
+  "mortgage_ranks_in_entities": 6,
+  "empty_mortgage_rank_values": 0,
+  "amounts_extracted": 50,
+  "amount_format_nonstandard_count": 14,
+  "amount_words_digits_mismatch_count": 1,
+  "persons_structured": 10,
+  "banks_extracted": 7,
+  "land_titles_extracted": 13,
+  "dates_extracted": 56,
+  "anomaly_examples": [
+    {
+      "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:4",
+      "value": "CIN rejeté: le 2024"
+    },
+    {
+      "chunk_id": "10-2024-542-HYPOTHEQUE-SQALLI:01_engagement_hypothecaire:1",
+      "value": "CIN rejeté: le 2024"
+    },
+    {
+      "chunk_id": "11-2024-595-DONATION-AMRANI:01_acte_de_donation:18",
+      "value": "LIEU | الجديدة"
+    },
+    {
+      "chunk_id": "11-2024-595-DONATION-AMRANI:01_acte_de_donation:19",
+      "value": "LE |"
+    },
+    {
+      "chunk_id": "11-2024-595-DONATION-AMRANI:01_acte_de_donation:20",
+      "value": "OR |"
+    },
+    {
+      "chunk_id": "11-2024-595-DONATION-AMRANI:01_acte_de_donation:21",
+      "value": "RE |"
+    },
+    {
+      "chunk_id": "11-2024-595-DONATION-AMRANI:01_acte_de_donation:22",
+      "value": "D.V | 600.000 درهم"
+    },
+    {
+      "chunk_id": "11-2024-595-DONATION-AMRANI:01_acte_de_donation:23",
+      "value": "DROIT RECU |"
+    }
+  ],
+  "quality_flag_counts": {
+    "technical_notice": 27,
+    "amount_format_nonstandard": 14,
+    "table_artifact_or_fragment": 48,
+    "too_short_or_fragment": 2,
+    "amount_words_digits_mismatch": 1
+  }
+}

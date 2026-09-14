@@ -1,0 +1,43 @@
+[9-2024-191-HYPOTHEQUE-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Quel est le titre foncier hypothéqué dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?
+[9-2024-191-HYPOTHEQUE-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Quelle banque bénéficie de l'hypothèque dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?
+[9-2024-191-HYPOTHEQUE-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Quel est le montant du crédit garanti dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?
+[9-2024-191-HYPOTHEQUE-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Quel est le rang de l'hypothèque dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?
+[9-2024-191-HYPOTHEQUE-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Qui est l'emprunteur dans le dossier 9-2024-191-HYPOTHEQUE-AMRANI ?
+[17-2025-967-VENTE-ALAOUI] OK  sources_ok=True isole=True contenu_ok=True :: Quel est le titre foncier du bien vendu dans le dossier 17-2025-967-VENTE-ALAOUI ?
+[17-2025-967-VENTE-ALAOUI] OK  sources_ok=True isole=True contenu_ok=True :: Qui est le vendeur dans le dossier 17-2025-967-VENTE-ALAOUI ?
+[17-2025-967-VENTE-ALAOUI] OK  sources_ok=True isole=True contenu_ok=True :: Qui est l'acquéreur dans le dossier 17-2025-967-VENTE-ALAOUI ?
+[17-2025-967-VENTE-ALAOUI] OK  sources_ok=True isole=True contenu_ok=True :: Quelle est la superficie du bien dans le dossier 17-2025-967-VENTE-ALAOUI ?
+[17-2025-967-VENTE-ALAOUI] OK  sources_ok=True isole=True contenu_ok=True :: Le prix a-t-il transité par la comptabilité du notaire dans le dossier 17-2025-967-VENTE-ALAOUI ?
+[11-2024-595-DONATION-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Qui est le donateur (Premier Comparant) dans le dossier 11-2024-595-DONATION-AMRANI ?
+[11-2024-595-DONATION-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Qui est le donataire (Second Comparant) dans le dossier 11-2024-595-DONATION-AMRANI ?
+[11-2024-595-DONATION-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Quel est le lien entre donateur et donataire dans le dossier 11-2024-595-DONATION-AMRANI ?
+[11-2024-595-DONATION-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Quel est le titre foncier du bien donné dans le dossier 11-2024-595-DONATION-AMRANI ?
+[11-2024-595-DONATION-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Quelle est la valeur déclarée du bien donné dans le dossier 11-2024-595-DONATION-AMRANI ?
+[11-2024-595-DONATION-AMRANI] FAIL sources_ok=False isole=True contenu_ok=False :: Quel est le taux de droits d'enregistrement appliqué dans le dossier 11-2024-595-DONATION-AMRANI ?
+[11-2024-595-DONATION-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Sous quelle qualification juridique la donation est-elle conclue dans le dossier 11-2024-595-DONATION-AMRANI ?
+[11-2024-595-DONATION-AMRANI] OK  sources_ok=True isole=True contenu_ok=True :: Le dossier 11-2024-595-DONATION-AMRANI s'appuie-t-il sur un modèle réel de l'étude ?
+[7-2025-605-SUCCESSION-ELYACOUBI] FAIL sources_ok=False isole=True contenu_ok=False :: Qui est le défunt dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?
+[7-2025-605-SUCCESSION-ELYACOUBI] FAIL sources_ok=False isole=True contenu_ok=False :: Quelle est la date du décès dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?
+[7-2025-605-SUCCESSION-ELYACOUBI] OK  sources_ok=True isole=True contenu_ok=True :: Combien d'héritiers sont désignés dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?
+[7-2025-605-SUCCESSION-ELYACOUBI] OK  sources_ok=True isole=True contenu_ok=True :: Quelle est la part successorale de Fatima Zahra BENNANI (épouse) dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?
+[7-2025-605-SUCCESSION-ELYACOUBI] OK  sources_ok=True isole=True contenu_ok=True :: Quel bien compose la succession dans le dossier 7-2025-605-SUCCESSION-ELYACOUBI ?
+[7-2025-605-SUCCESSION-ELYACOUBI] FAIL sources_ok=True isole=True contenu_ok=False :: Le dossier 7-2025-605-SUCCESSION-ELYACOUBI s'appuie-t-il sur un modèle réel de l'étude ?
+[4-2025-539-PROCURATION-ALAOUI] OK  sources_ok=True isole=True contenu_ok=True :: Qui est le mandant dans le dossier 4-2025-539-PROCURATION-ALAOUI ?
+[4-2025-539-PROCURATION-ALAOUI] OK  sources_ok=True isole=True contenu_ok=True :: Qui est le mandataire dans le dossier 4-2025-539-PROCURATION-ALAOUI ?
+[4-2025-539-PROCURATION-ALAOUI] OK  sources_ok=True isole=True contenu_ok=True :: Quel est l'objet de la procuration dans le dossier 4-2025-539-PROCURATION-ALAOUI ?
+[4-2025-539-PROCURATION-ALAOUI] OK  sources_ok=True isole=True contenu_ok=True :: Quelle est la durée de la procuration dans le dossier 4-2025-539-PROCURATION-ALAOUI ?
+[4-2025-539-PROCURATION-ALAOUI] OK  sources_ok=True isole=True contenu_ok=True :: Le dossier 4-2025-539-PROCURATION-ALAOUI s'appuie-t-il sur un modèle réel de l'étude ?
+[1-2024-843-AMBIGU] FAIL sources_ok=True isole=True contenu_ok=False :: Le prix de vente est-il identique dans les deux versions du dossier 1-2024-843-AMBIGU ?
+[1-2024-843-AMBIGU] FAIL sources_ok=True isole=True contenu_ok=False :: Quel est le prix indiqué en version française dans le dossier 1-2024-843-AMBIGU ?
+[1-2024-843-AMBIGU] FAIL sources_ok=True isole=True contenu_ok=False :: Quel est le prix indiqué en version arabe (traduite) dans le dossier 1-2024-843-AMBIGU ?
+[1-2024-843-AMBIGU] OK  sources_ok=True isole=True contenu_ok=True :: Une anomalie est-elle signalée dans le dossier 1-2024-843-AMBIGU ?
+[1-2024-843-AMBIGU] OK  sources_ok=True isole=True contenu_ok=True :: Quel est le titre foncier du bien dans le dossier 1-2024-843-AMBIGU ?
+
+=== 27/34 tests passes (critères : sources correctes + isolation dossier + extrait contient la valeur attendue) ===
+Résultats sauvegardés dans /home/user/work/notary_app/src/output/tests_run_results.json
+Exception ignored in: <function QdrantClient.__del__ at 0x7f02b7e0ba60>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/qdrant_client/qdrant_client.py", line 169, in __del__
+  File "/usr/local/lib/python3.13/site-packages/qdrant_client/qdrant_client.py", line 178, in close
+  File "/usr/local/lib/python3.13/site-packages/qdrant_client/local/qdrant_local.py", line 108, in close
+ImportError: sys.meta_path is None, Python is likely shutting down

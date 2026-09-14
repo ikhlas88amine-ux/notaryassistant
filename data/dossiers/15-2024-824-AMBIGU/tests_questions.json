@@ -1,0 +1,30 @@
+{
+  "dossier_id": "15-2024-824-AMBIGU",
+  "tests": [
+    {
+      "question": "Combien de titres fonciers sont mentionnés pour le même bien dans le dossier 15-2024-824-AMBIGU ?",
+      "expected_answer_contains": "deux",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le premier numéro de titre foncier cité dans le dossier 15-2024-824-AMBIGU ?",
+      "expected_answer_contains": "121.709/08",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le second numéro de titre foncier cité dans le dossier 15-2024-824-AMBIGU ?",
+      "expected_answer_contains": "121.425/08",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Une anomalie est-elle signalée dans le dossier 15-2024-824-AMBIGU ?",
+      "expected_answer_contains": "ANOMALIE VOLONTAIRE",
+      "expected_source_contains": "acte_de_vente"
+    },
+    {
+      "question": "Quel est le premier montant de prix cité dans le dossier 15-2024-824-AMBIGU ?",
+      "expected_answer_contains": "440.000",
+      "expected_source_contains": "acte_de_vente"
+    }
+  ]
+}

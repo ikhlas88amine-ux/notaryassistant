@@ -1,0 +1,38 @@
+{
+  "dossier_id": "10-2024-542-HYPOTHEQUE-SQALLI",
+  "annee": 2024,
+  "numero_dossier": "542",
+  "type_dossier": "HYPOTHEQUE",
+  "variante": "engagement_avec_caution",
+  "client_famille": "SQALLI",
+  "notaire": {
+    "nom": "Maître Fouad BENJELLOUN",
+    "ville": "El Jadida",
+    "adresse": "12, Avenue Mohammed V, El Jadida",
+    "note": "Identité fictive - ne pas confondre avec l'étude réelle",
+    "nom_ar": "فؤاد بنجلون",
+    "ville_ar": "الجديدة"
+  },
+  "modele_reel_disponible": true,
+  "donnees": {
+    "emprunteur": {
+      "nom_fr": "Amine SQALLI",
+      "nom_ar": "أمين الصقلي",
+      "cin": "EJ334409"
+    },
+    "caution": {
+      "nom_fr": "Réda SQALLI",
+      "nom_ar": "رضا الصقلي",
+      "cin": "EJ334410",
+      "lien": "frère de l'emprunteur"
+    },
+    "bien": {
+      "nature": "appartement",
+      "tf": "148.201/08"
+    },
+    "banque": "AL BARID BANK",
+    "montant_credit_dhs": 420000,
+    "rang_hypotheque": 3,
+    "date_acte": "2024-08-06"
+  }
+}

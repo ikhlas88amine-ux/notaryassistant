@@ -1,0 +1,318 @@
+{
+  "corpora": {
+    "dossiers": {
+      "source_file": "output/chunks_dossiers.jsonl",
+      "total_chunks": 117,
+      "indexable": 90,
+      "excluded": 27,
+      "technical_notices": 27,
+      "fragments_too_short": 32,
+      "table_artifacts": 32,
+      "low_confidence_chunks": 0,
+      "sections_inferred": 43,
+      "chunks_by_role": {
+        "technical_notice": 27,
+        "parties": 25,
+        "property": 8,
+        "price": 3,
+        "clause": 43,
+        "signatures": 6,
+        "financing": 1,
+        "payment": 2,
+        "mortgage": 2
+      },
+      "sections_by_name": {
+        "clauses_diverses": 71,
+        "identification_parties": 22,
+        "designation_bien": 8,
+        "prix_paiement": 5,
+        "financement_hypotheque": 4,
+        "formalités_signature": 6,
+        "hypothèque_mainlevée": 1
+      },
+      "cin_extracted": 100,
+      "cin_rejected": 19,
+      "cin_false_positives_in_entities": 18,
+      "loan_numbers_in_entities": 5,
+      "loan_false_positives": 2,
+      "mortgage_ranks_in_entities": 4,
+      "empty_mortgage_rank_values": 3,
+      "amounts_extracted": 20,
+      "amount_format_nonstandard_count": 14,
+      "amount_words_digits_mismatch_count": 0,
+      "persons_structured": 0,
+      "banks_extracted": 0,
+      "land_titles_extracted": 14,
+      "dates_extracted": 2,
+      "anomaly_examples": [
+        {
+          "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:4",
+          "value": "CIN rejeté: le 2024"
+        },
+        {
+          "chunk_id": "1-2024-843-AMBIGU:01_acte_de_vente:4",
+          "value": "Faux CIN stocké: le 2024"
+        },
+        {
+          "chunk_id": "10-2024-542-HYPOTHEQUE-SQALLI:01_engagement_hypothecaire:1",
+          "value": "CIN rejeté: le 2024"
+        },
+        {
+          "chunk_id": "10-2024-542-HYPOTHEQUE-SQALLI:01_engagement_hypothecaire:1",
+          "value": "Faux CIN stocké: le 2024"
+        },
+        {
+          "chunk_id": "10-2024-542-HYPOTHEQUE-SQALLI:01_engagement_hypothecaire:1",
+          "value": "Faux n° de prêt: est"
+        },
+        {
+          "chunk_id": "10-2024-542-HYPOTHEQUE-SQALLI:01_engagement_hypothecaire:1",
+          "value": "Rang hypothécaire vide"
+        },
+        {
+          "chunk_id": "11-2024-595-DONATION-AMRANI:01_acte_de_donation:2",
+          "value": "LE |"
+        },
+        {
+          "chunk_id": "11-2024-595-DONATION-AMRANI:01_acte_de_donation:3",
+          "value": "OR |"
+        }
+      ],
+      "quality_flag_counts": {
+        "amount_format_nonstandard": 14,
+        "amount_parse_failed": 1
+      }
+    },
+    "modeles": {
+      "source_file": "output/chunks_modeles.jsonl",
+      "total_chunks": 35,
+      "indexable": 35,
+      "excluded": 0,
+      "technical_notices": 0,
+      "fragments_too_short": 9,
+      "table_artifacts": 6,
+      "low_confidence_chunks": 0,
+      "sections_inferred": 17,
+      "chunks_by_role": {
+        "clause": 28,
+        "property": 1,
+        "parties": 3,
+        "payment": 1,
+        "mortgage": 2
+      },
+      "sections_by_name": {
+        "clauses_diverses": 17,
+        "al_bqit_coaching_sarl_شركة": 1,
+        "requisition": 3,
+        "lieu_lieu_el_jadida": 1,
+        "le": 1,
+        "or": 1,
+        "re": 1,
+        "d_v": 1,
+        "droit_recu": 1,
+        "prix": 1,
+        "dont_quittance": 1,
+        "declaration_pour_l_enregistrement": 1,
+        "consignation": 1,
+        "pieces_jointes": 1,
+        "signee_ma_tre_nabil_zitouni": 1,
+        "piece_jointe": 1,
+        "signe": 1
+      },
+      "cin_extracted": 6,
+      "cin_rejected": 0,
+      "cin_false_positives_in_entities": 0,
+      "loan_numbers_in_entities": 0,
+      "loan_false_positives": 0,
+      "mortgage_ranks_in_entities": 0,
+      "empty_mortgage_rank_values": 0,
+      "amounts_extracted": 2,
+      "amount_format_nonstandard_count": 2,
+      "amount_words_digits_mismatch_count": 0,
+      "persons_structured": 0,
+      "banks_extracted": 0,
+      "land_titles_extracted": 1,
+      "dates_extracted": 8,
+      "anomaly_examples": [
+        {
+          "chunk_id": "modele-Sdq-w-kl-shq:5",
+          "value": "LIEU | LIEU | EL JADIDA | | |"
+        },
+        {
+          "chunk_id": "modele-Sdq-w-kl-shq:6",
+          "value": "| | LE | | |"
+        },
+        {
+          "chunk_id": "modele-Sdq-w-kl-shq:7",
+          "value": "| | OR | | |"
+        },
+        {
+          "chunk_id": "modele-Sdq-w-kl-shq:8",
+          "value": "| | RE | | |"
+        },
+        {
+          "chunk_id": "modele-Sdq-w-kl-shq:9",
+          "value": "| | D.V | | |"
+        },
+        {
+          "chunk_id": "modele-Sdq-w-kl-shq:10",
+          "value": "| | DROIT RECU | | |"
+        },
+        {
+          "chunk_id": "modele-thmn-lby:2",
+          "value": "DONT QUITTANCE"
+        },
+        {
+          "chunk_id": "modele-REQUISITION.MODEL-J:0",
+          "value": "21/01/2016"
+        }
+      ],
+      "quality_flag_counts": {
+        "amount_parse_failed": 2,
+        "amount_format_nonstandard": 2
+      }
+    },
+    "lois": {
+      "source_file": "output/chunks_lois.jsonl",
+      "total_chunks": 4408,
+      "indexable": 4408,
+      "excluded": 0,
+      "technical_notices": 0,
+      "fragments_too_short": 27,
+      "table_artifacts": 0,
+      "low_confidence_chunks": 186,
+      "sections_inferred": 0,
+      "chunks_by_role": {
+        "other": 4408
+      },
+      "sections_by_name": {
+        "": 3466,
+        "Section I : Les conditions d'accès": 1,
+        "Section II : Les incompatibilités": 2,
+        "Section III : Le stage": 4,
+        "Section IV : La nomination": 5,
+        "SECTION PREMIÉRE : DE LA CAPACITÉ4": 11,
+        "SECTION DEUXIÉME : DE LA DÉCLARATION DE VOLONTÉ": 43,
+        "SECTION TROISIÉME : DE L'OBJET DES OBLIGATIONS": 9,
+        "Section I : Dispositions générales": 2,
+        "Section II : De l'offre": 3,
+        "Section III : De la conclusion d'un contrat sous forme électronique": 1,
+        "Section IV : Dispositions diverses": 44,
+        "SECTION PREMIÉRE : DE LA SOLIDARITÉ ENTRE LES": 11,
+        "SECTION DEUXIÉME : DE LA SOLIDARITÉ ENTRE LES DÉBITEURS": 17,
+        "SECTION PREMIÉRE : DES OBLIGATIONS INDIVISIBLES": 5,
+        "SECTION DEUXIÉME : DES OBLIGATIONS DIVISIBLES": 3,
+        "SECTION PREMIÉRE : DE LA DEMEURE DU DÉBITEUR": 14,
+        "SECTION DEUXIÉME : DE LA FORCE MAJEURE ET DU CAS": 2,
+        "SECTION TROISIÉME : DE LA DEMEURE DU CRÉANCIER": 18,
+        "SECTION PREMIÉRE : DES ARRHES": 3,
+        "SECTION DEUXIÉME : DE DROIT DE RÉTENTION": 15,
+        "SECTION PREMIÉRE : DU PAYEMENT EN GÉNÉRAL": 5,
+        "SECTION DEUXIÉME : DU PAYEMENT PAR CHÉQUE65": 22,
+        "SECTION PREMIÉRE : DE L’AVEU DE LA PARTIE": 11,
+        "SECTION DEUXIÉME : DE LA PREUVE LITTÉRALE": 30,
+        "SECTION TROISIÉME : DE LA PREUVE TESTIMONIALE": 18,
+        "SECTION CINQUIÉME : DU SERMENT": 1,
+        "SECTION PREMIÉRE : DE L'INTERPRÉTATION DES": 13,
+        "SECTION DEUXIÉME : DE QUELQUES RÉGLES GÉNÉRALES DE": 4,
+        "SECTION PREMIÉRE : DE LA NATURE ET DES ÉLÉMENTS": 10,
+        "SECTION DEUXIÉME : DE LA PERFECTION DE LA VENTE": 3,
+        "SECTION PREMIÉRE : DES EFFETS DE LA VENTE ET GÉNÉRAL": 7,
+        "SECTION DEUXIÉME : DES OBLIGATIONS DU VENDEUR": 78,
+        "SECTION TROISIÉME : DES OBLIGATIONS DE L'ACHETEUR": 37,
+        "SECTION TROISIEME : De la vente à livrer avec avance de prix": 6,
+        "Section IV : de la vente d'immeuble en l'état futur d'achèvement111": 23,
+        "Section V : De la vente mobilière avec clause de réserve de": 220,
+        "Section IV: De la réalisation du gage et du nantissement": 49,
+        "SECTION VI.- AUTRES REVENUS ET GAINS414": 1,
+        "Section première": 1,
+        "Section II": 7,
+        "Section III": 7,
+        "Section IV": 6,
+        "Section V": 23,
+        "Section VI": 19,
+        "Section VII": 10,
+        "القسم األول :الخطبة والزواج": 1,
+        "القسم الثالث :موانع الزواج": 1,
+        "القسم الرابع :الشروط اإلرادية لعقد الزواج وآثارها": 3,
+        "القسم السادس :اإلجراءات اإلدارية والشكلية إلبرام عقد الزواج": 5,
+        "القسم األول :أحكام عامة": 12,
+        "القسم الثالث :الطالق": 15,
+        "القسم الثامن :إجراءات ومضمون اإلشهاد على الطالق": 4,
+        "القسم األول :شروط الوصية وإجراءات تنفيذها": 2,
+        "القسم الثاني :التنزيل": 6,
+        "القسم الثاني :أسباب اإلرث وشروطه وموانعه": 5,
+        "القسم الثالث :طرائق اإلرث": 7,
+        "القسم الرابع :أصحاب الفروض": 7,
+        "القسم الخامس :اإلرث بطريق التعصيب": 7,
+        "القسم السادس :الحجب": 5,
+        "القسم السابع :مسائل خاصة": 9,
+        "القسم الثامن :وصية واجبة": 4,
+        "القسم التاسع :تصفية التركة": 22,
+        "القسم العاشر :تسليم التركة وقسمتها": 3
+      },
+      "cin_extracted": 173,
+      "cin_rejected": 259,
+      "cin_false_positives_in_entities": 0,
+      "loan_numbers_in_entities": 0,
+      "loan_false_positives": 0,
+      "mortgage_ranks_in_entities": 0,
+      "empty_mortgage_rank_values": 0,
+      "amounts_extracted": 0,
+      "amount_format_nonstandard_count": 0,
+      "amount_words_digits_mismatch_count": 0,
+      "persons_structured": 0,
+      "banks_extracted": 0,
+      "land_titles_extracted": 0,
+      "dates_extracted": 0,
+      "anomaly_examples": [
+        {
+          "chunk_id": "loi-32-09__art94__p18__c0",
+          "value": "CIN rejeté: mai 1925"
+        },
+        {
+          "chunk_id": "loi-32-09__art132__p26__c0",
+          "value": "CIN rejeté: mai 1925"
+        },
+        {
+          "chunk_id": "doc-1913__art85 bis__p26__c0",
+          "value": "CIN rejeté: mai 1942"
+        },
+        {
+          "chunk_id": "doc-1913__art119__p38__c0",
+          "value": "CIN rejeté: de 1996"
+        },
+        {
+          "chunk_id": "doc-1913__art138__p42__c0",
+          "value": "CIN rejeté: mai 2000"
+        },
+        {
+          "chunk_id": "doc-1913__art324__p85__c0",
+          "value": "CIN rejeté: au 33466"
+        },
+        {
+          "chunk_id": "doc-1913__art984__p242__c0",
+          "value": "CIN rejeté: mai 1997"
+        },
+        {
+          "chunk_id": "doc-1913__art1061__p260__c0",
+          "value": "CIN rejeté: et 1057"
+        }
+      ],
+      "quality_flag_counts": {}
+    }
+  },
+  "totals": {
+    "total_chunks": 4560,
+    "indexable": 4533,
+    "excluded": 27,
+    "technical_notices": 27,
+    "fragments_too_short": 68,
+    "table_artifacts": 38,
+    "cin_false_positives_in_entities": 18,
+    "loan_false_positives": 2,
+    "empty_mortgage_rank_values": 3,
+    "persons_structured": 0,
+    "banks_extracted": 0
+  }
+}
